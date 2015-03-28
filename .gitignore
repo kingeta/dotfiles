@@ -2,3 +2,6 @@
 .ncmpcpp
 .mpdscribble
 *.log
+.log
+*.weechatlog
+.log

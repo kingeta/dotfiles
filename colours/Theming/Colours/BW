@@ -1,0 +1,38 @@
+! GENERAL
+*foreground: #D7D7D7
+*background: #151515
+
+! URXVT
+URxvt*borderColor: #151515
+URxvt*colorBD: #FFFFFF
+URxvt*cursorColor: #D7D7D7
+URxvt*cursorColor2: 151515
+URxvt*colorUL: #A0A0A0
+URxvt*colorIT: #686868
+
+! COLOURS
+! black
+*color0: #101010
+*color8: #404040
+! red
+*color1: #E8E8E8
+*color9: #D2D2D2
+! green
+*color2: #D6D6D6
+*color10: #CFCFCF
+! yellow
+*color3: #E1E1E1
+*color11: #F3F3F3
+! blue
+*color4: #CFCFCF
+*color12: #B1B1B1
+! magenta
+*color5: #FBFBFB
+*color13: #FFFFFF
+! cyan
+*color6: #8D8D8D
+*color14: #7B7B7B
+! white
+*color7: #DDDDDD
+*color15: #DDDDDD
+

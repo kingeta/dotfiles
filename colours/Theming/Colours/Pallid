@@ -1,0 +1,44 @@
+! TERMINAL COLOURS
+*foreground: #D7D0C7
+*background: #151515
+!Darkened forground: #8A857F
+
+! URXVT COLOURS
+URxvt*borderColor:        #151515
+URxvt*colorBD:            #ffffff
+URxvt*cursorColor:        #D7D0C7
+URxvt*cursorColor2:       #151515
+Urxvt*colorUL:            #A0A0A0
+URxvt.colorIT:            #686868
+
+! black
+*.color0:       #131619
+*.color8:       #839eba
+
+! red
+*.color1:       #1b1f23
+*.color9:       #d89fa9
+
+! green
+*.color2:       #2b3036
+*.color10:      #ecbdc5
+
+! yellow
+*.color3:       #414850
+*.color11:      #98d685
+
+! blue
+*.color4:       #5d6671
+*.color12:      #a0c2e5
+
+! magenta
+*.color5:       #7e8a98
+*.color13:      #dcb0b8
+
+! cyan
+*.color6:       #a8b4c2
+*.color14:      #88b7b1
+
+! white
+*.color7:       #dfe3e8
+*.color15:      #78c3bb
