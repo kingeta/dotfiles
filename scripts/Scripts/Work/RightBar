@@ -1,0 +1,56 @@
+#! /usr/bin/bash
+#
+# this is another script for use with bar, on my second screen
+#
+
+# colours
+
+DATECOLOR="$(getcolour 10)"
+TEXTCOLOR="$(getcolour 8)"
+
+COLOR1="$(getcolour 14)"
+COLOR2="$(getcolour 6)"
+COLOR3="$(getcolour 2)"
+
+# information
+
+Playing () {
+	PLAYING1=$(mpc -f %artist% | sed -n '1p')
+	PLAYING2=$(mpc -f %album% | sed -n '1p')
+	PLAYING3=$(mpc -f %title% | sed -n '1p')
+    FILENAME=$(mpc -f %file% | sed -n '1p' | cut -d '.' -f 1)
+    if [ -z "$(mpc -f %artist% | sed -n '1p')" ]; then
+        echo "%{F#FF"$(echo $COLOR2)"}$FILENAME%{F-}"
+    else
+        echo "%{F#FF"$(echo $COLOR1)"}$PLAYING1$(~/Scripts/Work/Separator)%{F#FF"$(echo $COLOR2)"}$PLAYING2$(~/Scripts/Work/Separator)%{F#FF"$(echo $COLOR3)"}$PLAYING3%{F-}"	
+    fi
+}
+
+PlayingState() {
+    if [ -n "`mpc | grep "playing"`" ]; then
+        echo -n "$(Playing)%{F-}"  
+    else
+        echo -n "%{F#FF"$(echo $COLOR1)"}Paused%{F-}"
+    fi
+}
+
+Date () {
+    DATE=$(date "+%d-%m-%Y")
+    echo "%{F#FF"$(echo $DATECOLOR)"}$DATE%{F-}"
+}
+
+CenterText() {
+    TEXT="github.com/kingeta/dotfiles"
+    echo -n "%{F#FF"$(echo $TEXTCOLOR)"}$TEXT%{F-}"
+}
+
+Separator() {
+    COLOR="666666"
+    echo -n "%{F#ff"$(echo $COLOR)"}%{T2}  ||  %{F-}%{T1}"
+}
+
+# outputting everything
+
+while true; do
+    echo -e "%{Sl}%{l} $(PlayingState)%{r}$(CenterText)$(~/Scripts/Work/Separator)$(Date) "
+done

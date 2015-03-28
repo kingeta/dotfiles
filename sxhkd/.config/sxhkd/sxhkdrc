@@ -1,0 +1,153 @@
+#
+# BSPWM BINDINGS
+#
+
+#Quit bspwm
+super + alt + Escape
+	bspc quit
+
+#Toggle window visibility
+super + Return
+    bspc control --toggle-visibility
+
+#Fix my keyboard
+shift + alt + k
+    bash ~/Scripts/Work/Keyboard
+
+#
+# SXHKD BINDINGS
+#
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# WINDOW SPECIFIC BINDINGS
+#
+
+#Close the focused window
+super + w
+	bspc window -c
+
+#Toggle the desktop layout
+super + t
+	bspc desktop -l next
+
+#Make all the windows occupy the same area
+super + b
+	bspc desktop -B
+
+#Toggle floating and fullscreen
+super + {s,f}
+	bspc window -t {floating,fullscreen}
+
+#
+# PRESELECTION
+#
+
+#Preselect the splitting area
+super + shift + {Left,Down,Up,Right}
+	bspc window -p {left,down,up,right}
+
+#Cancel preselection
+super + shift + {_,ctrl + }space
+	bspc {window -p cancel,desktop -c}
+
+#
+# WINDOW SIZE MODIFICATION
+#
+
+#Change the size of the window
+super + alt + {Left,Down,Up,Right}
+	bspc window -e {left -10,down +10,up -10,right +10}
+
+#Change the size of the window
+super + alt + shift + {Left,Down,Up,Right}
+	bspc window -e {right -10,up +10,down -10,left +10}
+
+#
+# DESKTOP, WINDOW AND MONITOR SELECTION
+#
+
+#Focus on or send a window to a certain desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,window -d} ^{1-9,10}
+
+#Focus on or send a window to a certain monitor
+super + {equal,minus}
+    bspc monitor -f {next,prev}
+
+#Focus on the next or last desktop
+super + bracket{left,right}
+	bspc desktop -f {prev,next}
+
+
+#Swap the current window with the largest
+super + m
+	bspc window -s biggest
+
+#Focus or swap the window to the side
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc window -{f,s} {left,down,up,right}
+
+#alt + tab through the windows
+super + {_,shift + } + Tab
+   bspc window -f {next,prev}
+
+#alt + tab through monitors
+
+ctrl + super + {_,shift + } + Tab
+    bspc monitor -f {next,prev}
+
+#
+# MOUSE CONTROL
+#
+
+#Focus the window under the pointer
+#~button1
+#    bspc pointer -g focus
+
+#Move the pointer
+shift + alt + button{1-3}
+	bspc pointer -g {move,resize_side,resize_corner}
+
+shift + alt + !button{1-3}
+	bspc pointer -t %i %i
+
+#shift + alt + @button{1-3}
+#	bspc pointer -u
+
+#
+# WM INDEPENDENT BINDINGS
+#
+
+shift + alt + Return
+	urxvt
+
+shift + alt + space
+    lighthouse | sh
+
+shift + alt + s
+	steam
+
+shift + alt + c 
+    google-chrome-beta
+
+shift + alt + f
+    firefox
+
+alt + {equal,minus} 
+	amixer set Master {1%+,1%-}
+
+shift + alt + {equal,minus} 
+	amixer set Master {5%+,5%-}
+
+shift + alt + w
+    urxvt -e "weechat"
+
+shift + alt + n
+    bash ~/Scripts/Work/StartNcmpcpp
+
+shift + alt + {slash,comma,period}
+    mpc {toggle,prev,next}

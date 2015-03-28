@@ -1,0 +1,7 @@
+#! /usr/bin/bash
+#
+# this script just writes a little seperator for lemonbois bar
+# 
+
+COLOR="666666"
+echo -n "%{F#FF"$(echo $COLOR)"}%{T2}  //  %{F-}%{T1}"

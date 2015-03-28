@@ -1,0 +1,15 @@
+#! /usr/bin/bash
+#
+# this script starts ncmpcpp on my media desktop. nothing more, nothing less
+#
+
+
+killall ncmpcpp
+bspc desktop -f Media
+urxvt -name ncmpcpp -e ncmpcpp &
+#bspc window -t floating=on
+bspc window -d Media
+bspc monitor -f last
+bpsc desktop -f last
+
+exit

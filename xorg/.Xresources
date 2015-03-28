@@ -1,0 +1,39 @@
+!URXVT SETTINGS
+URxvt.scrollBar: false
+URxvt.internalBorder: 7
+URxvt.iso14755: false
+URxvt.cursorBlink: 0
+URxvt.cursorUnderline: 0
+
+!URxvt.perl-ext: default,url-select
+!URxvt.keysym.M-u: perl:url-select:select_next
+!URxvt.url-select.launcher: /usr/bin/xdg-open
+!URxvt.url-select.underline: false
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+!FONTS
+*font: xft:DejaVuSansMono
+*boldfont: xft:DejaVuSansMono:bold
+*italicfont: xft:DejaVuSansMono-Oblique
+*.letterSpace: -2
+!OLD-bitmap
+!*.font:      -*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*
+!*.boldfont:  -*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
+!*.italicfont:-*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+!*.bolditalicfont:-*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
+
+!XFT FONTS
+Xft.antialias:  1
+Xft.autohint:   0
+Xft.dpi:        92
+Xft.hinting:    1
+Xft.hintstyle:  hintfull
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb
+
+!Source colours if I need to
+!nclude "Theming/Colours/Invisibone"
+#include "Theming/Colours/XDotShare"

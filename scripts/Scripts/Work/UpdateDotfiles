@@ -1,0 +1,31 @@
+#! /usr/bin/bash
+
+#
+# This script updates all my dotfiles and stuff
+#
+
+# files and folders, feel free to replace these with your own and update the actually copy stuff part
+
+# actually copy stuff
+
+cd ~/dotfiles
+
+# generate a commit name
+
+if [ -z $1 ]; then
+    commitstamp="$(echo "automated commit on $(date +%d-%m-%Y) at $(date +%T)" )"
+else
+    commitstamp="$1"
+fi
+
+# actually commit
+
+git commit -a -m "$commitstamp"
+
+git push origin master
+
+# finish off
+
+echo "commited and pushed as \"$commitstamp\" "
+
+exit 0

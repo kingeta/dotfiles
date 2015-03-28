@@ -1,0 +1,110 @@
+# Commands
+
+alias rm='echo "rm is disabled, use trash or /bin/rm instead."'
+
+alias cl='clear'
+
+alias ls='ls --color=auto'
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+
+editlatex() {
+    if [ -z $1 ]; then
+        echo "Please specify a filename"
+    elif [ -a $1.tex ]; then
+        exit
+    else
+        cp ~/Documents/LatexTemplate.tex $1.tex
+        vim $1.tex
+    fi
+}
+
+alias cp='cp -r'
+
+alias latex='editlatex'
+
+# Programs
+
+alias vim='vim -u /home/herby/.vimrc'
+
+alias mupdf='setsid mupdf'
+
+alias feh='setsid feh -Z -e "terminus/14"'
+
+alias mpv='setsid mpv'
+
+alias pacman='sudo pacman'
+
+mutt='mutt -F ~/.config/mutt/muttrc'
+
+# Configuring
+
+editor="vim"
+
+alias configbspwm='$editor ~/.config/bspwm/bspwmrc'
+
+alias configsxhkd='$editor ~/.config/sxhkd/sxhkdrc'
+
+alias configxinit='$editor ~/.xinitrc'
+
+alias configxresources='$editor ~/.Xresources'
+
+alias configaliases='$editor ~/.aliases'
+
+alias configncmpcpp='$editor ~/.ncmpcpp/config'
+
+alias configvim='$editor ~/.vimrc'
+
+togglegaps() {
+    if [ $BSPWM_GAPS -eq 1 ]; then
+        export BSPWM_GAPS=0
+    else
+        export BSPWM_GAPS=1
+    fi
+
+    ~/.config/bspwm/bspwmrc
+}
+
+# Configuring Bash
+
+alias configbashprofile='$editor ~/.bash_profile'
+
+alias configbash='$editor ~/.bashrc'
+
+# Configuring Zsh
+
+alias configzsh='$editor ~/.zshrc'
+
+alias configzshenv='$editor ~/.zshenv'
+
+alias configzlogin='$editor ~/.zlogin'
+
+# Configuring Mpv
+
+alias configmpv='$editor ~/.config/mpv/mpv.conf'
+
+alias configmpvinput='$editor ~/.config/mpv/input.conf'
+
+# Moving
+
+alias ..='cd ..'
+
+alias ~='cd ~'
+
+alias csgo='cd ~/.steam/steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/'
+
+alias syntax='cd /usr/share/doc/zsh-syntax-highlighting'
+
+# Zsh file aliases
+
+alias -s html=vim
+alias -s css=vim
+alias -s jpg=feh
+alias -s png=feh
+alias -s pdf=mupdf
+alias -s torrent=rtorrent
+
+# Fun
+
+alias nyan='telnet nyancat.dakko.us'

@@ -1,0 +1,8 @@
+#! /usr/bin/bash
+#
+# this script just makes my keyboard work, because its a bit glitchy
+#
+
+setxkbmap -option caps:super -option 108:64 -layout gb
+
+exit 0

@@ -1,0 +1,3 @@
+#! /usr/bin/bash
+
+while :; do clear; X=$(date +%H%M%S); tput cup $(($(tput lines)/2)) $((($(tput cols)/2)-6)); echo -ne "\033]11;#$X\a#$X"; sleep 1; done;

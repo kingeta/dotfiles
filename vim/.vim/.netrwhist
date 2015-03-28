@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_2='/etc/pacman.d'
+let g:netrw_dirhist_3='/etc/systemd/system'
+let g:netrw_dirhist_4='/home/herby/.config/gtk-2.0'
+let g:netrw_dirhist_5='/home/herby/.config/gtk-3.0'
+let g:netrw_dirhist_6='/home/herby/.config/gtk-2.0'
+let g:netrw_dirhist_7='/home/herby/.config/gtk-3.0'
+let g:netrw_dirhist_8='/usr/local/bin'
+let g:netrw_dirhist_9='/home/herby/.config/lighthouse'

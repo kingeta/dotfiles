@@ -1,0 +1,74 @@
+#! /usr/bin/bash
+# 
+# this is a script to output various data, for use with bar ain't recursive by lemonboy
+#
+
+# colours
+
+CLOCKCOLOR="$(getcolour 1)"
+DESKTOPCOLOR="$(getcolour 12)"
+DESKTOPCOLOR2="$(getcolour 4)"
+VOLUMECOLOR="$(getcolour 3)"
+
+# information
+
+Clock() {
+	DATE=$(date "+%H:%M:%S")
+    echo "%{F#FF$CLOCKCOLOR)}$DATE%{F-}"
+}
+
+Volume () {
+    VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
+    echo -n "%{F#FF"$(echo $VOLUMECOLOR)"}$VOLUME%%"
+    echo -n "%{F-}"
+}
+
+VolumeBar () {
+    I=0
+    VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
+    echo -n "%{F#FF"$(echo $VOLUMECOLOR)"}%{T2}"
+    while [ $I -ne 100 ]; do
+        if [ $VOLUME -gt $I ]; then
+            echo -n "—"
+        else
+            echo -n " "
+        fi
+        I=$(( $I + 10))
+    done
+    echo -n "%{F-}%{T1}"
+}
+
+DesktopOccupied() {
+    SIZE="0"
+
+    while [ "$SIZE" != "`bspc query -D | wc -l`" ]
+    do
+        if [ -n "`bspc query -W -d ^$SIZE`" ]; then
+            echo "%{+u}$(bspc query -D -d ^$SIZE)%{-u}"
+        else
+            echo $(bspc query -D -d ^$SIZE)
+        fi
+
+        let "SIZE = $SIZE + 1"
+    done
+
+    if [ -n "`bspc query -W -d ^$SIZE`" ]; then
+        echo "%{+u}$(bspc query -D -d ^$SIZE)%{-u}"
+    else
+        echo $(bspc query -D -d ^$SIZE)
+    fi
+}
+
+Desktop() {
+    DESKTOP=$( echo "$(DesktopOccupied)" | tr '\n' ' ' | sed 's/'"$(bspc query -D -d)"'/\%\{F#FF'"$(echo $DESKTOPCOLOR)"'\}\%\{U#FF'"$(echo $DESKTOPCOLOR)"'\}'"$(bspc query -D -d)"'\%\{F#FF'"$(echo $DESKTOPCOLOR2)"'\}\%\{U#FF'"$(echo $DESKTOPCOLOR2)"'\}/g')
+    
+    echo -n "%{F#FF"$(echo $DESKTOPCOLOR2)"}"
+    echo -n "$DESKTOP%{F-}"
+}
+
+# outputting everything
+
+while true; do
+    echo " %{Sf}%{l}$(Desktop)%{r}$(Clock)$(~/Scripts/Work/Separator)$(VolumeBar) "
+done
+

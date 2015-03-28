@@ -1,0 +1,54 @@
+//MPD
+mpd_host = "localhost"
+mpd_music_dir = "~/Music"
+mpd_port = "6600"
+mpd_connection_timeout = "3"
+
+//Vizualiser
+visualizer_in_stereo = "yes"
+//visualizer_look = "██"
+visualizer_look = "••"
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_type = "spectrum"
+
+//Display
+song_list_format = {$7%a$2 - $6%b$9 - $5%t$0}|{$2%f$0}
+song_columns_list_format = {$7%a$2 - $6%b$9 - $5%t$0}|{$2%f$0}
+song_library_format = {$7%a$2 - $6%b$9 - $5%t$0}|{$2%f$0}
+song_window_title_format = {$2%f$0}
+song_status_format = {$7%a$2 - $6%b$9 - $5%t$0}|{$2%f$0}
+
+playlist_display_mode = "classic"
+
+statusbar_color = "white"
+visualizer_color = "red"
+active_column_color = "white"
+main_window_highlight_color = "white"
+main_window_color = "cyan"
+color1 = "red"
+color2 = "red"
+progressbar_color = "black"
+progressbar_elapsed_color = "white"
+
+startup_screen = "visualizer"
+header_visibility = "no"
+statusbar_visibility = "yes"
+colors_enabled = "yes"
+now_playing_prefix = ""
+now_playing_suffix = ""
+autocenter_mode = "yes"
+centered_cursor = "yes"
+progressbar_look = "―― "
+titles_visibility = "no"
+discard_colors_if_item_is_selected = "yes"
+playlist_disable_highlight_delay = "0"
+message_delay_time = "1"
+ask_before_clearing_playlists = "no"
+mouse_support = "no"
+progressbar_boldness = "yes"
+//browser_playlist_prefix = "$7playlist$2"
+
+selected_item_prefix = "$8"
+selected_item_suffix = "$2"
+
