@@ -12230,3 +12230,1255 @@
 2015-03-28 11:42:22	+neeasade	could**
 2015-03-28 11:42:23	+neeasade	fuck
 2015-03-28 11:42:26	+neeasade	how do I type
+2015-03-28 11:48:09	>	enugu395 (~enugu395@78A8C500.C5456D01.60587EE6.IP) has joined #rice
+2015-03-28 11:50:33	+z3bra	FUCK
+2015-03-28 11:50:35	+z3bra	PRINTER
+2015-03-28 11:55:25	>	chap (~chap@7CE28E11.4DDA3617.849B9D1.IP) has joined #rice
+2015-03-28 11:55:25	⇄	Mode #rice [+v chap] by Onee-chan
+2015-03-28 11:56:12	+eta	can you put real files in linked directories?
+2015-03-28 11:56:20	+neeasade	yes
+2015-03-28 11:56:37	+eta	phew
+2015-03-28 12:00:51	+z3bra	eta sure
+2015-03-28 12:01:15	+z3bra	a symlink is just like what you'd have on microsoft windows
+2015-03-28 12:01:25	+z3bra	a file that points to something else
+2015-03-28 12:01:38	+z3bra	either a simple file, program, directory...
+2015-03-28 12:02:13	+z3bra	even websites :)
+2015-03-28 12:03:59	>	onodera (~onodera@present.day.present.time) has joined #rice
+2015-03-28 12:03:59	⇄	Mode #rice [+v onodera] by Onee-chan
+2015-03-28 12:08:06	+z3bra	cups
+2015-03-28 12:08:12	+onodera	hello
+2015-03-28 12:30:43	>	eta (~herby@Rizon-47B34E7B.range86-185.btcentralplus.com) has joined #rice
+2015-03-28 12:30:43	⇄	Topic for #rice is "No Rice No Life™ | Welcome to #rice: Technology customization discussion | https://u.teknik.io/32NSPT.png | http://thinkmoult.com/irc.html"
+2015-03-28 12:30:43	⇄	Topic set by kori (~luiz@no.rice.no.life) on Mon, 23 Mar 2015 18:13:33
+2015-03-28 12:30:43	⇄	Channel #rice: 119 nicks (7 ops, 1 halfop, 104 voices, 7 normals)
+2015-03-28 12:30:43	⇄	Mode #rice [+v eta] by Onee-chan
+2015-03-28 12:30:44	+onodera	*stratos
+2015-03-28 12:30:45	⇄	Channel created on Sun, 30 Dec 2012 00:07:54
+2015-03-28 12:30:47	+eta	well this is wierd
+2015-03-28 12:30:51	+harakiru	s/girls/girl
+2015-03-28 12:30:57	+onodera	eva is not harem but d33p
+2015-03-28 12:31:03	+eta	xresources doesn't want to include a file
+2015-03-28 12:31:18	+sizzle	eva IS FEDORA TIER
+2015-03-28 12:31:41	<	harakiru (~uzay@74FFB6FE.BB6D12D0.C1406530.IP) has quit
+2015-03-28 12:31:50	>	harakiru (~uzay@74FFB6FE.BB6D12D0.C1406530.IP) has joined #rice
+2015-03-28 12:31:50	⇄	Mode #rice [+v harakiru] by Onee-chan
+2015-03-28 12:34:25	+eta	ahh, xresources doesn't seem to do file location expansion or whateveer
+2015-03-28 12:37:12	+z3bra	nope
+2015-03-28 12:37:18	>	MyXoMoPBL (~MyXoMoPBL@Ayase.CHIHAYA) has joined #rice
+2015-03-28 12:37:19	⇄	Mode #rice [+v MyXoMoPBL] by Onee-chan
+2015-03-28 12:37:26	+z3bra	but you can do
+2015-03-28 12:37:37	+z3bra	xrdb -I$HOME/.theme ~/.Xresources
+2015-03-28 12:37:42	+z3bra	and have things like 
+2015-03-28 12:37:47	+z3bra	#include <theme1>
+2015-03-28 12:38:00	+eta	huh
+2015-03-28 12:38:00	+z3bra	with theme1 being in $HOME/.theme
+2015-03-28 12:38:09	+mysall	I didn't know that that's cool
+2015-03-28 12:38:19	+z3bra	also, #define
+2015-03-28 12:39:13	>	ruukasu (~ruukasu@onetwoseven.zero.zero.one) has joined #rice
+2015-03-28 12:39:13	⇄	Mode #rice [+v ruukasu] by Onee-chan
+2015-03-28 12:41:23	⇄	LeDZeP is now known as ZeroCool
+2015-03-28 12:41:25	>	Cheat47_ (~CheatFrea@Rizon-719F1EAF.nap.wideopenwest.com) has joined #rice
+2015-03-28 12:41:40	⇄	ZeroCool is now known as LeDZeP
+2015-03-28 12:41:42	>	Cheat (~CheatFrea@Rizon-719F1EAF.nap.wideopenwest.com) has joined #rice
+2015-03-28 12:41:42	⇄	Mode #rice [+v Cheat] by Onee-chan
+2015-03-28 12:44:34	+z3bra	i hate printers.
+2015-03-28 12:45:45	<	enugu395 (~enugu395@78A8C500.C5456D01.60587EE6.IP) has quit (Remote host closed the connection)
+2015-03-28 12:45:52	>	camey (~camey@4084E4FF.1D595ACD.161B01B4.IP) has joined #rice
+2015-03-28 12:46:10	<	sizzle (~sizzle@Rizon-7D78B4EC.dyn.user.ono.com) has quit (Quit: leaving)
+2015-03-28 12:47:55	+prash	z3bra me too
+2015-03-28 12:48:19	+slackR	why?
+2015-03-28 12:48:49	+z3bra	have you tried setting one up?
+2015-03-28 12:49:37	+slackR	z3bra: Yeah,Bu i use it only as a scanner as printing is not supported
+2015-03-28 12:50:08	+z3bra	so no
+2015-03-28 12:50:18	+z3bra	it's not a printer
+2015-03-28 12:50:21	+z3bra	it's a scanner :)
+2015-03-28 12:51:52	+slackR	ohkay!
+2015-03-28 13:00:16	+slackR	should I stop using Display manager?
+2015-03-28 13:00:30	+xenkey	no
+2015-03-28 13:00:49	+slackR	xenkey: Then which one do you prefer
+2015-03-28 13:01:08	+z3bra	if you have no particular reason to do so, don't
+2015-03-28 13:01:19	+xenkey	slackR: y-you mean like lxdm?
+2015-03-28 13:01:25	+slackR	yeah
+2015-03-28 13:01:34	+xenkey	where do I change the weechat text colour?
+2015-03-28 13:02:02	%oneesama	good morning fuckers
+2015-03-28 13:02:02	+xenkey	i wanna #707880
+2015-03-28 13:02:36	+z3bra	in the config
+2015-03-28 13:03:54	%oneesama	it's weechat.color.chat
+2015-03-28 13:04:07	%oneesama	set it with /set weechat.color.chat value
+2015-03-28 13:04:38	%oneesama	does weechat support using hex values for colors?
+2015-03-28 13:04:42	+slackR	oneesama: hey.  P.S : I'm not a fucker xP
+2015-03-28 13:04:58	%oneesama	y'all fuckers
+2015-03-28 13:05:21	+onodera	I don't think it does
+2015-03-28 13:05:25	%oneesama	no it doesn't
+2015-03-28 13:05:27	%oneesama	just tried
+2015-03-28 13:05:31	+xenkey	fuck
+2015-03-28 13:05:33	%oneesama	it does support 256colors though
+2015-03-28 13:05:37	+xenkey	then
+2015-03-28 13:05:39	+xenkey	ugh
+2015-03-28 13:05:40	%oneesama	so find a fitting color
+2015-03-28 13:05:47	+xenkey	lightishgreywithabitofblue
+2015-03-28 13:05:48	+slackR	oneesama: https://github.com/weechat/weechat/issues/312
+2015-03-28 13:05:49	+Combot	[URL] Add support for hex color codes as values in options. · Issue #312 · weechat/weechat · GitHub (github.com)
+2015-03-28 13:05:57	+onodera	>using colors that aren't in your xResources
+2015-03-28 13:06:00	+onodera	ugh
+2015-03-28 13:06:12	+xenkey	> using .Xresources
+2015-03-28 13:06:22	+xenkey	> calling it .xResources
+2015-03-28 13:06:29	+xenkey	> not termite/config
+2015-03-28 13:06:38	+slackR	typical rice
+2015-03-28 13:06:46	+slackR	:^)
+2015-03-28 13:06:50	+eta	>not just having an Xresources that is #include "Colours/sex"
+2015-03-28 13:07:14	+miles	onodera: I'm too lazy to keep typing xrdb -merge .Xresources
+2015-03-28 13:07:23	%oneesama	...then run it at login
+2015-03-28 13:07:28	%oneesama	?????
+2015-03-28 13:07:46	+miles	Doesn't help when you're trying to initally setup the colors
+2015-03-28 13:07:57	%oneesama	that's some extreme fucking laziness
+2015-03-28 13:08:04	+onodera	yu can just use the up arrow
+2015-03-28 13:08:08	%oneesama	yeah
+2015-03-28 13:08:16	+miles	Creating terminal color schemes is annoyingly annoying
+2015-03-28 13:08:16	+onodera	or whatever keybind you've set for prev command
+2015-03-28 13:08:16	%oneesama	hell you can just !!
+2015-03-28 13:08:38	+onodera	I've used sudo !! before
+2015-03-28 13:08:41	+onodera	but not !!
+2015-03-28 13:08:45	+onodera	this is gonna change my life
+2015-03-28 13:08:49	+xenkey	scrub
+2015-03-28 13:08:52	+xenkey	get gud
+2015-03-28 13:08:59	%oneesama	>get gud
+2015-03-28 13:09:03	%oneesama	>can't even set a weechat color
+2015-03-28 13:09:04	%oneesama	:^)))
+2015-03-28 13:09:18	+xenkey	SHUT UP ITS WEECHAT'S FAULT
+2015-03-28 13:09:19	+miles	I don't use weechat
+2015-03-28 13:09:25	+miles	oh
+2015-03-28 13:09:26	+miles	xenkey: 
+2015-03-28 13:09:29	+miles	nvm
+2015-03-28 13:09:33	|	xenkey cries
+2015-03-28 13:09:38	%oneesama	xenkey: http://misc.flogisoft.com/_media/bash/colors_format/256-colors.sh.png
+2015-03-28 13:09:38	+Combot	[image/png] Size: 39.58 KB
+2015-03-28 13:09:45	%oneesama	for your reference theres the 256color spectrum
+2015-03-28 13:09:47	+xenkey	WEECHAT Y U NO OBEY COLOR RULES
+2015-03-28 13:09:52	%oneesama	pick one that looks a bit like the colour you want to use
+2015-03-28 13:10:06	+onodera	it does xenkey 
+2015-03-28 13:10:11	+xenkey	but
+2015-03-28 13:10:17	%oneesama	or just set that colour in your termite config
+2015-03-28 13:10:22	+onodera	http://a.uguu.se/eybdxw_scrot.png
+2015-03-28 13:10:23	%oneesama	as your lightblue
+2015-03-28 13:10:23	+Combot	[image/png] Size: 93.76 KB
+2015-03-28 13:10:24	%oneesama	???
+2015-03-28 13:10:28	+xenkey	in my config it says foreground -color
+2015-03-28 13:10:36	+xenkey	and i see the colour in the input box
+2015-03-28 13:10:42	+xenkey	but not on the output box
+2015-03-28 13:10:53	%oneesama	hahahah omg uguu.se gets eror warnings in chrome
+2015-03-28 13:11:02	%oneesama	I'll drop neku an email
+2015-03-28 13:11:13	%oneesama	Attackers on a.uguu.se might attempt to trick you into installing programs that harm your browsing experience (for example, by changing your homepage or showing extra ads on sites that you visit).⎋
+2015-03-28 13:12:35	+xenkey	I made a terminal too small now it gone :c
+2015-03-28 13:12:49	%oneesama	wat
+2015-03-28 13:13:03	>	panzervi (~panzer@Rizon-7325F718.hsd1.in.comcast.net) has joined #rice
+2015-03-28 13:13:12	+xenkey	fuck the colours lol
+2015-03-28 13:13:23	%oneesama	oh my god dude just set the color in your config
+2015-03-28 13:13:26	%oneesama	and use it like that
+2015-03-28 13:13:46	+xenkey	https://a.pomf.se/pplkcs.png
+2015-03-28 13:13:46	+Combot	[image/png] Size: 114.49 KB
+2015-03-28 13:14:43	<	harakiru (~uzay@74FFB6FE.BB6D12D0.C1406530.IP) has quit (Ping timeout: 240 seconds)
+2015-03-28 13:15:07	%oneesama	eh I'm not keen on your font
+2015-03-28 13:15:45	+xenkey	look at the colour inconsistency
+2015-03-28 13:15:53	+xenkey	why don't we just write everything we run  ourselves
+2015-03-28 13:16:03	%oneesama	what color inconsistency
+2015-03-28 13:16:11	+xenkey	text colour
+2015-03-28 13:16:23	%oneesama	dfude
+2015-03-28 13:16:24	+xenkey	one is white, the other greyish
+2015-03-28 13:16:26	%oneesama	try this for me
+2015-03-28 13:16:53	%oneesama	/set weechat.color.chat white
+2015-03-28 13:17:18	<	panzervi (~panzer@Rizon-7325F718.hsd1.in.comcast.net) has quit (Ping timeout: 240 seconds)
+2015-03-28 13:17:22	+xenkey	Urhm
+2015-03-28 13:17:49	+xenkey	https://a.pomf.se/nlduep.png
+2015-03-28 13:17:49	+Combot	[image/png] Size: 155.65 KB
+2015-03-28 13:18:33	%oneesama	okay show me your termite config
+2015-03-28 13:18:40	%oneesama	what is that Profanity thing on the left
+2015-03-28 13:18:48	%oneesama	are those colours listed in it your terminal colorurs
+2015-03-28 13:19:23	+xenkey	Uh I sort of gave up. What was the hex value I posted earlier?
+2015-03-28 13:19:39	<	ruukasu (~ruukasu@onetwoseven.zero.zero.one) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2015-03-28 13:19:48	%oneesama	707880
+2015-03-28 13:19:54	+xenkey	thanks
+2015-03-28 13:20:11	+xenkey	http://pastie.org/10059222
+2015-03-28 13:20:12	+Combot	[URL] #10059222 - Pastie (pastie.org)
+2015-03-28 13:20:55	>	harakiru (~uzay@74FFB6FE.BB6D12D0.C1406530.IP) has joined #rice
+2015-03-28 13:20:55	⇄	Mode #rice [+v harakiru] by Onee-chan
+2015-03-28 13:20:59	%oneesama	right...
+2015-03-28 13:21:07	%oneesama	try set weechat.color.chat 7
+2015-03-28 13:22:02	+xenkey	That looka a bit closer
+2015-03-28 13:22:10	%oneesama	it's exactly the same
+2015-03-28 13:22:25	%oneesama	if that Profanity window is correct
+2015-03-28 13:22:28	+xenkey	Yeah, this is it i think
+2015-03-28 13:22:30	%oneesama	scrot it for me
+2015-03-28 13:22:33	%oneesama	okay good
+2015-03-28 13:22:34	%oneesama	there you go
+2015-03-28 13:22:44	+xenkey	https://a.pomf.se/zpwwhv.png
+2015-03-28 13:22:45	+Combot	[image/png] Size: 97.18 KB
+2015-03-28 13:22:53	+xenkey	Still a bit inconsistent though, but thanks
+2015-03-28 13:23:13	+xenkey	profanity didn't follow the theme to start with and i wanted to make the sexy colour default :)
+2015-03-28 13:23:21	%oneesama	well, then just set the rest of your colors in weechat to match profanity
+2015-03-28 13:24:04	+xenkey	It actually looks worse than white but it's a lot easier to read
+2015-03-28 13:24:13	>	ruukasu (~ruukasu@Rizon-ED09A025.maine.res.rr.com) has joined #rice
+2015-03-28 13:24:13	+xenkey	So It's gud
+2015-03-28 13:24:15	⇄	Mode #rice [+v ruukasu] by Onee-chan
+2015-03-28 13:24:27	%oneesama	protip, install the weechat script iset
+2015-03-28 13:24:34	%oneesama	then you can just do /iset color
+2015-03-28 13:24:39	%oneesama	to find all values matching color
+2015-03-28 13:24:56	+xenkey	o nice
+2015-03-28 13:24:57	+xenkey	thanks
+2015-03-28 13:25:02	%oneesama	np
+2015-03-28 13:26:14	>	NASA (~NASA@ash.nazg.thrakatuluk) has joined #rice
+2015-03-28 13:26:14	⇄	Mode #rice [+v NASA] by Onee-chan
+2015-03-28 13:26:19	+xenkey	Anyone else use profanity?
+2015-03-28 13:26:36	+xenkey	Is the theming flexible enough to make it a bit like my weechat?
+2015-03-28 13:27:18	%oneesama	if I want a terminal xmpp client I'll use finch
+2015-03-28 13:27:27	%oneesama	becuase of purple-otr
+2015-03-28 13:27:48	+xenkey	OTR works on profanity though
+2015-03-28 13:28:23	%oneesama	oh really
+2015-03-28 13:28:45	+xenkey	13:30 ! OTR session started (trusted).
+2015-03-28 13:29:18	%oneesama	oh cool
+2015-03-28 13:29:28	%oneesama	does it interoperate with pidgin-otr and purple-otr
+2015-03-28 13:29:33	%oneesama	I assume it does
+2015-03-28 13:30:03	+xenkey	Uh
+2015-03-28 13:30:10	+xenkey	Don't think so
+2015-03-28 13:30:16	%oneesama	oh that's shit then
+2015-03-28 13:30:26	%oneesama	none of my friends will want to use some hipster terminal client
+2015-03-28 13:30:26	+xenkey	lol
+2015-03-28 13:30:36	+xenkey	what do you mean interoperate
+2015-03-28 13:30:40	+xenkey	on the same pc?
+2015-03-28 13:30:44	%oneesama	no I mean
+2015-03-28 13:30:58	%oneesama	can someone using profanity otr communicate via otr with someone using pidgin-otr
+2015-03-28 13:31:00	%oneesama	or purple-otr
+2015-03-28 13:31:07	+xenkey	OTR is a universal protocol so you can talk to pidgin clients using OTR from any other client that supports it
+2015-03-28 13:31:12	%oneesama	oh okay good
+2015-03-28 13:31:14	%oneesama	that's what i was aslking
+2015-03-28 13:31:16	%oneesama	asking*
+2015-03-28 13:31:17	+xenkey	otherwise it wouldn't be called OTR
+2015-03-28 13:31:28	%oneesama	yeah I didn't know if it was universal or not
+2015-03-28 13:31:42	+xenkey	finch looks awful though
+2015-03-28 13:31:49	+xenkey	I'll be honest
+2015-03-28 13:31:49	%oneesama	finch is alright
+2015-03-28 13:32:00	+xenkey	it's pidgin trying to fit in the terminal lol
+2015-03-28 13:33:24	>	gabaghool (~oyy@free.gnu.man) has joined #rice
+2015-03-28 13:33:24	⇄	Mode #rice [+v gabaghool] by Onee-chan
+2015-03-28 13:33:53	%oneesama	.desktop 1
+2015-03-28 13:33:54	+spoonbot	[1] http://a.pomf.se/giinsd.png [oneesama]
+2015-03-28 13:33:56	%oneesama	r89 m89s
+2015-03-28 13:34:15	+gabaghool	>ubuntu
+2015-03-28 13:34:33	%oneesama	yeah, the only distro I've ever used that doesn't suck ass with fglrx
+2015-03-28 13:34:36	%oneesama	and actually works
+2015-03-28 13:35:20	<	camey (~camey@4084E4FF.1D595ACD.161B01B4.IP) has quit (Remote host closed the connection)
+2015-03-28 13:35:54	+gabaghool	you cant rice ubuntu
+2015-03-28 13:35:58	%oneesama	you can
+2015-03-28 13:36:03	%oneesama	what are you talking about
+2015-03-28 13:36:13	%oneesama	>gtk-3.0/apps/unity.css
+2015-03-28 13:37:05	+gabaghool	pls
+2015-03-28 13:37:17	%oneesama	no no pls
+2015-03-28 13:37:26	%oneesama	give me a legitimate reason you can't rice ubuntu lol
+2015-03-28 13:37:39	+gabaghool	because its ubuntu?
+2015-03-28 13:37:48	%oneesama	le 
+2015-03-28 13:37:49	+bixxx	lol
+2015-03-28 13:37:51	>	arianon (~arianon@ED714BA.BF81DC.DEE60918.IP) has joined #rice
+2015-03-28 13:39:00	+gabaghool	its just common sense
+2015-03-28 13:39:03	+bixxx	most(/all?) of mobo's desktops are ubuntu, from what i've heard
+2015-03-28 13:39:09	%oneesama	no, gabaghool 
+2015-03-28 13:39:12	%oneesama	it's you being an idiot
+2015-03-28 13:39:16	%oneesama	:^)
+2015-03-28 13:39:51	+gabaghool	no im a desktop thread veteran
+2015-03-28 13:40:00	+gabaghool	i know what im talking about
+2015-03-28 13:40:10	%oneesama	haha ok
+2015-03-28 13:40:30	+onodera	What the fuck did you just fucking say about my desktop, you little tasteless bitch? I'll have you know I graduated top of my class in the Desktop Ricing division, and I've been involved in numerous secret desktop thread operations, and I have over 300 confirmed 10/10s.
+2015-03-28 13:40:49	+bixxx	haha
+2015-03-28 13:41:12	+gabaghool	.dtop bixxx 
+2015-03-28 13:41:12	+spoonbot	[1] http://waa.ai/4r8P.png [2] http://a.pomf.se/gdykgc.png [3] http://a.pomf.se/xzcatd.png [bixxx]
+2015-03-28 13:41:39	+onodera	ou're fucking dead, kid. I can be anywhere, anytime, and I can rice desktops in over seven hundred ways, and that's just with a minimal tiling WM setup.
+2015-03-28 13:42:24	%oneesama	.desktop gabaghool 
+2015-03-28 13:42:24	+spoonbot	gabaghool doesn't have any desktops saved.
+2015-03-28 13:42:30	%oneesama	is this nigga serious
+2015-03-28 13:42:51	+gabaghool	oneesama, http://u.xpo.pw/cmH.png
+2015-03-28 13:42:52	+Combot	[image/png] Size: 1.28 MB
+2015-03-28 13:43:28	<	harakiru (~uzay@74FFB6FE.BB6D12D0.C1406530.IP) has quit (Ping timeout: 240 seconds)
+2015-03-28 13:43:34	%oneesama	okay your desktop is quite nice
+2015-03-28 13:43:42	+onodera	whos the grill
+2015-03-28 13:44:05	+gabaghool	irene from red velvet
+2015-03-28 13:44:30	+onodera	can you link the pic pls
+2015-03-28 13:45:31	+onodera	https://lh6.googleusercontent.com/-pvVPh9RDv-o/VP-carSk3SI/AAAAAAAA0ro/YOZD1jXz7lE/w2000-h1333/%25EC%2595%2584%25EC%259D%25B4%25EB%25A6%25B0.jpg
+2015-03-28 13:45:32	+Combot	[image/jpeg] Size: 403.41 KB
+2015-03-28 13:45:34	+onodera	hngg
+2015-03-28 13:45:48	+bixxx	.w 11725
+2015-03-28 13:45:48	+Combot	Commack, NY is currently light snow mist with a temperature of 32 F (0 C).  The humidity is 85% with winds blowing NNW at 16 mph
+2015-03-28 13:46:22	+bixxx	i'll admit that i'm starting to get tired of this snow
+2015-03-28 13:46:24	%oneesama	I do not think that woman is all that attractive
+2015-03-28 13:46:29	%oneesama	she's not ugly
+2015-03-28 13:46:35	%oneesama	but nothing special
+2015-03-28 13:46:40	+bixxx	^
+2015-03-28 13:46:46	+gabaghool	no shes very special
+2015-03-28 13:48:26	+gabaghool	whos ur waifu oneesama 
+2015-03-28 13:49:01	<	ruukasu (~ruukasu@onetwoseven.zero.zero.one) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2015-03-28 13:51:06	%oneesama	I have a real gf
+2015-03-28 13:51:15	+gabaghool	hahahahahahahhaaha
+2015-03-28 13:51:46	+gabaghool	and thats why youre using ubuntu
+2015-03-28 13:51:59	%oneesama	as if having a gf is a bad thing
+2015-03-28 13:52:35	+gabaghool	its not a bad thing but its just that it makes you a normie
+2015-03-28 13:52:41	%oneesama	>normie
+2015-03-28 13:52:44	%oneesama	oh you're one of those
+2015-03-28 13:52:50	%oneesama	I bet you like being cucked don't you
+2015-03-28 13:52:58	+gabaghool	lol
+2015-03-28 13:53:33	>	ruukasu (~ruukasu@Rizon-ED09A025.maine.res.rr.com) has joined #rice
+2015-03-28 13:53:36	⇄	Mode #rice [+v ruukasu] by Onee-chan
+2015-03-28 13:53:40	%oneesama	for the record I used gentoo and arch for months and decided both are a waste of time
+2015-03-28 13:55:12	<	arianon (~arianon@ED714BA.BF81DC.DEE60918.IP) has quit (Ping timeout: 240 seconds)
+2015-03-28 13:56:20	+gabaghool	and ricing isnt?
+2015-03-28 13:56:40	%oneesama	sure it is
+2015-03-28 13:56:43	%oneesama	but at least ricing is fun
+2015-03-28 13:57:00	%oneesama	bashing your head against a wall trying to get things to work isn't
+2015-03-28 13:57:09	+psycho	https://i.imgur.com/W3aKavG.jpg
+2015-03-28 13:57:10	+Combot	[image/jpeg] Size: 164.34 KB
+2015-03-28 13:57:12	+psycho	that ass tho
+2015-03-28 13:57:14	%oneesama	so instead I installed debian on my netbook and ubuntu on my desktop and never looked back
+2015-03-28 13:57:38	+gabaghool	>debian and ubuntu
+2015-03-28 13:57:41	+gabaghool	youre dead to me bro
+2015-03-28 13:57:56	+bixxx	psycho: nice :o
+2015-03-28 13:58:37	>	jcalve (~jcalve@B8CC0846.CAF2F8B6.63B32730.IP) has joined #rice
+2015-03-28 13:58:37	⇄	Mode #rice [+v jcalve] by Onee-chan
+2015-03-28 14:01:11	%oneesama	no great loss gabaghool 
+2015-03-28 14:01:35	+psycho	http://psycho.space/s/uO5Y
+2015-03-28 14:01:37	+Combot	[image/jpeg] Size: 56.94 KB
+2015-03-28 14:02:44	+Plez	SWEAG
+2015-03-28 14:02:46	+Plez	how are we all
+2015-03-28 14:02:56	+jcalve	>not systemctl stop
+2015-03-28 14:02:58	+psycho	Fine as a nice lady's bottom
+2015-03-28 14:03:03	+gabaghool	hungover as fuck
+2015-03-28 14:03:09	+psycho	jcalve: the joke | | you
+2015-03-28 14:03:10	+Plez	damn, thats pretty fine
+2015-03-28 14:03:11	+Plez	gabaghool: rip
+2015-03-28 14:03:23	+jcalve	:(
+2015-03-28 14:03:25	+Plez	psycho: but that pipe would have an error
+2015-03-28 14:03:33	+psycho	gabaghool: mineral water + lemon + honey
+2015-03-28 14:03:38	+psycho	It does wonders to hangovers
+2015-03-28 14:04:02	+Plez	i started just drinking whiskey
+2015-03-28 14:04:06	+Plez	idk why but i dont get hangovers from it
+2015-03-28 14:04:15	+Plez	but after beer im fucked
+2015-03-28 14:04:22	+gabaghool	honey makes me puke
+2015-03-28 14:04:30	+psycho	lmao I can drink as much as 4 liters of beer and have nothing
+2015-03-28 14:04:30	+Plez	rip
+2015-03-28 14:04:33	+Plez	honey da bes
+2015-03-28 14:04:35	+psycho	... don't ask how I know that
+2015-03-28 14:04:41	+Plez	psycho: i used to be able to
+2015-03-28 14:04:43	+Plez	but not anymore
+2015-03-28 14:04:51	+Plez	4litres of beer isnt so much, thats like a case i think
+2015-03-28 14:05:02	+Plez	yeah half a case
+2015-03-28 14:05:12	+gabaghool	ive noticed that with age hangovers keep getting worse and worse
+2015-03-28 14:05:23	+Plez	me too
+2015-03-28 14:05:25	+Plez	;-;
+2015-03-28 14:05:28	+Plez	tfw not even that old yet
+2015-03-28 14:05:49	+xenkey	I'm a very stupid person
+2015-03-28 14:05:53	+xenkey	foreground      = #707880
+2015-03-28 14:05:53	+xenkey	foreground_bold = #c5c8c6
+2015-03-28 14:05:57	+Plez	i couldve told you that :^)
+2015-03-28 14:06:31	+anosh	gabaghool confirmed for /r9k/
+2015-03-28 14:06:32	+xenkey	like literally-about-to-kms stupid
+2015-03-28 14:06:47	%oneesama	yeah gabaghool is literally an r9k cuck :^)
+2015-03-28 14:07:01	+gabaghool	:<
+2015-03-28 14:07:08	+Plez	xenkey: no rip pls
+2015-03-28 14:07:18	+Plez	im sick of people dying so quit it
+2015-03-28 14:07:24	+xenkey	rip me
+2015-03-28 14:07:28	+Plez	no more deaths allowed in entire world
+2015-03-28 14:07:32	+xenkey	 /quit life
+2015-03-28 14:07:44	+Plez	you cant sudoku until i get to 150wpm
+2015-03-28 14:07:45	+xenkey	DYERS WILL BE PROSECU- oh wait
+2015-03-28 14:07:47	>	apt-get_ (~apt-get@7229F399.27D67210.BEE40085.IP) has joined #rice
+2015-03-28 14:07:56	+Plez	.top
+2015-03-28 14:07:58	+Plez	.dtop
+2015-03-28 14:07:58	+spoonbot	[1] http://a.pomf.se/wgtpae.png [2] https://u.teknik.io/VFX6DG.webm [3] http://a.pomf.se/eyarfr.png [Plez]
+2015-03-28 14:08:11	+Plez	.dtop -replace 3 http://a.pomf.se/nxyhde.png
+2015-03-28 14:08:11	+spoonbot	Plez: Desktop replaced.
+2015-03-28 14:08:12	+Combot	[image/png] Size: 997.89 KB
+2015-03-28 14:08:27	+psycho	is that i3bar
+2015-03-28 14:08:31	+Plez	it is my friend
+2015-03-28 14:08:38	+psycho	Nice
+2015-03-28 14:08:54	+psycho	Why the fuck you wanna see your local ip address and max speed
+2015-03-28 14:08:55	+xenkey	.dtop
+2015-03-28 14:08:55	+spoonbot	xenkey: You don't have any desktops saved.
+2015-03-28 14:09:02	+psycho	s/speed/bandwidth/
+2015-03-28 14:09:05	+Combot	psycho meant to say: Why the fuck you wanna see your local ip address and max bandwidth
+2015-03-28 14:09:14	+Plez	psycho: max speed is useless but local ip is good for when my router decides to give me a new one
+2015-03-28 14:09:15	+xenkey	no its speed
+2015-03-28 14:09:22	+Plez	despite being in static setu
+2015-03-28 14:09:38	+psycho	Look up static leases, Plez 
+2015-03-28 14:09:44	+psycho	Set up your router properly
+2015-03-28 14:09:54	+Plez	id set it up properly if it allowed it
+2015-03-28 14:10:05	+psycho	Put openwrt on it
+2015-03-28 14:10:11	+Plez	its a shitty isp router, i need to buy a new one and passthrough
+2015-03-28 14:10:15	+Plez	psycho: cant its a cable modem
+2015-03-28 14:10:17	+Plez	aswell
+2015-03-28 14:10:19	+psycho	oshi-
+2015-03-28 14:10:33	+Plez	ill fix it all when i buy my gigabit nics
+2015-03-28 14:10:47	+Plez	soontm
+2015-03-28 14:11:07	+psycho	I got two TP-Links, a WR841N and a WR841ND
+2015-03-28 14:11:13	<	apt-get__ (~apt-get@Rizon-6AB06F45.adsl196-12.iam.net.ma) has quit (Ping timeout: 240 seconds)
+2015-03-28 14:11:23	+Plez	ive got a gigabit switch doing nothing that i got given for free
+2015-03-28 14:11:26	+Plez	24 ports :D
+2015-03-28 14:11:39	+psycho	Implying you need 24 ports
+2015-03-28 14:11:46	+Plez	thats why its doing nothing
+2015-03-28 14:11:50	+psycho	no shit
+2015-03-28 14:11:54	+Plez	it sounds like a jet engine and i bet it draws more power than my pc
+2015-03-28 14:12:00	+psycho	Hah
+2015-03-28 14:12:05	+Plez	i only use it when im having lans
+2015-03-28 14:12:23	+jcalve	.dtop add http://a.pomf.se/gkfybp.png
+2015-03-28 14:12:23	+spoonbot	jcalve: Invalid number.
+2015-03-28 14:12:24	+Combot	[image/png] Size: 354.33 KB
+2015-03-28 14:12:26	+psycho	>not hosting lans on wireless
+2015-03-28 14:12:40	+psycho	It's like you have shit bandwith
+2015-03-28 14:12:41	+jcalve	spoonbot: you invalid
+2015-03-28 14:12:42	+Plez	implying my friends have good wireless nics
+2015-03-28 14:12:43	+psycho	bandwidth
+2015-03-28 14:12:49	+gabaghool	jcalve, dark as my soul
+2015-03-28 14:12:50	+Plez	my router has better wireless throughput than lan
+2015-03-28 14:13:00	+jcalve	gabaghool: shh emo
+2015-03-28 14:13:02	+Plez	theoretical anyway, its still faster using lan
+2015-03-28 14:13:11	%oneesama	wow those colours are not very nice
+2015-03-28 14:13:22	+Plez	i like the colors on the right
+2015-03-28 14:13:30	%oneesama	I don't
+2015-03-28 14:13:32	%oneesama	they're too dark
+2015-03-28 14:13:37	+Plez	yellow looks like poop but
+2015-03-28 14:13:39	+Plez	needs a tweak
+2015-03-28 14:13:40	+psycho	tfw I get as much as 9 MB/s through wireless
+2015-03-28 14:13:47	+gabaghool	needs some sunshine
+2015-03-28 14:13:50	+xenkey	can i use iset and replace all colours white with 7
+2015-03-28 14:13:50	>	arianon (~arianon@ED714BA.BF81DC.DEE60918.IP) has joined #rice
+2015-03-28 14:14:03	%oneesama	yeah xenkey 
+2015-03-28 14:14:07	+xenkey	h-how
+2015-03-28 14:14:07	%oneesama	do /iset =white
+2015-03-28 14:14:15	+xenkey	and what's the hilight colour
+2015-03-28 14:14:15	%oneesama	and it'll give you everything with the value white
+2015-03-28 14:14:26	+Plez	i like this new wallpaper, im gonna keep it
+2015-03-28 14:14:27	%oneesama	just go through and change em all
+2015-03-28 14:14:37	%oneesama	xenkey: as in the color of someone's nick when they hightlight you?@
+2015-03-28 14:14:41	|	Plez adds line to window manager options
+2015-03-28 14:14:46	<	chap (~chap@7CE28E11.4DDA3617.849B9D1.IP) has quit (Ping timeout: 240 seconds)
+2015-03-28 14:14:59	+xenkey	How do I change them -.-
+2015-03-28 14:15:04	+xenkey	oneesama: ye
+2015-03-28 14:15:11	%oneesama	alt+enter on the value you want to change
+2015-03-28 14:15:20	%oneesama	it'll put it in your input bar
+2015-03-28 14:15:23	%oneesama	and then you can just change the value
+2015-03-28 14:15:43	>	xnil (~xnil@GANNOO.LEENUCKS) has joined #rice
+2015-03-28 14:15:43	⇄	Mode #rice [+v xnil] by Onee-chan
+2015-03-28 14:16:46	>	Scrambo (~Scrambo@Rizon-9A0C544D.phlapa.fios.verizon.net) has joined #rice
+2015-03-28 14:16:46	⇄	Mode #rice [+v Scrambo] by Onee-chan
+2015-03-28 14:16:48	%oneesama	also it's weechat.color.chat_highlight
+2015-03-28 14:17:03	>	king1337-2 (~king1337@Rizon-21720562.vs.shawcable.net) has joined #rice
+2015-03-28 14:17:03	⇄	Mode #rice [+v king1337-2] by Onee-chan
+2015-03-28 14:18:22	+xnil	must... 
+2015-03-28 14:18:24	+xnil	into... 
+2015-03-28 14:18:38	+xnil	haskell... 
+2015-03-28 14:18:40	+xnil	on... 
+2015-03-28 14:18:41	+xenkey	ugh
+2015-03-28 14:18:41	+xnil	vps... 
+2015-03-28 14:18:45	+xenkey	hilight vs highlight
+2015-03-28 14:18:51	<	arianon (~arianon@ED714BA.BF81DC.DEE60918.IP) has left #rice
+2015-03-28 14:18:53	+xnil	highlight
+2015-03-28 14:18:58	>	arianon (~arianon@ED714BA.BF81DC.DEE60918.IP) has joined #rice
+2015-03-28 14:19:19	+xenkey	yeah i know but try telling weechat plugin coders that
+2015-03-28 14:20:41	~kori	h
+2015-03-28 14:21:01	+xenkey	h
+2015-03-28 14:21:50	+gabaghool	h
+2015-03-28 14:22:19	+xnil	h
+2015-03-28 14:23:30	+Plez	WELCOME TO THE HOTEL CALIFORNIA
+2015-03-28 14:23:32	+Plez	SUCH A LOVELY PLACE
+2015-03-28 14:23:47	+Plez	also hi SNORI
+2015-03-28 14:24:15	+Plez	kori: how did you get the name kori when your real name is louisyour pants. GET IT LOO WEES YOUR PANTS
+2015-03-28 14:24:29	~kori	wut
+2015-03-28 14:24:45	+Plez	my sisters middle name is louise
+2015-03-28 14:24:55	+Plez	and when we were young id say fynlay loUISE HER PANTS
+2015-03-28 14:24:57	+Plez	and she got rekt
+2015-03-28 14:25:12	+bixxx	haha
+2015-03-28 14:26:10	+xenkey	i dont get it
+2015-03-28 14:26:14	~kori	^
+2015-03-28 14:26:24	+Plez	how can you not get it
+2015-03-28 14:26:29	+xenkey	it's either a really bad pun or im missing something
+2015-03-28 14:26:33	+xnil	fynlay wees her ponts
+2015-03-28 14:26:36	+xnil	pants
+2015-03-28 14:26:45	+xenkey	things that are funny in real life aren't funny on the internet
+2015-03-28 14:26:52	+gabaghool	rip
+2015-03-28 14:27:03	+Plez	you just dont appreciate fine humour
+2015-03-28 14:28:08	+Plez	you know what sfucking cancer about mobile websites
+2015-03-28 14:28:31	+bixxx	yes
+2015-03-28 14:28:32	+Plez	they're often based off of resolution so if you visit a webpage with a web browser taking up 2 thirds of the screen it uses the mobile website
+2015-03-28 14:29:01	+Plez	OH YOUR SCREEN IS ONLY 1 THOUSAND PIXELS HORIZONATL? MUST BE A FUCKINGPHONE
+2015-03-28 14:29:29	+bixxx	lol
+2015-03-28 14:29:43	+Plez	i posted my desktop on kek syndicate
+2015-03-28 14:29:46	~kori	I miss seeing old rice
+2015-03-28 14:29:47	+Plez	yeboi we big time now
+2015-03-28 14:29:48	+bixxx	does FF have a "request Desktop version" option liek chrome has?
+2015-03-28 14:29:53	~kori	like
+2015-03-28 14:29:56	~kori	ahoka style shit
+2015-03-28 14:30:05	+Plez	bixxx: the phone version certainly does, but ive never looked on the desktop version
+2015-03-28 14:30:29	+Plez	i miss when you were a religion zealot on a crusade across south america slaughtering degenerates and muslims
+2015-03-28 14:30:43	+bixxx	oh shit, yea nvm, that's with chrome as well :o
+2015-03-28 14:30:49	+bixxx	no wonder i never bothered checking
+2015-03-28 14:31:03	+bixxx	s/der/der why/
+2015-03-28 14:31:06	+Combot	bixxx meant to say: no wonder why i never bothered checking
+2015-03-28 14:31:07	+Plez	https://forum.teksyndicate.com/t/official-post-your-desktop-screenshot-thread/74865/105
+2015-03-28 14:31:08	+Combot	[URL] Official Post Your Desktop Screenshot Thread! - teksyndicate.com forums (forum.teksyndicate.com)
+2015-03-28 14:31:37	+Plez	https://forum.teksyndicate.com/uploads/default/_optimized/6db/fc5/907e663a16_687x550.png
+2015-03-28 14:31:37	+Combot	[image/png] Size: 279.61 KB
+2015-03-28 14:31:50	+gabaghool	inb4 shitty pleb tier desktops
+2015-03-28 14:31:52	+xenkey	how do I group channels by network in weechat
+2015-03-28 14:31:59	+bixxx	>teksyndicate'
+2015-03-28 14:32:09	+bixxx	that's the guy with the awesome goatee/beard thing, right?
+2015-03-28 14:32:11	+bixxx	on youtube
+2015-03-28 14:32:26	+gabaghool	yeah and he has a trans gf
+2015-03-28 14:32:28	+Plez	yeah and his buddy wendel who is a genius
+2015-03-28 14:32:40	+Plez	lots of people hate tek syndicate, but logan is charismatic and wendell is smart
+2015-03-28 14:32:41	+Plez	so w/e
+2015-03-28 14:32:43	+Plez	the duo works
+2015-03-28 14:32:55	+gabaghool	logan is a amdshill and wendell is a fat fuck
+2015-03-28 14:33:07	+Plez	gabaghool: wendell is pretty kawaii
+2015-03-28 14:33:10	+Plez	now we can see his face
+2015-03-28 14:33:37	~kori	>~ $ rdf misc/dls/*  
+2015-03-28 14:33:38	~kori	FUCK ME
+2015-03-28 14:33:52	+xenkey	what
+2015-03-28 14:33:55	+xenkey	does that do
+2015-03-28 14:33:56	~kori	I was SEEDING SHIT, DUDE!
+2015-03-28 14:34:02	~kori	ughhhh
+2015-03-28 14:34:05	~kori	never run rm while tired
+2015-03-28 14:34:11	+xenkey	rdf?
+2015-03-28 14:34:18	+Plez	that wouldnt happen on windows
+2015-03-28 14:34:22	+gabaghool	Plez, hes still hiding behind his beard
+2015-03-28 14:34:36	+gabaghool	he wouldnt show his face when he didnt have the beard
+2015-03-28 14:34:39	+Plez	gabaghool: i cant blame him, if i could grow a beard id keep it
+2015-03-28 14:34:52	+Plez	tfw no neck fat but still double chin thanks to shitty genetics
+2015-03-28 14:34:57	+gabaghool	i think he has lost some weight too
+2015-03-28 14:35:03	>	frwny (~frwny@frwny.frwny) has joined #rice
+2015-03-28 14:35:04	⇄	Mode #rice [+v frwny] by Onee-chan
+2015-03-28 14:35:16	+frwny	hey kids
+2015-03-28 14:35:23	+bixxx	>never run rm while tired
+2015-03-28 14:35:24	+Plez	hello
+2015-03-28 14:35:25	+bixxx	sweet rule
+2015-03-28 14:35:29	~kori	xenkey: alias rdf='rm -rf'
+2015-03-28 14:35:34	+xenkey	O
+2015-03-28 14:35:36	+xenkey	shit
+2015-03-28 14:36:17	+Plez	theres fuckloads of linux dekstops on kek syndicate, idk if thats a sign of their linux percentage or just that linux users are more inclined to post since they had an active part in choosing a desktop
+2015-03-28 14:36:33	~kori	I can't login
+2015-03-28 14:36:35	~kori	on kek syndicate
+2015-03-28 14:36:41	~kori	I get automagically redirected
+2015-03-28 14:36:49	+Plez	i had to go through my old accoutns until i got the right handle
+2015-03-28 14:37:08	+Plez	i made the account when i didnt care about pws though, so i knew the pw for certain but not the handle
+2015-03-28 14:37:57	<	corgisquidman (~corgisqui@ganoo.loonix) has quit (Ping timeout: 240 seconds)
+2015-03-28 14:38:39	+bixxx	lol
+2015-03-28 14:39:12	+bixxx	first post to teksyndicate in x amount of time is going to be a scrot of your desktop :o
+2015-03-28 14:39:18	+Plez	it was
+2015-03-28 14:39:19	~kori	I CAN'T FUCKING LOG IN, DUDE
+2015-03-28 14:39:23	+Plez	and the one before that
+2015-03-28 14:39:26	+Plez	was shitposting about ubuntu
+2015-03-28 14:39:28	>	CruxBot (~CruxBot@D3F905D9.DBFC011D.4F66FD71.IP) has joined #rice
+2015-03-28 14:39:28	<	CruxBot (~CruxBot@D3F905D9.DBFC011D.4F66FD71.IP) has left #rice
+2015-03-28 14:39:48	+Izuru	anyone here play runescape back in 2007?
+2015-03-28 14:39:51	+xenkey	Hrmm
+2015-03-28 14:40:03	+bixxx	kori: you tried clearing cookies?
+2015-03-28 14:40:03	~kori	onodera: you fucked up
+2015-03-28 14:40:04	+Plez	i never into runescape because i knew ragnarok existed
+2015-03-28 14:40:09	+onodera	ueah I saw
+2015-03-28 14:40:21	+xenkey	I did a thing
+2015-03-28 14:40:22	+onodera	what did I do wrong
+2015-03-28 14:40:24	+Izuru	ragnarok, i havent heard that game in forever..
+2015-03-28 14:40:27	+xenkey	https://a.pomf.se/rhhfxs.png
+2015-03-28 14:40:29	~kori	https://github.com/6c37/crux-ports/commit/dc124b0edcb71439a082450e03a004bd3995fa28
+2015-03-28 14:40:30	+Combot	[URL] Add: meh. · 6c37/crux-ports@dc124b0 · GitHub (github.com)
+2015-03-28 14:40:39	~kori	onodera: if you did a symlink that's where u fucked up
+2015-03-28 14:40:39	+onodera	wtf is that
+2015-03-28 14:40:47	+onodera	I don't think I did
+2015-03-28 14:41:04	~kori	do ls -l on the meh folder
+2015-03-28 14:41:06	~kori	and why are you adding meh
+2015-03-28 14:41:12	~kori	z3bra already maintains a port
+2015-03-28 14:41:18	~kori	there's no point
+2015-03-28 14:42:03	+onodera	not git tho
+2015-03-28 14:42:10	+onodera	the last non git update is in 2011
+2015-03-28 14:42:12	~kori	well I can't see
+2015-03-28 14:42:14	⇄	Mode #rice [+v arianon] by Onee-chan
+2015-03-28 14:42:17	~kori	┐('~'; )┌
+2015-03-28 14:43:00	+xenkey	Anybod else use profanity xmpp client?
+2015-03-28 14:43:04	+xenkey	I need to find some themes
+2015-03-28 14:43:23	~kori	.desktop
+2015-03-28 14:43:23	+spoonbot	https://u.teknik.io/guZEDb.png [kori]
+2015-03-28 14:43:29	+onodera	fucking git is configing as fuck
+2015-03-28 14:43:33	+onodera	I hate it so much
+2015-03-28 14:44:13	+jcalve	kori: which font is that?
+2015-03-28 14:44:23	~kori	jcalve: where
+2015-03-28 14:44:37	+jcalve	kori: the terminal font
+2015-03-28 14:44:39	~kori	plez: https://forum.teksyndicate.com/t/official-post-your-desktop-screenshot-thread/74865/149
+2015-03-28 14:44:40	+Combot	[URL] Official Post Your Desktop Screenshot Thread! - teksyndicate.com forums (forum.teksyndicate.com)
+2015-03-28 14:44:47	~kori	jcalve: M+ 1m
+2015-03-28 14:45:06	%oneesama	kori: your desktop used to be good what happened
+2015-03-28 14:45:17	%oneesama	(I don't like m+)
+2015-03-28 14:45:26	~kori	>implying it's not at its most excellent state right now
+2015-03-28 14:45:49	⇄	Mode #rice [+b cruxbot!*@*] by kori
+2015-03-28 14:45:51	+Plez	kori: i gave you a like
+2015-03-28 14:45:55	~kori	Plez: THX
+2015-03-28 14:46:00	~kori	;) ;) ;)
+2015-03-28 14:46:01	+Plez	UM KORI
+2015-03-28 14:46:05	+Plez	YOUA RE ON 4CHAN
+2015-03-28 14:46:07	+Plez	LMAO
+2015-03-28 14:46:10	>	harakiru (~uzay@74FFB6FE.BB6D12D0.C1406530.IP) has joined #rice
+2015-03-28 14:46:10	⇄	Mode #rice [+v harakiru] by Onee-chan
+2015-03-28 14:46:18	~kori	yeah I had /w/ open then
+2015-03-28 14:46:20	~kori	so?
+2015-03-28 14:46:33	~kori	wanted to check out their desktop thread to see if anything was cooking
+2015-03-28 14:47:09	+anosh	losers
+2015-03-28 14:47:15	+xnil	^
+2015-03-28 14:47:21	+harakiru	do you think is there any more prententious channel than this one
+2015-03-28 14:47:21	+xnil	anosh do you want a vps
+2015-03-28 14:47:29	+xnil	harakiru: #golang
+2015-03-28 14:47:30	+anosh	Yeah
+2015-03-28 14:47:34	+onodera	kori: https://github.com/6c37/crux-ports/blob/master/meh/Pkgfile#L1
+2015-03-28 14:47:35	+Combot	[URL] crux-ports/Pkgfile at master · 6c37/crux-ports · GitHub (github.com)
+2015-03-28 14:47:39	+anosh	Is it free?
+2015-03-28 14:47:43	+xnil	sure
+2015-03-28 14:47:46	~kori	onodera: interesting
+2015-03-28 14:47:48	+anosh	I'm struggling with £3 a month
+2015-03-28 14:47:49	+anosh	Honestly
+2015-03-28 14:47:51	+onodera	what do you think about git checkout between () so we can use periods
+2015-03-28 14:48:03	+xnil	how about $1/mo? then i can provide it indefinitely
+2015-03-28 14:48:16	~kori	onodera: that could happen yeah
+2015-03-28 14:48:24	+xnil	i can't really, if it's free :s
+2015-03-28 14:48:33	+anosh	Specs?
+2015-03-28 14:48:44	+xnil	digitalocean $5 box
+2015-03-28 14:48:46	+xnil	centos
+2015-03-28 14:48:51	+xnil	newest version
+2015-03-28 14:48:57	+xnil	backups stored
+2015-03-28 14:49:10	+xnil	not all the way to the beginning of time but ayy
+2015-03-28 14:49:25	+anosh	Hmm
+2015-03-28 14:49:25	+Plez	im going full autist on tek syndicate idc
+2015-03-28 14:49:31	+Plez	i just suggested a new user arch linux
+2015-03-28 14:49:31	+anosh	What's the catch?
+2015-03-28 14:49:34	+Plez	and ima continue doing that
+2015-03-28 14:49:36	+xnil	uh
+2015-03-28 14:49:44	+xnil	you're just sharing it with me
+2015-03-28 14:49:46	+anosh	Ah
+2015-03-28 14:49:48	+xnil	and you don't get root
+2015-03-28 14:49:50	+Plez	kori: i hit 120wpm this week
+2015-03-28 14:49:55	~kori	nice
+2015-03-28 14:49:56	+xnil	i don't use up any resources really
+2015-03-28 14:49:58	>	aaro (~aaro@7DE21920.2B7CCAF3.E1834447.IP) has joined #rice
+2015-03-28 14:49:58	⇄	Mode #rice [+v aaro] by Onee-chan
+2015-03-28 14:50:00	~kori	I got 75wpm last week or so
+2015-03-28 14:50:02	~kori	I'm happy
+2015-03-28 14:50:07	+Plez	i just randomly did a test and i got 108 so i practiced until 120
+2015-03-28 14:50:10	+anosh	I'm fine xnil :)
+2015-03-28 14:50:10	+xnil	i'll spin up another droplet if i need to, anosh
+2015-03-28 14:50:11	~kori	.desktop aaro 
+2015-03-28 14:50:11	+spoonbot	http://aaro2011.deviantart.com/gallery/ [aaro]
+2015-03-28 14:50:13	+Plez	i wanna get 150 but that will take much more effort
+2015-03-28 14:50:22	+anosh	Nah man, it's fine
+2015-03-28 14:50:26	+xnil	;_;
+2015-03-28 14:50:31	+xnil	needroot? 
+2015-03-28 14:50:43	+Plez	you can give me access to a droplet, i hate the rizon bouncer
+2015-03-28 14:50:46	+Plez	i want a proper bouncer
+2015-03-28 14:50:50	+Plez	:3
+2015-03-28 14:50:53	+xnil	Plez: $1/mo
+2015-03-28 14:51:19	+Plez	FUCK IT
+2015-03-28 14:51:20	+xnil	'man i cant fork out that much for a service!!!' 
+2015-03-28 14:51:27	+Plez	ill just get a droplet since i want a TS server to
+2015-03-28 14:51:28	+Plez	too*
+2015-03-28 14:51:36	+xnil	Plez: you can host a TS server too m8
+2015-03-28 14:51:37	<	arianon (~arianon@ED714BA.BF81DC.DEE60918.IP) has quit (Quit: WeeChat 1.1.1)
+2015-03-28 14:51:49	+Plez	which location are your droplets at
+2015-03-28 14:52:03	+harakiru	.dtop 
+2015-03-28 14:52:03	+spoonbot	[1] http://a.pomf.se/abehjk.png [2] http://a.pomf.se/zvcsyj.png [3] http://a.pomf.se/byqxzb.png [4] http://a.pomf.se/oxjngn.png [5] http://a.pomf.se/vjxbuh.png [harakiru]
+2015-03-28 14:52:05	+onodera	kori: should I change all git checkouts, yay or nay?
+2015-03-28 14:52:11	+xnil	Plez: NY
+2015-03-28 14:52:35	+Plez	i woner what my latency is to ny
+2015-03-28 14:52:38	+xnil	we got irssi and tmux bruh, what else could you possibly need
+2015-03-28 14:52:40	+xenkey	https://a.pomf.se/lfcjqb.png
+2015-03-28 14:52:40	+Combot	[image/png] Size: 152.77 KB
+2015-03-28 14:52:42	+xenkey	Thoughts?
+2015-03-28 14:52:42	+harakiru	.dtop -del 3 
+2015-03-28 14:52:42	+spoonbot	harakiru: Desktop removed.
+2015-03-28 14:52:44	+harakiru	.dtop -del 4
+2015-03-28 14:52:44	+spoonbot	harakiru: Desktop removed.
+2015-03-28 14:52:46	+harakiru	.dtop -del 5
+2015-03-28 14:52:46	+spoonbot	harakiru: Desktop not found.
+2015-03-28 14:52:53	~kori	onodera: uh sure
+2015-03-28 14:52:54	+harakiru	.dtop 
+2015-03-28 14:52:54	+spoonbot	[1] http://a.pomf.se/abehjk.png [2] http://a.pomf.se/zvcsyj.png [3] http://a.pomf.se/oxjngn.png [harakiru]
+2015-03-28 14:52:55	+xnil	besides TS lol
+2015-03-28 14:53:04	+harakiru	.dtop -del 3
+2015-03-28 14:53:04	+spoonbot	harakiru: Desktop removed.
+2015-03-28 14:53:10	+anosh	Free bouncer here
+2015-03-28 14:53:17	+Plez	i wonder if theres an affordable provider in AUS/SEA
+2015-03-28 14:53:18	+anosh	plez I gib u free bouncer
+2015-03-28 14:53:24	+Plez	voice chat under 100ms would be great
+2015-03-28 14:53:26	+Plez	anosh: pls
+2015-03-28 14:53:27	+bixxx	Plez: i think speedtest has a ping test where you can choose a NY server
+2015-03-28 14:53:33	+Plez	bixxx: ill have a gander
+2015-03-28 14:53:34	>	arianon (~arianon@D7D6512.204D9F52.DEE60918.IP) has joined #rice
+2015-03-28 14:53:34	⇄	Mode #rice [+v arianon] by Onee-chan
+2015-03-28 14:53:35	+xnil	Plez: want to test your latency? i'll give you a user really quick
+2015-03-28 14:53:36	+anosh	plez hold on, creating you an account
+2015-03-28 14:53:37	~kori	for pkg in */Pkgfile; do sed -i s:/ - git checkout/. (git checkout); done should work
+2015-03-28 14:53:37	+Plez	is ny on east or west coast
+2015-03-28 14:53:39	+harakiru	.dtop add http://a.pomf.se/rtqeob.png
+2015-03-28 14:53:39	+spoonbot	harakiru: Invalid number.
+2015-03-28 14:53:39	+Combot	[image/png] Size: 125.97 KB
+2015-03-28 14:53:43	+xnil	Plez: east
+2015-03-28 14:53:44	+bixxx	east coast
+2015-03-28 14:53:45	+harakiru	.dtop -add http://a.pomf.se/rtqeob.png
+2015-03-28 14:53:45	+spoonbot	harakiru: Desktop(s) saved.
+2015-03-28 14:53:45	+Combot	[image/png] Size: 125.97 KB
+2015-03-28 14:53:46	+Plez	ty
+2015-03-28 14:53:48	+arianon	strange
+2015-03-28 14:53:49	+xnil	SPAM
+2015-03-28 14:53:55	+Plez	SUCH ACTIVITY
+2015-03-28 14:54:01	~kori	dudes
+2015-03-28 14:54:03	+arianon	Onee-chan doesn't +v me when I connect through weechat now
+2015-03-28 14:54:04	~kori	I just thought about this
+2015-03-28 14:54:10	~kori	what if we get kek syndicate dudes here
+2015-03-28 14:54:12	~kori	poop
+2015-03-28 14:54:15	~kori	it's all ogre now
+2015-03-28 14:54:20	+Plez	you wanted more users
+2015-03-28 14:54:22	+Plez	it might be ok
+2015-03-28 14:54:30	~kori	it might
+2015-03-28 14:54:33	+Plez	they wont have 4chan mindset either
+2015-03-28 14:54:34	+Plez	could be ok
+2015-03-28 14:54:35	~kori	but some users don't act nice enough
+2015-03-28 14:54:48	+Plez	theyre all fucbois
+2015-03-28 14:54:50	+Plez	theyll be nice
+2015-03-28 14:54:54	+Plez	they actualy think bans matter
+2015-03-28 14:54:55	~kori	as in, on their first slip someone will call them a faggot or something
+2015-03-28 14:55:00	+Izuru	kori in the house
+2015-03-28 14:55:01	+Plez	good
+2015-03-28 14:55:13	+Izuru	best anime
+2015-03-28 14:55:27	~kori	Plez: could give us bad PR :^)
+2015-03-28 14:55:49	+Plez	thats good too
+2015-03-28 14:55:52	+Plez	all pr is good pr
+2015-03-28 14:56:01	+Plez	"i went to this terrible place called rice"
+2015-03-28 14:56:06	+Plez	suddenly 20 more people join
+2015-03-28 14:56:40	+anosh	I still campaign for the unbanning of tsukimi
+2015-03-28 14:57:04	+anosh	I strive to see him unbanned
+2015-03-28 14:57:08	+bixxx	i don't think spoonm will allow that
+2015-03-28 14:57:16	+bixxx	since he's evaded bans multiple times
+2015-03-28 14:57:26	+anosh	It's not that hard to avoid a ban lol
+2015-03-28 14:57:34	+bixxx	yea, but seriously
+2015-03-28 14:57:48	+anosh	Man, he's nice to have around
+2015-03-28 14:57:55	~kori	no
+2015-03-28 14:58:06	~kori	I refuse
+2015-03-28 14:58:18	+anosh	If I can persuade him to tone it down a bit
+2015-03-28 14:58:19	+anosh	Then?
+2015-03-28 14:58:46	~kori	you won't
+2015-03-28 14:58:50	~kori	you can't
+2015-03-28 14:59:03	+anosh	I can try
+2015-03-28 14:59:33	+anosh	Our friendship was built on us bullying each other
+2015-03-28 14:59:38	+Plez	tone down this
+2015-03-28 14:59:41	|	Plez unzips dick
+2015-03-28 14:59:45	+arianon	l-lewd
+2015-03-28 14:59:55	+anosh	2lewd
+2015-03-28 14:59:58	+anosh	2furious
+2015-03-28 15:00:10	+Plez	kori wont ban me cause he can keep me under wraps atm
+2015-03-28 15:00:14	+Plez	but if i get ding dong bannud
+2015-03-28 15:00:16	+Plez	hed have to pw rice
+2015-03-28 15:00:18	+Plez	:D
+2015-03-28 15:00:33	⇄	arianon is now known as arian0n
+2015-03-28 15:01:00	~kori	.akick list
+2015-03-28 15:01:16	~kori	holy shit the akick list is 50% bots and 50% #/g/iggle
+2015-03-28 15:01:22	~kori	.akick del 5
+2015-03-28 15:01:23	>	chap (~chap@Rizon-58AF4FFE.retail.telecomitalia.it) has joined #rice
+2015-03-28 15:01:23	⇄	Mode #rice [+v chap] by Onee-chan
+2015-03-28 15:01:29	+anosh	.akick list
+2015-03-28 15:02:08	~kori	yep
+2015-03-28 15:02:10	~kori	lol
+2015-03-28 15:02:31	<	chap (~chap@Rizon-58AF4FFE.retail.telecomitalia.it) has quit
+2015-03-28 15:03:47	⇄	arian0n is now known as arianon
+2015-03-28 15:03:58	+xenkey	Guys what think https://a.pomf.se/ooixio.png
+2015-03-28 15:04:15	~kori	mfw I threw 700mb of ratio in the trash
+2015-03-28 15:04:15	>	plez_ (~plez@15302AB8.BA297218.47AE6A4F.IP) has joined #rice
+2015-03-28 15:04:17	~kori	possibly even more
+2015-03-28 15:05:03	+bixxx	s/trash/shredder/
+2015-03-28 15:05:15	+bixxx	(you can recover things from the trash)
+2015-03-28 15:05:40	+xenkey	Guys pls what think
+2015-03-28 15:05:56	+gabaghool	very nice xenkey 
+2015-03-28 15:06:03	+xenkey	Why thank you
+2015-03-28 15:06:37	+bixxx	damn, Combot didn't identify image, i didn't even see the link there
+2015-03-28 15:06:56	+arianon	ohhhhhhhhh~
+2015-03-28 15:07:07	+xenkey	Oh my god colours in nicklist
+2015-03-28 15:07:14	+arianon	the moderncv class from LaTeX is truly beautiful indeed, onodera
+2015-03-28 15:07:40	+onodera	I know rite
+2015-03-28 15:07:48	+onodera	one of the few "modern" cv templates
+2015-03-28 15:08:16	<	Plez (Plez@il.borchia.di.riso.e.riso.discussioni) has quit (Killed (NickServ (GHOST command used by plez_)))
+2015-03-28 15:08:32	<	harakiru (~uzay@74FFB6FE.BB6D12D0.C1406530.IP) has quit (Quit: Lost terminal)
+2015-03-28 15:08:32	>	Plez (Plez@il.borchia.di.riso.e.riso.discussioni) has joined #rice
+2015-03-28 15:08:32	⇄	Mode #rice [+v Plez] by Onee-chan
+2015-03-28 15:08:58	>	chap (~chap@Rizon-58AF4FFE.retail.telecomitalia.it) has joined #rice
+2015-03-28 15:08:58	⇄	Mode #rice [+v chap] by Onee-chan
+2015-03-28 15:09:22	+anosh	You struggling Plez?
+2015-03-28 15:11:37	⇄	Plez is now known as Guest45834
+2015-03-28 15:11:52	<	chap (~chap@Rizon-58AF4FFE.retail.telecomitalia.it) has quit
+2015-03-28 15:12:05	<	plez_ (~plez@15302AB8.BA297218.47AE6A4F.IP) has left #rice
+2015-03-28 15:12:22	>	Plez (~plez@il.borchia.di.riso.e.riso.discussioni) has joined #rice
+2015-03-28 15:12:22	⇄	Mode #rice [+v Plez] by Onee-chan
+2015-03-28 15:12:26	+Plez	there we go
+2015-03-28 15:12:28	+Plez	all done
+2015-03-28 15:13:26	+gabaghool	whats the best way to learn latex?
+2015-03-28 15:13:33	+Plez	hire a gimp
+2015-03-28 15:13:44	+bixxx	LOL
+2015-03-28 15:13:57	%oneesama	haha
+2015-03-28 15:13:59	%oneesama	nice
+2015-03-28 15:14:33	+xnil	lmao
+2015-03-28 15:15:42	~kori	onodera: noooo you're adding an extra space to the stuff when ur supposed to remove the extra spaces from the others
+2015-03-28 15:16:09	+onodera	eh where
+2015-03-28 15:16:28	~kori	https://github.com/6c37/crux-ports/commit/bc5b82889779c02c7cf22a461e020d371101bcde#diff-709c4bea5ecb94d1ddf90a44546f938fR1
+2015-03-28 15:16:29	+Combot	[URL] cp437: Updated description. · 6c37/crux-ports@bc5b828 · GitHub (github.com)
+2015-03-28 15:16:33	~kori	https://github.com/6c37/crux-ports/commit/6297767bcbc44843d2bcf59ae0deab86d1d3cece#diff-80ab9b2d57cad7d023d2abf3df3d809cR1
+2015-03-28 15:16:34	+Combot	[URL] bitchx: Updated description. · 6c37/crux-ports@6297767 · GitHub (github.com)
+2015-03-28 15:16:41	+Plez	ty aaro 
+2015-03-28 15:16:44	+Plez	anosh: *
+2015-03-28 15:16:44	~kori	my old ports are all fucked up
+2015-03-28 15:16:51	+anosh	yo
+2015-03-28 15:16:53	+anosh	np
+2015-03-28 15:16:55	+onodera	kori: thatw as a tab
+2015-03-28 15:16:57	%oneesama	lol xenkey it looks ok
+2015-03-28 15:16:59	+onodera	I replaces it with a space
+2015-03-28 15:17:03	+anosh	.ping Plez
+2015-03-28 15:17:03	~kori	onodera: o fug
+2015-03-28 15:17:03	+spoonbot	Ping: 0.231 seconds. [anosh]
+2015-03-28 15:17:06	~kori	onodera: well
+2015-03-28 15:17:11	~kori	let me clean these old ports up
+2015-03-28 15:17:12	+Plez	i am a super fast now
+2015-03-28 15:17:16	%oneesama	but idk I don't like your channel list
+2015-03-28 15:17:17	%oneesama	but that's just me
+2015-03-28 15:17:17	~kori	but that dfc cmake catch was nice
+2015-03-28 15:17:18	+onodera	but yeay you are rite
+2015-03-28 15:17:46	+anosh	.ver Plez
+2015-03-28 15:17:47	+spoonbot	WeeChat 1.1.1 (Jan 27 2015) via ZNC - http://znc.in [Plez]
+2015-03-28 15:17:49	+Combot	[Plez] Using version: WeeChat 1.1.1 (Jan 27 2015) via ZNC - http://znc.in
+2015-03-28 15:17:52	+anosh	.ver anosh
+2015-03-28 15:17:53	+spoonbot	D-don't look there pervert! [anosh]
+2015-03-28 15:17:53	+Combot	[anosh] Using version: D-don't look there pervert!
+2015-03-28 15:17:56	+anosh	:P
+2015-03-28 15:17:57	+Plez	https://www.youtube.com/watch?v=T_34tpg2994
+2015-03-28 15:17:57	+Combot	50 Cent - Window Shopper [uncensored] | Length: 0:03:11 | Rating: 12129 Likes, 212 Dislikes (98.3%) | Views: 5440908 | Uploaded By: zotnica on Thu, 16 Jul 2009 11:46:39 GMT
+2015-03-28 15:17:59	+Plez	:D
+2015-03-28 15:18:06	+Plez	i forgot that i like 50cent
+2015-03-28 15:18:11	+Plez	does thtat make me a degenerate
+2015-03-28 15:18:11	+anosh	You can have ZNC say something else for the version
+2015-03-28 15:18:21	~kori	onodera: I just pushed
+2015-03-28 15:18:27	+Plez	anosh: whats the option called?
+2015-03-28 15:18:37	+xenkey	How do i show the topic bar
+2015-03-28 15:18:51	+anosh	lemme look
+2015-03-28 15:19:06	+anosh	.ver
+2015-03-28 15:19:06	+Combot	Missing a required argument for .ver Nickname.  The required arguments are Nickname.
+2015-03-28 15:19:06	+spoonbot	D-don't look there pervert! [anosh]
+2015-03-28 15:19:09	+anosh	aight
+2015-03-28 15:19:12	+anosh	In your settings
+2015-03-28 15:19:23	+anosh	Scroll down to CTCP replies
+2015-03-28 15:19:31	+anosh	Example: PIZZA Domino's or Pizza Hut?
+2015-03-28 15:19:38	%oneesama	actually I like these side buffers
+2015-03-28 15:19:39	+anosh	So if you do /ctcp anosh PIZZA
+2015-03-28 15:19:40	%oneesama	I changed my mind
+2015-03-28 15:19:51	+anosh	It'll say "Domino's or Pizza Hut"
+2015-03-28 15:20:10	%oneesama	but now I can't see all of my buffers
+2015-03-28 15:20:10	+Plez	so i do, ver what i want it to say?
+2015-03-28 15:20:27	+anosh	You do "VERSION whatever you want here"
+2015-03-28 15:20:28	+Plez	or VER what i want it tosay
+2015-03-28 15:20:30	+Plez	oook
+2015-03-28 15:20:50	+bixxx	anosh: like anyone is ever going to ctcp PIZZA you
+2015-03-28 15:20:51	+bixxx	:|
+2015-03-28 15:20:54	+anosh	lol
+2015-03-28 15:20:58	+anosh	Someone did ages ago
+2015-03-28 15:21:00	+anosh	and did it again
+2015-03-28 15:21:02	+Plez	how do i write the spoiler? c^c1,1 ??
+2015-03-28 15:21:26	+anosh	I copy and pasted the char hexchat inserts
+2015-03-28 15:21:27	+anosh	
+2015-03-28 15:21:34	+anosh	
+2015-03-28 15:21:36	+anosh	Oh
+2015-03-28 15:21:40	+Plez	good idea  
+2015-03-28 15:21:42	%oneesama	thanks xenkey for the inspiration
+2015-03-28 15:21:48	%oneesama	http://a.pomf.se/txrjms.png my weechat looks tidier now
+2015-03-28 15:21:49	+Combot	[image/png] Size: 51.61 KB
+2015-03-28 15:21:52	+animu	http://www.imdb.com/title/tt2265890/
+2015-03-28 15:21:54	+Combot	[URL] Deus Ex: Human Revolution - IMDb (www.imdb.com)
+2015-03-28 15:21:55	+animu	its happening
+2015-03-28 15:22:00	+Plez	mfw i cant copy out of terminal on my pc
+2015-03-28 15:22:06	+Plez	i forgot how i got it to work on my notebook
+2015-03-28 15:22:07	%oneesama	what terminal emulator
+2015-03-28 15:22:11	+Plez	urxvt
+2015-03-28 15:22:14	+anosh	Who're the cast
+2015-03-28 15:22:15	%oneesama	select with middle mouse
+2015-03-28 15:22:17	%oneesama	no
+2015-03-28 15:22:18	+anosh	That's what matters
+2015-03-28 15:22:19	%oneesama	select with left mouse
+2015-03-28 15:22:22	%oneesama	paste with middle mouse
+2015-03-28 15:22:28	+Plez	thanks g
+2015-03-28 15:22:29	%oneesama	that's the default
+2015-03-28 15:22:30	+xenkey	wow on oneesama 
+2015-03-28 15:22:33	+xenkey	ok*
+2015-03-28 15:22:42	~kori	onodera: all of my old ports are FUBAR lol
+2015-03-28 15:22:42	+Plez	i didnt know that cause i have no middle muse on my notebook
+2015-03-28 15:22:49	%oneesama	yea
+2015-03-28 15:22:51	%oneesama	it's a shit solution though
+2015-03-28 15:22:55	+Plez	.ver Plez
+2015-03-28 15:22:56	+spoonbot	weechat 1.1.x   you pervert. [Plez]
+2015-03-28 15:22:56	+Combot	[Plez] Using version: weechat 1.1.x   you pervert.
+2015-03-28 15:22:58	%oneesama	because it gets all mixed up if you select anything in another window
+2015-03-28 15:22:58	+Plez	!
+2015-03-28 15:23:02	+Plez	it didnt work
+2015-03-28 15:23:04	+Plez	oneesama: ahh
+2015-03-28 15:23:26	%oneesama	check your netbook's .Xdefaults I guess
+2015-03-28 15:23:36	+bixxx	Plez: have you tried shift+del and shift+ins method?
+2015-03-28 15:23:41	+Plez	yeah it'll be there somewhere, i can do that latter
+2015-03-28 15:23:42	+Plez	OH
+2015-03-28 15:23:52	+Plez	sry guys, the paste worked,not the pasting the spoliered character method
+2015-03-28 15:24:41	⇄	Mode #rice [-b cruxbot!*@*] by kori
+2015-03-28 15:24:45	+anosh	Let me check
+2015-03-28 15:24:46	~kori	let's see how spammy this is
+2015-03-28 15:24:54	+Plez	ILL WHOOP YOUR HEAD BOY
+2015-03-28 15:24:58	>	CruxBot (~CruxBot@5A0CB7F5.DBFC011D.4F66FD71.IP) has joined #rice
+2015-03-28 15:24:58	<	CruxBot (~CruxBot@5A0CB7F5.DBFC011D.4F66FD71.IP) has left #rice
+2015-03-28 15:25:02	~kori	oh right he was muted
+2015-03-28 15:25:04	~kori	ayy
+2015-03-28 15:25:10	⇄	Mode #rice [+b cruxbot!*@*] by kori
+2015-03-28 15:25:20	+anosh	I'll add the special char for you plez
+2015-03-28 15:25:25	+Plez	thx b
+2015-03-28 15:25:48	+anosh	.ver plez
+2015-03-28 15:25:48	+Combot	[plez] Using version: weechat 1.1.x
+2015-03-28 15:25:48	+spoonbot	weechat 1.1.x [Plez]
+2015-03-28 15:25:51	~kori	poop
+2015-03-28 15:25:52	+anosh	there
+2015-03-28 15:25:57	~kori	should've bumped the release for cp437
+2015-03-28 15:26:11	+anosh	refresh
+2015-03-28 15:26:13	+anosh	and edir
+2015-03-28 15:26:14	+anosh	edit*
+2015-03-28 15:26:15	>	rayne (~rayne@1D3D77A3.209874E7.6799DE09.IP) has joined #rice
+2015-03-28 15:26:15	⇄	Mode #rice [+v rayne] by Onee-chan
+2015-03-28 15:26:16	%oneesama	Plez: when you do, can you throw it my way
+2015-03-28 15:26:22	%oneesama	because I am having an awful time with it
+2015-03-28 15:26:42	+Plez	the characteR>?
+2015-03-28 15:26:45	+bixxx	tfw BitchX + cp437 doesn't display UTF8
+2015-03-28 15:26:51	+bixxx	but bX without cp437 does
+2015-03-28 15:26:53	%oneesama	no the copy+pate you use on your netbook
+2015-03-28 15:26:55	%oneesama	for urxvt
+2015-03-28 15:27:02	+Plez	okay, will do my friend
+2015-03-28 15:27:03	~kori	bixxx: bX without cp437 doesn't fucken werk
+2015-03-28 15:27:03	+miles	>display managers want me to use a bunch of bullshit and not .xinitrc
+2015-03-28 15:27:05	%oneesama	danke
+2015-03-28 15:27:09	+anosh	I might go make a pizza
+2015-03-28 15:27:11	+Plez	probably not tonight but ill o it in themorning
+2015-03-28 15:27:13	+Plez	and .msg you it
+2015-03-28 15:27:18	%oneesama	danke
+2015-03-28 15:27:23	+bixxx	kori: i know
+2015-03-28 15:27:32	%oneesama	wow I just realized I've not been klined for a whle
+2015-03-28 15:27:34	%oneesama	thanks rizon
+2015-03-28 15:27:39	+Plez	.ver
+2015-03-28 15:27:39	+Combot	Missing a required argument for .ver Nickname.  The required arguments are Nickname.
+2015-03-28 15:27:39	+spoonbot	1,1weechat 1.1.x you filthy pervert  [Plez]
+2015-03-28 15:27:51	+anosh	wtf
+2015-03-28 15:27:52	+bixxx	LOL
+2015-03-28 15:27:59	+Plez	.ver plez
+2015-03-28 15:27:59	+spoonbot	1,1weechat 1.1.x  you filthy pervert  [Plez]
+2015-03-28 15:27:59	+Combot	[plez] Using version: 1,1weechat 1.1.x  you filthy pervert 
+2015-03-28 15:28:01	+Plez	AGGA
+2015-03-28 15:28:06	+Plez	OH
+2015-03-28 15:28:08	+anosh	Why are you losing the character?
+2015-03-28 15:28:08	+Plez	im dumb
+2015-03-28 15:28:21	%oneesama	are you trying to put a color control char in your version string
+2015-03-28 15:28:22	+Plez	.ver
+2015-03-28 15:28:22	+Combot	Missing a required argument for .ver Nickname.  The required arguments are Nickname.
+2015-03-28 15:28:22	+spoonbot	weechat 1.1.x  you filthy pervert  [Plez]
+2015-03-28 15:28:22	%oneesama	lol
+2015-03-28 15:28:28	+anosh	lol
+2015-03-28 15:28:33	%oneesama	amazing
+2015-03-28 15:28:42	+anosh	Has science gone too far?
+2015-03-28 15:28:44	+Plez	i thought that the char was doing it, so i just completely ignored the q,q
+2015-03-28 15:28:46	+Plez	1,1
+2015-03-28 15:28:51	+anosh	lol
+2015-03-28 15:28:59	%oneesama	how do you edit your version string that's so funny
+2015-03-28 15:29:02	+anosh	Username 	In 	Out 	Total
+2015-03-28 15:29:03	+anosh	anosh 	761 MiB 	858 MiB 	1 GiB
+2015-03-28 15:29:07	>	xnool (~xnil@AD44D6EE.43A281EB.63230E32.IP) has joined #rice
+2015-03-28 15:29:07	⇄	Mode #rice [+v xnool] by Onee-chan
+2015-03-28 15:29:08	+anosh	Just text chat
+2015-03-28 15:29:14	+anosh	lol
+2015-03-28 15:29:30	+anosh	plez I can get a ts server sorted too
+2015-03-28 15:29:35	+anosh	ts3
+2015-03-28 15:30:10	+Plez	.yt doctor jones
+2015-03-28 15:30:11	+Combot	Aqua - Doctor Jones - Official Video | Length: 0:03:28 | Rating: 1865 Likes, 56 Dislikes (97.1%) | Views: 612915 | Uploaded By: aquaholdet on Wed, 09 Feb 2011 14:12:59 GMT - http://youtu.be/aLodKOB00AU
+2015-03-28 15:30:17	+Plez	someone added this too my playlist
+2015-03-28 15:30:17	+bixxx	>aqua
+2015-03-28 15:30:20	+Plez	and im not removing it
+2015-03-28 15:30:29	+Plez	anosh: wheres the server located?
+2015-03-28 15:30:36	+anosh	NY
+2015-03-28 15:30:39	+Plez	i mean im not gonna say no to FREE
+2015-03-28 15:30:43	<	eric_ (~eric@Rizon-CC377A67.ph.ph.cox.net) has quit (Ping timeout: 240 seconds)
+2015-03-28 15:30:44	+Plez	but latency is an issueon voice comms
+2015-03-28 15:30:50	+bixxx	lol everyone's server is located in NY
+2015-03-28 15:30:52	+anosh	It's information superhub
+2015-03-28 15:31:05	+Plez	ill just move to  ny
+2015-03-28 15:31:06	+anosh	10/10 connection for people all around the country
+2015-03-28 15:31:08	+Plez	so i can beat up bixxx
+2015-03-28 15:31:11	@spoonm	.ping
+2015-03-28 15:31:11	+spoonbot	Ping: 0.285 seconds. [spoonm]
+2015-03-28 15:31:15	+Plez	.ping
+2015-03-28 15:31:17	+spoonbot	Ping: 2.258 seconds. [Plez]
+2015-03-28 15:31:18	<	xnil (~xnil@GANNOO.LEENUCKS) has quit (Ping timeout: 240 seconds)
+2015-03-28 15:31:20	+Plez	jej
+2015-03-28 15:31:21	@spoonm	moaning #rice
+2015-03-28 15:31:21	+anosh	We all want to beat up bixxx, wait in line
+2015-03-28 15:31:22	+anosh	lol
+2015-03-28 15:31:23	+anosh	.ping
+2015-03-28 15:31:24	+spoonbot	Ping: 0.159 seconds. [anosh]
+2015-03-28 15:31:24	+bixxx	Plez: you can't beat a dead man
+2015-03-28 15:31:27	+bixxx	that's just wrong
+2015-03-28 15:31:27	+Plez	hello spoonm 
+2015-03-28 15:31:27	@spoonm	we do?
+2015-03-28 15:31:28	+anosh	plez do .ping
+2015-03-28 15:31:30	@spoonm	hi Plez 
+2015-03-28 15:31:31	+Plez	bixxx: watch me
+2015-03-28 15:31:37	+Plez	.ping
+2015-03-28 15:31:39	+spoonbot	Ping: 1.965 seconds. [Plez]
+2015-03-28 15:31:44	+anosh	mfw yours it slow
+2015-03-28 15:31:45	+bixxx	Plez: bully strahm instead
+2015-03-28 15:31:47	+anosh	.ping
+2015-03-28 15:31:47	+spoonbot	Ping: 0.162 seconds. [anosh]
+2015-03-28 15:31:51	+anosh	tfw fazt
+2015-03-28 15:31:56	+Plez	anosh: its cause it connects to my end client
+2015-03-28 15:31:58	+Plez	i would guess
+2015-03-28 15:32:02	+Plez	which is STRAYA
+2015-03-28 15:32:06	+anosh	You think?
+2015-03-28 15:32:16	+anosh	I thought it would ping the bouncer
+2015-03-28 15:32:18	+Plez	seems it since its literally 17times slower than yours
+2015-03-28 15:32:21	+anosh	which is why fast ping
+2015-03-28 15:32:25	+anosh	do it again
+2015-03-28 15:32:28	+Plez	.ping
+2015-03-28 15:32:29	+anosh	might've been a fluke
+2015-03-28 15:32:30	+spoonbot	Ping: 1.855 seconds. [Plez]
+2015-03-28 15:32:33	+Izuru	.ping
+2015-03-28 15:32:34	+spoonbot	Ping: 0.248 seconds. [Izuru]
+2015-03-28 15:32:35	+anosh	fucking hell
+2015-03-28 15:32:36	+Plez	.ping anosh
+2015-03-28 15:32:38	+spoonbot	Ping: 1.969 seconds. [Plez]
+2015-03-28 15:32:41	+anosh	.ping
+2015-03-28 15:32:41	+spoonbot	Ping: 0.16 seconds. [anosh]
+2015-03-28 15:32:43	@spoonm	anosh: CTCP PING is sent to the client through RizonBNC
+2015-03-28 15:32:47	+Plez	doesnt worry me
+2015-03-28 15:32:49	@spoonm	not sure about Plez
+2015-03-28 15:32:57	+bixxx	spoonbot is located in canada
+2015-03-28 15:33:05	+anosh	spoonbot is a meanie pants
+2015-03-28 15:33:08	+spoonbot	no u
+2015-03-28 15:33:10	+Plez	oh shit
+2015-03-28 15:33:12	+Plez	loveshack
+2015-03-28 15:33:13	+anosh	no u
+2015-03-28 15:33:17	+spoonbot	no u
+2015-03-28 15:33:20	+anosh	no u
+2015-03-28 15:33:21	+Plez	LOVE SHACK BABY 
+2015-03-28 15:33:21	+spoonbot	no u
+2015-03-28 15:33:23	+anosh	no u
+2015-03-28 15:33:23	+spoonbot	no u
+2015-03-28 15:33:25	+anosh	no u
+2015-03-28 15:33:26	+spoonbot	no u
+2015-03-28 15:33:30	+Plez	im glad i oppened up the playlist
+2015-03-28 15:33:30	+arianon	no u
+2015-03-28 15:33:31	+spoonbot	no u
+2015-03-28 15:33:33	+anosh	no u
+2015-03-28 15:33:33	+bixxx	no me
+2015-03-28 15:33:38	+spoonbot	yes bixxx
+2015-03-28 15:33:41	+bixxx	k
+2015-03-28 15:33:42	+anosh	lol
+2015-03-28 15:34:05	+bixxx	even though i don't know how to wear meanie pants
+2015-03-28 15:34:26	@spoonm	where the hell is kyubiko? ;-;
+2015-03-28 15:34:34	@spoonm	I've seen up to episode 7 of Kanon '06
+2015-03-28 15:34:35	+bixxx	ignoring you
+2015-03-28 15:34:38	@spoonm	fucking kyubiko 
+2015-03-28 15:34:46	+bixxx	RIP OLD KYUBIKO
+2015-03-28 15:34:49	@spoonm	RIP
+2015-03-28 15:34:53	+bixxx	version 2.11 sucks
+2015-03-28 15:35:17	@spoonm	it all went downhill on 1.8
+2015-03-28 15:35:30	+bixxx	unmerge kyubiko && emerge kyubiko-1.7.2
+2015-03-28 15:36:21	~kori	onodera:  https://github.com/6c37/crux-ports/blob/master/cp437/Pkgfile#L11-12
+2015-03-28 15:36:22	+Combot	[URL] crux-ports/Pkgfile at master · 6c37/crux-ports · GitHub (github.com)
+2015-03-28 15:36:25	~kori	this some hardcore shit right here
+2015-03-28 15:36:55	@spoonm	h kori
+2015-03-28 15:37:01	~kori	hi
+2015-03-28 15:37:21	@spoonm	I'm gonna get a haircut today ;-;
+2015-03-28 15:37:28	@spoonm	rip hair
+2015-03-28 15:37:28	+anosh	tfw uptown funk gon' give it to ya
+2015-03-28 15:37:58	+Plez	anosh: get UFCKE
+2015-03-28 15:37:59	+Plez	D
+2015-03-28 15:38:08	>	chap (~chap@Rizon-58AF4FFE.retail.telecomitalia.it) has joined #rice
+2015-03-28 15:38:08	⇄	Mode #rice [+v chap] by Onee-chan
+2015-03-28 15:38:24	+xnool	anosh: lol
+2015-03-28 15:38:42	+Plez	wow someone added robbie williams too
+2015-03-28 15:38:43	+Plez	brilliant
+2015-03-28 15:39:23	<	Guest50855 (~a@Rizon-936D1B2D.lightspeed.hstntx.sbcglobal.net) has left #rice (WeeChat 1.1-dev)
+2015-03-28 15:40:37	+anosh	https://twitter.com/antibullyranger
+2015-03-28 15:40:38	+Combot	[URL] antibullyranger (@antibullyranger) | Twitter (twitter.com)
+2015-03-28 15:40:45	+onodera	kori: lol
+2015-03-28 15:41:15	>	trippin (~rlosito@making.fiends) has joined #rice
+2015-03-28 15:41:15	⇄	Mode #rice [+v trippin] by Onee-chan
+2015-03-28 15:41:17	+arianon	onodera, what's the tex macro for monospace text?
+2015-03-28 15:41:28	+arianon	like this http://i.imgur.com/FW9Q3k1.png
+2015-03-28 15:41:28	+Combot	[image/png] Size: 6.98 KB
+2015-03-28 15:41:36	+onodera	No idea I know literally nothing about latex
+2015-03-28 15:41:44	+onodera	I just use templates and google evrything
+2015-03-28 15:41:49	+arianon	you should, it's easy as fok
+2015-03-28 15:41:52	+onodera	stackoverflow saves me
+2015-03-28 15:42:02	+onodera	ah
+2015-03-28 15:42:06	+onodera	eh
+2015-03-28 15:42:16	+arianon	latex is mostly googling the macros that do what you want :P
+2015-03-28 15:42:17	+onodera	it is used in the moderncv template
+2015-03-28 15:42:26	+onodera	the monotex thingy
+2015-03-28 15:43:50	%oneesama	ech now I need to update my desktop with my new weechat layout
+2015-03-28 15:44:00	%oneesama	not until I change my gtk css some more though
+2015-03-28 15:44:34	+anosh	Can someone link me to a clear monospaced font
+2015-03-28 15:44:44	+anosh	something a more modern and clear
+2015-03-28 15:44:52	+Plez	dina always
+2015-03-28 15:45:03	+onodera	menlo
+2015-03-28 15:45:06	+onodera	oxygen mono
+2015-03-28 15:45:10	+onodera	ubuntu mono
+2015-03-28 15:45:49	+Plez	http://i.4cdn.org/vg/1427557381920.jpg
+2015-03-28 15:45:49	+Combot	[image/jpeg] Size: 54.05 KB
+2015-03-28 15:46:12	+Plez	im glad the interent use wasnt this prolific when i was young
+2015-03-28 15:46:18	+Plez	i wouldve been made a meme for sure
+2015-03-28 15:46:24	>	george970 (~george970@Rizon-648D5AB0.dyn.plus.net) has joined #rice
+2015-03-28 15:46:25	+anosh	getting dejavu sans mono
+2015-03-28 15:46:36	+Plez	dejavu sans mono is nice
+2015-03-28 15:46:39	+Plez	so is liberation mono
+2015-03-28 15:47:38	~kori	about to make a new dwm config
+2015-03-28 15:47:48	~kori	with dwm from git
+2015-03-28 15:48:45	+anosh	hmmm
+2015-03-28 15:48:49	+anosh	This is good enough I guess
+2015-03-28 15:49:36	<	NASA (~NASA@ash.nazg.thrakatuluk) has quit (Ping timeout: 240 seconds)
+2015-03-28 15:50:22	~kori	lol dwm from git comes with xft support
+2015-03-28 15:50:55	~kori	https://u.teknik.io/Cx7Plt.png
+2015-03-28 15:50:57	+Combot	[image/png] Size: 268.82 KB
+2015-03-28 15:50:57	~kori	ah good old times
+2015-03-28 15:51:38	~kori	DUDES
+2015-03-28 15:51:43	~kori	DWM FROM GIT CAN FULLSCREEN GAMES CORRECTLY
+2015-03-28 15:51:44	~kori	AWESOME
+2015-03-28 15:52:03	+arianon	dwm is STILL maintained?
+2015-03-28 15:52:03	+arianon	top kek
+2015-03-28 15:52:15	+gabaghool	it's deprecated arianon 
+2015-03-28 15:52:28	+arianon	oh I see
+2015-03-28 15:52:32	+arianon	based Eric Pruitt
+2015-03-28 15:52:56	+arianon	gabaghool, you're deprecated
+2015-03-28 15:53:09	+gabaghool	:<
+2015-03-28 15:53:13	<	xnool (~xnil@AD44D6EE.43A281EB.63230E32.IP) has quit (Ping timeout: 240 seconds)
+2015-03-28 15:53:14	+gabaghool	rude
+2015-03-28 15:53:25	+arianon	tell that to BeOS :^)
+2015-03-28 15:53:31	<	matuka` (~matooka@Rizon-9B86DE4F.me) has left #rice (Leaving)
+2015-03-28 15:53:41	+Plez	the best meme ever
+2015-03-28 15:53:46	+Plez	is to use she on 4chan instead of he
+2015-03-28 15:54:01	>	matuka (~matooka@Rizon-9B86DE4F.me) has joined #rice
+2015-03-28 15:54:13	+gabaghool	your sure about that Plez ?
+2015-03-28 15:54:21	+Plez	yes
+2015-03-28 15:54:21	⇄	Mode #rice [+v matuka] by Onee-chan
+2015-03-28 15:54:23	+Plez	guaranteed replies
+2015-03-28 15:54:27	+matuka	Reeeeee
+2015-03-28 15:54:41	+matuka	I need to redo this bncs config 
+2015-03-28 15:55:40	>	shadowwookie (~shadowwal@only.in.vowels) has joined #rice
+2015-03-28 15:55:40	⇄	Mode #rice [+v shadowwookie] by Onee-chan
+2015-03-28 15:55:40	<	aaro (~aaro@7DE21920.2B7CCAF3.E1834447.IP) has quit (Read error: Connection reset by peer)
+2015-03-28 15:56:02	>	aaro (~aaro@7DE21920.2B7CCAF3.E1834447.IP) has joined #rice
+2015-03-28 15:56:11	~kori	new dwm rice
+2015-03-28 15:56:13	~kori	aw yes
+2015-03-28 15:56:23	<	Taiiwo2 (~Taiiwo@Rizon-D703B324.range86-171.btcentralplus.com) has left #rice
+2015-03-28 15:56:29	>	Taiiwo (~Taiiwo@Rizon-D703B324.range86-171.btcentralplus.com) has joined #rice
+2015-03-28 15:56:40	+arianon	onodera, nevermind found it, it was the \textsc{}  (small capitals) macro
+2015-03-28 15:58:31	<	chap (~chap@Rizon-58AF4FFE.retail.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2015-03-28 16:02:05	+eta	does anyone here use a popup notification system>
+2015-03-28 16:02:15	+eta	s/>/?/g
+2015-03-28 16:02:18	+Combot	eta meant to say: does anyone here use a popup notification system?
+2015-03-28 16:03:07	+zxc	kori, wut ?
+2015-03-28 16:03:32	+zxc	I'm actually pissed they merged the xft patch
+2015-03-28 16:03:46	~kori	zxc: why
+2015-03-28 16:04:02	~kori	dwm isn't getting any more updates to the main program anyway
+2015-03-28 16:04:04	~kori	this is great
+2015-03-28 16:04:46	+zxc	i don't need it, i have a small screen so i use bitmap fonts for the status bar
+2015-03-28 16:05:25	+zxc	kori, did you try the new status color patch ? 
+2015-03-28 16:05:29	~kori	zxc: no
+2015-03-28 16:06:28	+zxc	i don't know if the suckless people checked if it works or not because the int function returns void
+2015-03-28 16:06:36	+arianon	>i'm pissed off because they added more features
+2015-03-28 16:06:42	+arianon	lol
+2015-03-28 16:06:46	+Plez	BLOAT
+2015-03-28 16:06:51	~kori	well
+2015-03-28 16:06:52	+Plez	BLOOOOOAAAAAAAAAATTTTTT!
+2015-03-28 16:06:55	~kori	considering dwm is a minimalist project
+2015-03-28 16:06:57	~kori	it's bloat, yes
+2015-03-28 16:06:57	+arianon	you do know you can remove the patch, right?
+2015-03-28 16:07:01	~kori	arianon: no
+2015-03-28 16:07:04	+Plez	remove this
+2015-03-28 16:07:05	~kori	it's merged into master
+2015-03-28 16:07:06	~kori	now
+2015-03-28 16:07:07	|	Plez unzips patch
+2015-03-28 16:07:11	+arianon	kori, are you sure?
+2015-03-28 16:07:20	+zxc	arianon, people can patch what they need and the xft patch is a bit complicated
+2015-03-28 16:07:23	~kori	http://git.suckless.org/dwm/
+2015-03-28 16:07:25	+Combot	[URL] dwm - dynamic window manager (git.suckless.org)
+2015-03-28 16:07:26	~kori	arianon: check latest commit
+2015-03-28 16:07:28	+arianon	$ git clone git://suckless.org/dwm
+2015-03-28 16:07:36	|	bixxx install bloat in patch
+2015-03-28 16:07:37	+arianon	$ git reset --hard HEAD^1
+2015-03-28 16:07:39	|	bixxx rezips patch
+2015-03-28 16:07:43	+arianon	$ make && sudo make install
+2015-03-28 16:07:47	+arianon	done, was that hard?
+2015-03-28 16:07:49	+zxc	i kept the previous commit
+2015-03-28 16:07:51	+zxc	.git
+2015-03-28 16:07:51	+spoonbot	https://github.com/gstk [zxc]
+2015-03-28 16:07:52	+Combot	zxc2694 - 6 Followers - Following 4 Users - 34 Repositories | https://github.com/zxc2694
+2015-03-28 16:08:02	+zxc	https://github.com/gstk/dwm-suckless
+2015-03-28 16:08:03	+Combot	[URL] gstk/dwm-suckless · GitHub (github.com)
+2015-03-28 16:08:10	+arianon	ITC: people who can't into git
+2015-03-28 16:08:40	+zxc	I can but i kept it so others don't have to
+2015-03-28 16:09:08	~kori	yay
+2015-03-28 16:09:12	~kori	hide vacant tags werks now
+2015-03-28 16:09:34	~kori	I'm using git to manage dwm now
+2015-03-28 16:09:35	+zxc	yep applies perfectly
+2015-03-28 16:09:46	~kori	eh
+2015-03-28 16:09:50	~kori	not sure whether I want this though
+2015-03-28 16:09:50	+zxc	Long ago i told you to upgrade to 6.1
+2015-03-28 16:09:53	~kori	I wanted the one
+2015-03-28 16:09:57	~kori	where you can set different colors
+2015-03-28 16:10:02	~kori	for tags with no windows
+2015-03-28 16:10:07	~kori	so I can get rid of that stupid square
+2015-03-28 16:10:07	+zxc	hand patch the restart patch
+2015-03-28 16:10:34	+zxc	that would be the new status color patch
+2015-03-28 16:10:43	~kori	zxc: I did
+2015-03-28 16:10:54	+arianon	I assume you're using branches to safely test your patches, I guess?
+2015-03-28 16:10:56	~kori	http://dwm.suckless.org/patches/statuscolors this?
+2015-03-28 16:10:57	+Combot	[URL] patches - statuscolors | suckless.org dwm - dynamic window manager (dwm.suckless.org)
+2015-03-28 16:10:59	~kori	arianon: no
+2015-03-28 16:11:02	~kori	yolo :^)
+2015-03-28 16:11:06	+arianon	living to the limit
+2015-03-28 16:11:12	+zxc	kori, yes
+2015-03-28 16:11:19	~kori	zxc: >5.9
+2015-03-28 16:11:31	~kori	you sure this works 100%, m8Y?
+2015-03-28 16:11:39	+zxc	wut no, i have cloned their wiki i have the 6.1
+2015-03-28 16:11:39	~kori	uselessgaps is tagged as 5.9 but it werks
+2015-03-28 16:11:45	~kori	gibe diff
+2015-03-28 16:11:53	+zxc	yeah but no y offset
+2015-03-28 16:12:12	+zxc	fucks up bstack
+2015-03-28 16:12:15	+Plez	>tfw your backhair gets caught in the chair
+2015-03-28 16:12:37	+zxc	https://github.com/gstk/dwm :^)
+2015-03-28 16:12:38	+Combot	[URL] gstk/dwm · GitHub (github.com)
+2015-03-28 16:13:27	+arianon	>not even having a "original" branch
+2015-03-28 16:13:27	+zxc	tfw i made the new bitmap font so i don't need to use xft for fontawesome ;_;
+2015-03-28 16:13:30	+arianon	PLS
+2015-03-28 16:13:33	+zxc	arianon, pls
+2015-03-28 16:13:38	~kori	statuscolors where
+2015-03-28 16:13:45	+arianon	zxc, pls^2
+2015-03-28 16:14:11	~kori	zxc: oh ur that stark guy
+2015-03-28 16:14:13	~kori	cool
+2015-03-28 16:14:25	+zxc	yep
+2015-03-28 16:14:36	+arianon	I've been thinking of switching to dwm lately because spectrwm is boring me and awesome is bloated as shit
+2015-03-28 16:15:19	~kori	k I've got grid again
+2015-03-28 16:15:35	~kori	my dwm is pretty much almost set up again
+2015-03-28 16:15:37	~kori	lol
+2015-03-28 16:16:09	+animu	https://www.youtube.com/watch?v=DPHsToh4z3Y
+2015-03-28 16:16:10	+Combot	Tchami - Untrue (Extended Mix) | Length: 0:05:03 | Rating: 9239 Likes, 369 Dislikes (96.2%) | Views: 1044428 | Uploaded By: spinninrec on Fri, 04 Apr 2014 21:00:00 GMT
+2015-03-28 16:16:18	+zxc	kori, http://git.suckless.org/sites/commit/?id=456cab5eb268774276e944c4b8d0015567b7b81f
+2015-03-28 16:16:19	+Combot	[URL] sites - Public Wiki Contents of suckless.org (git.suckless.org)
+2015-03-28 16:16:19	<	shadowwookie (~shadowwal@only.in.vowels) has quit (Read error: Connection reset by peer)
+2015-03-28 16:16:32	>	shadowwookie (~shadowwal@Rizon-276F181.alshamil.net.ae) has joined #rice
+2015-03-28 16:16:39	<	shadowwookie (~shadowwal@Rizon-276F181.alshamil.net.ae) has left #rice
+2015-03-28 16:18:03	+zxc	kori, its by this guy https://bbs.archlinux.org/viewtopic.php?pid=1513886#p1513886
+2015-03-28 16:18:05	+Combot	[URL] DWM Hackers Unite! Share (or request) dwm patches. (Page 57) / Community Contributions / Arch Linux Forums (bbs.archlinux.org)
+2015-03-28 16:19:08	~kori	wait
+2015-03-28 16:19:11	~kori	so how tf does this work

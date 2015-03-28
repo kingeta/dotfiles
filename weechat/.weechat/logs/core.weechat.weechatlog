@@ -1447,3 +1447,4 @@
 2015-03-22 20:37:21	+	Error: WeeChat main buffer can't be closed
 2015-03-28 08:33:50		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
 2015-03-28 08:33:51		script: 289 scripts for WeeChat 1.1.1
+2015-03-28 12:30:15		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer

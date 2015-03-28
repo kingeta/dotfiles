@@ -20,10 +20,10 @@ URxvt.matcher.button: 1
 *italicfont: xft:DejaVuSansMono-Oblique
 *.letterSpace: -2
 !OLD-bitmap
-!*.font:      -*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*
-!*.boldfont:  -*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
-!*.italicfont:-*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
-!*.bolditalicfont:-*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*
+!*.font:      -*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*
+!*.boldfont:  -*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
+!*.italicfont:-*-terminus-medium-*-*-*-20-*-*-*-*-*-*-*
+!*.bolditalicfont:-*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
 
 !XFT FONTS
 Xft.antialias:  1
@@ -35,5 +35,4 @@ Xft.lcdfilter:  lcddefault
 Xft.rgba:       rgb
 
 !Source colours if I need to
-!nclude "Theming/Colours/Invisibone"
-#include "Theming/Colours/XDotShare"
+#include "../../Theming/Colours/XDotShare"

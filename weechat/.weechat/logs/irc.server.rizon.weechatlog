@@ -15602,3 +15602,73 @@
 2015-03-28 08:34:14	⇄	MSG(NickServ): identify **********
 2015-03-28 08:34:15	⇄	User mode [+r] by eta
 2015-03-28 08:34:15	⇄	NickServ (service@rizon.net): Password accepted - you are now recognized.
+2015-03-28 12:30:18	⇄	irc: connecting to server irc.rizon.net/6667...
+2015-03-28 12:30:18	⇄	irc: connected to irc.rizon.net/6667 (80.65.57.18)
+2015-03-28 12:30:18	⇄	* :Please wait while we process your connection.
+2015-03-28 12:30:18	⇄	irc.rizon.no: *** Looking up your hostname...
+2015-03-28 12:30:18	⇄	irc.rizon.no: *** Checking Ident
+2015-03-28 12:30:19	⇄	irc.rizon.no: *** Found your hostname
+2015-03-28 12:30:19	⇄	irc.rizon.no: *** No Ident response
+2015-03-28 12:30:19	⇄	irc.rizon.no: *** Your host is masked (Rizon-47B34E7B.range86-185.btcentralplus.com)
+2015-03-28 12:30:19	⇄	Welcome to the Rizon Internet Relay Chat Network herby
+2015-03-28 12:30:19	⇄	Your host is irc.rizon.no, running version hybrid-7.2.3+plexus-3.1.0(20140407_0-541)
+2015-03-28 12:30:19	⇄	This server was created Apr 14 2014 at 08:40:39
+2015-03-28 12:30:19	⇄	irc.rizon.no hybrid-7.2.3+plexus-3.1.0(20140407_0-541) CDFGNRSUWXabcdfgijklnopqrsuwxyz BIMNORSabcehiklmnopqstvz Iabehkloqv
+2015-03-28 12:30:19	⇄	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 TOPICLEN=390 PREFIX=(qaohv)~&@%+ STATUSMSG=~&@%+ NETWORK=Rizon MAXLIST=beI:250 TARGMAX=ACCEPT:,KICK:1,LIST:1,NAMES:1,NOTICE:4,PRIVMSG:4,WHOIS:1 CHANTYPES=# :are supported by this server
+2015-03-28 12:30:19	⇄	CHANLIMIT=#:250 CHANNELLEN=50 CHANMODES=beI,k,l,BCMNORScimnpstz KNOCK ELIST=CMNTU SAFELIST NAMESX UHNAMES FNC AWAYLEN=160 EXCEPTS=e INVEX=I :are supported by this server
+2015-03-28 12:30:19	⇄	06CAAVQNT :your unique ID
+2015-03-28 12:30:19	⇄	There are 30 users and 23884 invisible on 16 servers
+2015-03-28 12:30:20	⇄	67 :IRC Operators online
+2015-03-28 12:30:20	⇄	23 :unknown connection(s)
+2015-03-28 12:30:20	⇄	20677 :channels formed
+2015-03-28 12:30:20	⇄	I have 23914 clients and 16 servers
+2015-03-28 12:30:20	⇄	23914 29162 :Current local users 23914, max 29162
+2015-03-28 12:30:20	⇄	23914 29162 :Current global users 23914, max 29162
+2015-03-28 12:30:20	⇄	- irc.rizon.no Message of the Day -
+2015-03-28 12:30:20	⇄	-          oo                            
+2015-03-28 12:30:20	⇄	-
+2015-03-28 12:30:20	⇄	- 88d888b. dP d888888b .d8888b. 88d888b. 
+2015-03-28 12:30:20	⇄	- 88'  `88 88    .d8P' 88'  `88 88'  `88 
+2015-03-28 12:30:20	⇄	- 88       88  .Y8P    88.  .88 88    88 
+2015-03-28 12:30:20	⇄	- dP       dP d888888P `88888P' dP    dP
+2015-03-28 12:30:20	⇄	-
+2015-03-28 12:30:20	⇄	- Rizon Chat Network -- http://rizon.net
+2015-03-28 12:30:20	⇄	-
+2015-03-28 12:30:20	⇄	- Listening on ports: 6660 - 6669, 7000. SSL: 6697, 9999
+2015-03-28 12:30:20	⇄	-
+2015-03-28 12:30:20	⇄	- Rules:
+2015-03-28 12:30:20	⇄	- o No spamming or flooding
+2015-03-28 12:30:20	⇄	- o No clones or malicious bots
+2015-03-28 12:30:20	⇄	- o No takeovers
+2015-03-28 12:30:20	⇄	- o No distribution of child pornography
+2015-03-28 12:30:20	⇄	- o Clients must respond to VERSION requests
+2015-03-28 12:30:20	⇄	- o Rizon staff may disconnect clients for any or no reason
+2015-03-28 12:30:20	⇄	-
+2015-03-28 12:30:20	⇄	- First steps:
+2015-03-28 12:30:20	⇄	- o To register your nick: /msg NickServ HELP
+2015-03-28 12:30:20	⇄	- o To register your channel: /msg ChanServ HELP
+2015-03-28 12:30:20	⇄	- o To get a vHost: /msg HostServ HELP REQUEST
+2015-03-28 12:30:20	⇄	- o For other help with Rizon: /join #help
+2015-03-28 12:30:20	⇄	-
+2015-03-28 12:30:20	⇄	- Usage of this network is a privilege, not a right. Rizon is a
+2015-03-28 12:30:20	⇄	- transit provider, therefore no person or entity involved with
+2015-03-28 12:30:20	⇄	- *.rizon.net or irc.rizon.no takes any responsibility for
+2015-03-28 12:30:20	⇄	- users' actions. Absolutely no warranty is expressed or implied.
+2015-03-28 12:30:20	⇄	End of /MOTD command.
+2015-03-28 12:30:20	⇄	User mode [+ix] by herby
+2015-03-28 12:30:20	⇄	Global (service@rizon.net): [Logon News - May 21 2011] First time on Rizon? Be sure to read the FAQ! http://s.rizon.net/FAQ
+2015-03-28 12:30:20	⇄	Global (service@rizon.net): [Logon News - Dec 16 2013] Own a large/active channel or plan to get one going? Please read http://s.rizon.net/authline
+2015-03-28 12:30:20	⇄	Global (service@rizon.net): [Random News - Nov 29 2013] Want to make your vhost shiny by adding colors to it? Try your luck in #VIzon
+2015-03-28 12:30:20	⇄	NickServ (service@rizon.net): This nickname is registered and protected. If it is your
+2015-03-28 12:30:20	⇄	NickServ (service@rizon.net): nick, type /msg NickServ IDENTIFY password. Otherwise,
+2015-03-28 12:30:20	⇄	NickServ (service@rizon.net): please choose a different nick.
+2015-03-28 12:30:20	⇄	CTCP requested by py-ctcp: VERSION
+2015-03-28 12:30:20	⇄	CTCP reply to py-ctcp: VERSION WeeChat 1.1.1 (Jan 27 2015)
+2015-03-28 12:30:20	⇄	peer (service@rizon.net): For network safety, your client is being scanned for open proxies by scanner.rizon.net (80.65.51.219). This scan will not harm your computer.
+2015-03-28 12:30:31	⇄	You are now known as eta
+2015-03-28 12:30:31	⇄	NickServ (service@rizon.net): This nickname is registered and protected. If it is your
+2015-03-28 12:30:31	⇄	NickServ (service@rizon.net): nick, type /msg NickServ IDENTIFY password. Otherwise,
+2015-03-28 12:30:31	⇄	NickServ (service@rizon.net): please choose a different nick.
+2015-03-28 12:30:38	⇄	MSG(NickServ): identify **********
+2015-03-28 12:30:39	⇄	User mode [+r] by eta
+2015-03-28 12:30:39	⇄	NickServ (service@rizon.net): Password accepted - you are now recognized.
