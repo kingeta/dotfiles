@@ -2,7 +2,7 @@ Readme
 ========
 
 <p align="center">
-  <img src="http://i.imgur.com/YNUHqbS.png" alt="scrot"/>
+  <img src="http://i.imgur.com/7eOWKVs.png" alt="scrot"/>
 </p>
 
 My dotfiles (for reference and copying)

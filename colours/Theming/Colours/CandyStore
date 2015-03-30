@@ -24,20 +24,20 @@ URxvt.colorIT:            #686868
 *.color10:      #79b77E
 
 ! yellow
-*.color3:       #C4BE13
+*.color3:       #D1C114
 *.color11:      #DDCB3E
 
-! blue
-*.color4:       #5671C4
-*.color12:      #67A0E7
+! cyan
+*.color6:       #5671C4
+*.color14:      #67A0E7
 
 ! magenta
 *.color5:       #936693
 *.color13:      #C998C9
 
-! cyan
-*.color6:       #2A519C
-*.color14:      #4361BB
+! blue
+*.color4:       #2A519C
+*.color12:      #4361BB
 
 ! white
 *.color7:       #BDBDBD
