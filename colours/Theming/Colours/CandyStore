@@ -12,34 +12,34 @@ Urxvt*colorUL:            #A0A0A0
 URxvt.colorIT:            #686868
 
 ! black
-*.color0:       #1d1d1d
-*.color8:       #2a2a2a
+*.color0:       #1D1D1D
+*.color8:       #3A3A3A
 
 ! red
-*.color1:       #642323
-*.color9:       #8b2b37
+*.color1:       #842323
+*.color9:       #AB2B37
 
 ! green
 *.color2:       #417150
-*.color10:      #79b77e
+*.color10:      #79b77E
 
 ! yellow
-*.color3:       #73650e
-*.color11:      #cdbb5e
+*.color3:       #C4BE13
+*.color11:      #DDCB3E
 
 ! blue
-*.color4:       #567194
-*.color12:      #67a0d7
+*.color4:       #5671C4
+*.color12:      #67A0E7
 
 ! magenta
 *.color5:       #936693
-*.color13:      #c798c9
+*.color13:      #C998C9
 
 ! cyan
-*.color6:       #2a518c
-*.color14:      #4361ab
+*.color6:       #2A519C
+*.color14:      #4361BB
 
 ! white
-*.color7:       #bdbdbd
-*.color15:      #d2d2d2
+*.color7:       #BDBDBD
+*.color15:      #D2D2D2
 

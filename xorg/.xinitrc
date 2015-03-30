@@ -14,7 +14,6 @@ xrandr --output DVI-D-0 --auto --primary
 xrandr --output HDMI-0 --auto --right-of DVI-D-0
 
 # Start recursive bar
-killall bar
 COLORSCHEME="$(cat ~/.Xresources | grep include | cut -d '"' -f 2 )"
 FOREGROUNDCOLOR="$(getcolour foreground)"
 BACKGROUNDCOLOR="$(getcolour background)"
@@ -26,7 +25,6 @@ bash ~/Scripts/Work/RightBar | bar -f $FONT -u 2 -p -F \#FF$(echo $FOREGROUNDCOL
 setxkbmap -option caps:super -option 108:64 -layout gb
 
 # Start compton, with no -C now
-killall compton
 compton -zcf -r 5 -l -7 -t -7 -D 5 -i 1 -o 0.5 -e 1 &
 
 # Set the cursor
@@ -36,7 +34,7 @@ xsetroot -cursor_name left_ptr
 unclutter -root &
 
 # Set the wallpaper
-feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Flat/blue.png &
+feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Flat/green.png &
 
 # Load wm and keybind manager
 sxhkd &

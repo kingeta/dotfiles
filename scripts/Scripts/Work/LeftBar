@@ -5,10 +5,10 @@
 
 # colours
 
-CLOCKCOLOR="$(getcolour 1)"
+CLOCKCOLOR="$(getcolour 9)"
 DESKTOPCOLOR="$(getcolour 12)"
 DESKTOPCOLOR2="$(getcolour 4)"
-VOLUMECOLOR="$(getcolour 3)"
+VOLUMECOLOR="$(getcolour 11)"
 
 # information
 

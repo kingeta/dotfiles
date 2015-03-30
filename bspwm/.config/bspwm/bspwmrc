@@ -1,18 +1,12 @@
 #! /bin/sh
 
-export BSPWM_GAPS=1
+bspc config window_gap      12
+bspc config border_width    4
 
-bspc config border_width        4
-if [ $BSPWM_GAPS -eq 1 ]; then
-    bspc config window_gap      12
-else
-    bspc config window_gap      0
-fi
-
-bspc config top_padding         30
-bspc config bottom_padding      0
-bspc config left_padding        0
-bspc config right_padding       0
+bspc config top_padding         60
+bspc config bottom_padding      30
+bspc config left_padding        30
+bspc config right_padding       30
 
 bspc config split_ratio         0.52
 bspc config borderless_monocle  true
@@ -37,5 +31,5 @@ bspc rule -a ncmpcpp desktop=Media floating=on
 bspc rule -a steamwebhelper floating=on
 bspc rule -a steam desktop=Steam
 bspc rule -a feh floating=on
-bspc rule -a mpv desktop=Media 
+bspc rule -a mpv desktop=Media floating=on 
 bspc rule -a mupdf floating=on

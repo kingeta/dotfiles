@@ -24,6 +24,10 @@ alias cp='cp -r'
 
 alias latex='editlatex'
 
+alias flacsplit='shntool split -f *.cue -o flac *.flac && cuetag.sh *.cue split-track*.flac'
+
+alias flactag='cuetag.sh **/**.flac'
+
 # Programs
 
 alias vim='vim -u /home/herby/.vimrc'
@@ -55,16 +59,6 @@ alias configaliases='$editor ~/.aliases'
 alias configncmpcpp='$editor ~/.ncmpcpp/config'
 
 alias configvim='$editor ~/.vimrc'
-
-togglegaps() {
-    if [ $BSPWM_GAPS -eq 1 ]; then
-        export BSPWM_GAPS=0
-    else
-        export BSPWM_GAPS=1
-    fi
-
-    ~/.config/bspwm/bspwmrc
-}
 
 # Configuring Bash
 

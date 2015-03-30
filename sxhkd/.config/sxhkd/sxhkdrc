@@ -47,11 +47,11 @@ super + {s,f}
 #
 
 #Preselect the splitting area
-super + shift + {Left,Down,Up,Right}
+alt + {Left,Down,Up,Right}
 	bspc window -p {left,down,up,right}
 
 #Cancel preselection
-super + shift + {_,ctrl + }space
+alt + {_,ctrl + }space
 	bspc {window -p cancel,desktop -c}
 
 #
@@ -59,11 +59,11 @@ super + shift + {_,ctrl + }space
 #
 
 #Change the size of the window
-super + alt + {Left,Down,Up,Right}
+ctrl + alt + {Left,Down,Up,Right}
 	bspc window -e {left -10,down +10,up -10,right +10}
 
 #Change the size of the window
-super + alt + shift + {Left,Down,Up,Right}
+ctrl + alt + shift + {Left,Down,Up,Right}
 	bspc window -e {right -10,up +10,down -10,left +10}
 
 #
@@ -75,12 +75,12 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,window -d} ^{1-9,10}
 
 #Focus on or send a window to a certain monitor
-super + {equal,minus}
-    bspc monitor -f {next,prev}
+#super + {equal,minus}
+#    bspc monitor -f {next,prev}
 
 #Focus on the next or last desktop
-super + bracket{left,right}
-	bspc desktop -f {prev,next}
+#super + bracket{left,right}
+#	bspc desktop -f {prev,next}
 
 
 #Swap the current window with the largest
@@ -126,7 +126,7 @@ shift + alt + Return
 	urxvt
 
 shift + alt + space
-    lighthouse | sh
+    dmenu_extended_run
 
 shift + alt + s
 	steam
@@ -145,6 +145,9 @@ shift + alt + {equal,minus}
 
 shift + alt + w
     urxvt -e "weechat"
+
+shift + alt + g
+    gimp
 
 shift + alt + n
     bash ~/Scripts/Work/StartNcmpcpp
