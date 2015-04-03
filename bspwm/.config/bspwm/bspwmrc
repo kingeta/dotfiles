@@ -3,10 +3,10 @@
 bspc config window_gap      12
 bspc config border_width    4
 
-bspc config top_padding         60
-bspc config bottom_padding      30
-bspc config left_padding        30
-bspc config right_padding       30
+bspc config top_padding         30
+bspc config bottom_padding      0
+bspc config left_padding        0
+bspc config right_padding       0
 
 bspc config split_ratio         0.52
 bspc config borderless_monocle  true
@@ -14,8 +14,8 @@ bspc config gapless_monocle     true
 
 bspc config normal_border_color  '#'$(getcolour background) 
 bspc config active_border_color  '#'$(getcolour background) 
-bspc config focused_border_color '#'$(getcolour 11)
-bspc config presel_border_color  '#'$(getcolour 3)
+bspc config focused_border_color '#'$(getcolour 12)
+bspc config presel_border_color  '#'$(getcolour 4)
 bspc config urgent_border_color  '#'$(getcolour 1)
 
 bspc monitor DVI-D-0 -d Web Code Work Steam
@@ -33,3 +33,5 @@ bspc rule -a steam desktop=Steam
 bspc rule -a feh floating=on
 bspc rule -a mpv desktop=Media floating=on 
 bspc rule -a mupdf floating=on
+
+feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Flat/darkblue.png

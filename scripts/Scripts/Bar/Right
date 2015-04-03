@@ -1,0 +1,55 @@
+#! /usr/bin/bash
+#
+# this is my left bar
+# 
+
+# COLOURS
+
+DATECOLOR="$(getcolour 13)"
+
+COLOR1="$(getcolour 4)"
+COLOR2="$(getcolour 6)"
+COLOR3="$(getcolour 2)"
+
+FG="$(getcolour foreground)"
+BG="$(getcolour background)"
+
+# INFORMATION
+
+Playing () {
+    PLAYING1=$(mpc -f %artist% | sed -n '1p')
+    PLAYING2=$(mpc -f %album% | sed -n '1p')
+    PLAYING3=$(mpc -f %title% | sed -n '1p')
+    FILENAME=$(mpc -f %file% | sed -n '1p' | cut -d '.' -f 1)
+    if [ -z "$(mpc -f %artist% | sed -n '1p')" ]; then
+        echo "%{B#FF"$COLOR2"}$FILENAME%{B-}"
+    else
+        echo -n "%{B#FF"$COLOR1"} $PLAYING1 %{B-} "
+        echo -n "%{B#FF"$COLOR2"} $PLAYING2 %{B-} "
+        echo -n "%{B#FF"$COLOR3"} $PLAYING3 %{B-} "
+    fi
+}
+
+PlayingState() {
+    if [ -n "`mpc | grep "playing"`" ]; then
+        echo -n "$(Playing)"  
+    else
+        echo -n "%{B#FF"$COLOR3"} Paused %{B-}"
+    fi
+}
+
+Date () {
+    DATE=$(date "+%d/%m/%Y")
+    echo "%{B#FF"$DATECOLOR"} $DATE %{B-}"
+}
+
+# BAR
+
+FONT="-*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*"
+x="2570"
+y="10"
+w="1900"
+h="20"
+PARAMETERS="-f "$FONT" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
+
+while :; do echo "$(PlayingState)%{r}$(Date)"; done | bar $PARAMETERS

@@ -15,15 +15,15 @@ URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 
 !FONTS
-*font: xft:DejaVuSansMono
-*boldfont: xft:DejaVuSansMono:bold
-*italicfont: xft:DejaVuSansMono-Oblique
-*.letterSpace: -2
-!OLD-bitmap
-!*.font:      -*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*
-!*.boldfont:  -*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
-!*.italicfont:-*-terminus-medium-*-*-*-20-*-*-*-*-*-*-*
-!*.bolditalicfont:-*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
+!*font: xft:DejaVuSansMono
+!*boldfont: xft:DejaVuSansMono:bold
+!*italicfont: xft:DejaVuSansMono-Oblique
+!*.letterSpace: -2
+!bitmap
+*.font:      -*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*
+*.boldfont:  -*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
+*.italicfont:-*-terminus-medium-*-*-*-20-*-*-*-*-*-*-*
+*.bolditalicfont:-*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
 
 !XFT FONTS
 Xft.antialias:  1

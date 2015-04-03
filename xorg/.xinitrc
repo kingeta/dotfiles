@@ -14,12 +14,16 @@ xrandr --output DVI-D-0 --auto --primary
 xrandr --output HDMI-0 --auto --right-of DVI-D-0
 
 # Start recursive bar
-COLORSCHEME="$(cat ~/.Xresources | grep include | cut -d '"' -f 2 )"
-FOREGROUNDCOLOR="$(getcolour foreground)"
-BACKGROUNDCOLOR="$(getcolour background)"
-FONT="DejaVuSansMono,DejaVuSansMono:bold"
-bash ~/Scripts/Work/LeftBar | bar -f $FONT -u 2 -p -g 2560x30+0+0 -F \#FF$(echo $FOREGROUNDCOLOR) -B \#FF$(echo $BACKGROUNDCOLOR) &
-bash ~/Scripts/Work/RightBar | bar -f $FONT -u 2 -p -F \#FF$(echo $FOREGROUNDCOLOR) -B \#FF$(echo $BACKGROUNDCOLOR) -g 1920x30+2560+0 &
+#COLORSCHEME="$(cat ~/.Xresources | grep include | cut -d '"' -f 2 )"
+#FOREGROUNDCOLOR="$(getcolour foreground)"
+#BACKGROUNDCOLOR="$(getcolour background)"
+#FONT="DejaVuSansMono,DejaVuSansMono:bold"
+#bash ~/Scripts/Work/LeftBar | bar -f $FONT -u 2 -p -g 2560x30+0+0 -F \#FF$(echo $FOREGROUNDCOLOR) -B \#FF$(echo $BACKGROUNDCOLOR) &
+#bash ~/Scripts/Work/RightBar | bar -f $FONT -u 2 -p -F \#FF$(echo $FOREGROUNDCOLOR) -B \#FF$(echo $BACKGROUNDCOLOR) -g 1920x30+2560+0 &
+
+# Bars
+bash ~/Scripts/Bar/Left &
+bash ~/Scripts/Bar/Right &
 
 # Caps lock = escape
 setxkbmap -option caps:super -option 108:64 -layout gb
@@ -33,8 +37,8 @@ xsetroot -cursor_name left_ptr
 # Start unclutter
 unclutter -root &
 
-# Set the wallpaper
-feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Flat/green.png &
+# Set the wallpaper // now in bspwm config
+#feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Tiling/Monochrome/purplelights.png &
 
 # Load wm and keybind manager
 sxhkd &

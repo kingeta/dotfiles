@@ -5,7 +5,7 @@
 
 # colours
 
-DATECOLOR="$(getcolour 10)"
+DATECOLOR="$(getcolour 3)"
 TEXTCOLOR="$(getcolour 8)"
 
 COLOR1="$(getcolour 14)"
@@ -30,7 +30,7 @@ PlayingState() {
     if [ -n "`mpc | grep "playing"`" ]; then
         echo -n "$(Playing)%{F-}"  
     else
-        echo -n "%{F#FF"$(echo $COLOR1)"}Paused%{F-}"
+        echo -n "%{F#FF"$(echo $COLOR2)"}Paused%{F-}"
     fi
 }
 

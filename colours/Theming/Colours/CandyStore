@@ -1,10 +1,10 @@
 ! TERMINAL COLOURS
 *foreground: #D7D0C7
-*background: #151515
+*background: #151522
 ! darkened fg: #8A857F
 
 ! URXVT COLOURS
-URxvt*borderColor:        #151515
+URxvt*borderColor:        #151522
 URxvt*colorBD:            #ffffff
 URxvt*cursorColor:        #D7D0C7
 URxvt*cursorColor2:       #151515

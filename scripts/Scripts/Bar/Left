@@ -1,0 +1,68 @@
+#! /usr/bin/bash
+#
+# this is my left bar
+# 
+
+# COLOURS
+
+CLOCK="$(getcolour 5)"
+DESKTOP="$(getcolour 2)"
+VOLUME="$(getcolour 1)"
+FG="$(getcolour foreground)"
+BG="$(getcolour background)"
+
+# INFORMATION
+
+Clock() {
+    echo -n "%{B#FF"$CLOCK"} "
+    TIME=$(date "+%H:%M:%S")
+    echo -n "$TIME"
+    echo -n " %{B-}"
+}
+
+Desktop() {
+    echo -n "%{B#FF"$DESKTOP"}"
+    DTOPS="$(bspc query -D | wc -l)"
+    i=1
+    while [ $i -le $DTOPS ]; do
+        if [ -n "$(bspc query -W -d ^$i)" ]; then
+            echo -n " %{+u}"
+        else
+            echo -n " "
+        fi
+        if [ "$(bspc query -D -d)" = "$(bspc query -D -d ^$i)" ]; then
+            echo -n "#%{-u}"
+        else
+            echo -n "-%{-u}"
+        fi
+        
+        let "i = $i + 1" 
+    done
+    echo -n " %{B-}"
+}
+
+Volume () {
+    echo -n "%{B#FF"$VOLUME"} "
+    i=0
+    VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
+    while [ $i -ne 100 ]; do
+        if [ $VOLUME -gt $i ]; then
+            echo -n "*"
+        else
+            echo -n " "
+        fi
+        i=$(( $i + 10))
+    done
+    echo -n " %{B-}"
+}
+
+# BAR
+
+FONT="-*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*"
+x="10"
+y="10"
+w="2540"
+h="20"
+PARAMETERS="-f "$FONT" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
+
+while :; do echo "$(Desktop)%{c}$(Volume)%{r}$(Clock)"; done | bar $PARAMETERS
