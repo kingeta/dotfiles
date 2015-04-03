@@ -36,8 +36,6 @@ alias mupdf='setsid mupdf'
 
 alias feh='setsid feh -Z -e "terminus/14"'
 
-alias mpv='setsid mpv'
-
 alias pacman='sudo pacman'
 
 mutt='mutt -F ~/.config/mutt/muttrc'

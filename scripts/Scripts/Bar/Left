@@ -7,7 +7,7 @@
 
 CLOCK="$(getcolour 5)"
 DESKTOP="$(getcolour 2)"
-VOLUME="$(getcolour 1)"
+DESKTOP2="$(getcolour 10)"
 FG="$(getcolour foreground)"
 BG="$(getcolour background)"
 
@@ -26,32 +26,17 @@ Desktop() {
     i=1
     while [ $i -le $DTOPS ]; do
         if [ -n "$(bspc query -W -d ^$i)" ]; then
-            echo -n " %{+u}"
-        else
             echo -n " "
+        else
+            echo -n " %{F#FF"$DESKTOP2"}"
         fi
         if [ "$(bspc query -D -d)" = "$(bspc query -D -d ^$i)" ]; then
-            echo -n "#%{-u}"
+            echo -n "#%{F-}"
         else
-            echo -n "-%{-u}"
+            echo -n "-%{F-}"
         fi
         
         let "i = $i + 1" 
-    done
-    echo -n " %{B-}"
-}
-
-Volume () {
-    echo -n "%{B#FF"$VOLUME"} "
-    i=0
-    VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
-    while [ $i -ne 100 ]; do
-        if [ $VOLUME -gt $i ]; then
-            echo -n "*"
-        else
-            echo -n " "
-        fi
-        i=$(( $i + 10))
     done
     echo -n " %{B-}"
 }
@@ -65,4 +50,4 @@ w="2540"
 h="20"
 PARAMETERS="-f "$FONT" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
 
-while :; do echo "$(Desktop)%{c}$(Volume)%{r}$(Clock)"; done | bar $PARAMETERS
+while :; do echo "$(Desktop)%{r}$(Clock)"; done | bar $PARAMETERS

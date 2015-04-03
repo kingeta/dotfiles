@@ -14,8 +14,8 @@ bspc config gapless_monocle     true
 
 bspc config normal_border_color  '#'$(getcolour background) 
 bspc config active_border_color  '#'$(getcolour background) 
-bspc config focused_border_color '#'$(getcolour 12)
-bspc config presel_border_color  '#'$(getcolour 4)
+bspc config focused_border_color '#'$(getcolour 10)
+bspc config presel_border_color  '#'$(getcolour 2)
 bspc config urgent_border_color  '#'$(getcolour 1)
 
 bspc monitor DVI-D-0 -d Web Code Work Steam
@@ -34,4 +34,4 @@ bspc rule -a feh floating=on
 bspc rule -a mpv desktop=Media floating=on 
 bspc rule -a mupdf floating=on
 
-feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Flat/darkblue.png
+feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Tiling/Monochrome/purplelights.png

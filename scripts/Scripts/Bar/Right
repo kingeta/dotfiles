@@ -1,15 +1,14 @@
 #! /usr/bin/bash
 #
-# this is my left bar
+# this is my right bar
 # 
 
 # COLOURS
 
-DATECOLOR="$(getcolour 13)"
-
+VOLUME="$(getcolour 1)"
 COLOR1="$(getcolour 4)"
 COLOR2="$(getcolour 6)"
-COLOR3="$(getcolour 2)"
+COLOR3="$(getcolour 12)"
 
 FG="$(getcolour foreground)"
 BG="$(getcolour background)"
@@ -38,6 +37,21 @@ PlayingState() {
     fi
 }
 
+Volume () {
+    echo -n "%{B#FF"$VOLUME"} "
+    i=0
+    VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
+    while [ $i -ne 100 ]; do
+        if [ $VOLUME -gt $i ]; then
+            echo -n "*"
+        else
+            echo -n " "
+        fi
+        i=$(( $i + 10))
+    done
+    echo -n " %{B-}"
+}
+
 Date () {
     DATE=$(date "+%d/%m/%Y")
     echo "%{B#FF"$DATECOLOR"} $DATE %{B-}"
@@ -52,4 +66,4 @@ w="1900"
 h="20"
 PARAMETERS="-f "$FONT" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
 
-while :; do echo "$(PlayingState)%{r}$(Date)"; done | bar $PARAMETERS
+while :; do echo "$(PlayingState)%{r}$(Volume)"; done | bar $PARAMETERS
