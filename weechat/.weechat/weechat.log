@@ -1,16 +1,16 @@
-[2015-04-04 12:36:22] WeeChat 1.1.1 (compiled on Jan 27 2015 11:17:07)
-[2015-04-04 12:36:22] Reading configuration file sec.conf
-[2015-04-04 12:36:22] Reading configuration file weechat.conf
-[2015-04-04 12:36:22] Reading configuration file plugins.conf
-[2015-04-04 12:36:22] Reading configuration file alias.conf
-[2015-04-04 12:36:22] Reading configuration file xfer.conf
-[2015-04-04 12:36:22] Reading configuration file irc.conf
-[2015-04-04 12:36:22] Reading configuration file aspell.conf
-[2015-04-04 12:36:22] Reading configuration file relay.conf
-[2015-04-04 12:36:22] Reading configuration file exec.conf
-[2015-04-04 12:36:22] Reading configuration file script.conf
-[2015-04-04 12:36:22] Reading configuration file buffers.conf
-[2015-04-04 12:36:22] Reading configuration file charset.conf
-[2015-04-04 12:36:22] Reading configuration file logger.conf
-[2015-04-04 12:36:22] Reading configuration file trigger.conf
-[2015-04-04 12:36:25] irc: connecting to server irc.rizon.net/6667...
+[2015-04-04 15:35:22] WeeChat 1.1.1 (compiled on Jan 27 2015 11:17:07)
+[2015-04-04 15:35:22] Reading configuration file sec.conf
+[2015-04-04 15:35:22] Reading configuration file weechat.conf
+[2015-04-04 15:35:22] Reading configuration file plugins.conf
+[2015-04-04 15:35:22] Reading configuration file alias.conf
+[2015-04-04 15:35:22] Reading configuration file xfer.conf
+[2015-04-04 15:35:22] Reading configuration file irc.conf
+[2015-04-04 15:35:22] Reading configuration file aspell.conf
+[2015-04-04 15:35:22] Reading configuration file relay.conf
+[2015-04-04 15:35:22] Reading configuration file exec.conf
+[2015-04-04 15:35:22] Reading configuration file script.conf
+[2015-04-04 15:35:22] Reading configuration file buffers.conf
+[2015-04-04 15:35:22] Reading configuration file charset.conf
+[2015-04-04 15:35:22] Reading configuration file logger.conf
+[2015-04-04 15:35:22] Reading configuration file trigger.conf
+[2015-04-04 15:35:24] irc: connecting to server irc.rizon.net/6667...

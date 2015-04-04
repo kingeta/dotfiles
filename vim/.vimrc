@@ -66,7 +66,7 @@ augroup END
 filetype plugin indent on
 syntax on
 
-colorscheme desert
+colorscheme term
 
 set autoread
 

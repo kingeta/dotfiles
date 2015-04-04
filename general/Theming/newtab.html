@@ -23,7 +23,7 @@ html,body {
 ul, li { list-style-type: none; margin: 0; padding: 0; }
 
 a, a:link, a:visited { color: #D7D0C7; text-decoration: none; }
-a:hover, a:active    { color: #cecfd1; }
+a:hover, a:active    { color: #D7D0C7; }
 
 .center { position: relative; width: 100%; height: 100%; }
     .center .content {
@@ -34,7 +34,7 @@ a:hover, a:active    { color: #cecfd1; }
 
 #q {
     width: 500px;
-    background: #27282B; color: #cecfd1;
+    background: #1B1B2B; color: #D7D0C7;
     border: 0px solid #27282B; border-radius: 0px;
     padding: 8px 8px; font-size: 12pt;
 }
@@ -42,24 +42,26 @@ a:hover, a:active    { color: #cecfd1; }
     #q:hover { border-color: #393A3D; }
 
 #more {
-    background: #27282B; color: #aaabad; border-radius: 0px;
+    background: #1B1B2B; color: #D7D9C7; border-radius: 0px;
     cursor: pointer; display: inline-block;
     font-size: 18pt; line-height: 26px; /* vertical align "+" button */
     width: 24px; height: 24px;
     text-align: center; font-weight: bold;
+    display: none;
 }
-    #help {
-        display: inline-block; width: 320px; cursor: default;
-        font-family: "DejaVu Sans Mono", monospace;
-        background: #27282B; color: #aaabad;
-        padding: 8px; text-align: left; border-radius: 0px;
-        opacity: 0; transition: .2s ease-out;
-    }
+#help {
+    display: inline-block; width: 320px; cursor: default;
+    font-family: "DejaVu Sans Mono", monospace;
+    background: #27282B; color: #aaabad;
+    padding: 8px; text-align: left; border-radius: 0px;
+    opacity: 0; transition: .2s ease-out;
+    display: none;
+}
 
 #menu {
     position: fixed; bottom: -64px; left: 0; z-index: 11;
     width: 100%; height: 128px;
-    background: transparent; color: #aaabad; cursor: default;
+    background: transparent; color: #D7D0C7; cursor: default;
     transition: .2s ease-out;
 }
     #menu:hover            { bottom: 0; }
@@ -71,7 +73,7 @@ a:hover, a:active    { color: #cecfd1; }
     #menu label            { padding: 0; display: inline-block; font-weight: bold; width: 200px; } /* menu title width */
 
     #menu ul li            { float: left; border-radius: 0px; height: 64px; }
-    #menu ul li:hover      { background: #27282B; color: #cecfd1; }
+    #menu ul li:hover      { background: #1B1B2B; color: #D7D0C7; }
     #menu ul li:hover > ul { visibility: visible; bottom: 100%; opacity: 1; transition: .2s ease-out; }
     #menu ul li a          { display: block; white-space: nowrap; padding: 0 10px; }
 
@@ -83,7 +85,7 @@ a:hover, a:active    { color: #cecfd1; }
     }
 
     #menu ul ul li         { width: 100%; height: 32px; text-align: left; } /* menu links align */
-    #menu ul ul li:hover   { background: #27282B; }
+    #menu ul ul li:hover   { background: #1B1B2B; }
 
     #menu img {
         width: 16px; height: 16px;

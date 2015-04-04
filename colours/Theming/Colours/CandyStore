@@ -3,6 +3,7 @@
 *foreground: #D7D0C7
 *background: #151522
 ! darkened fg: #8A857F
+! lightened bg: #1B1B2B
 
 ! URXVT COLOURS
 URxvt*borderColor:        #151522
@@ -13,8 +14,8 @@ Urxvt*colorUL:            #A0A0A0
 URxvt.colorIT:            #686868
 
 ! black
-*.color0:       #1D1D1D
-*.color8:       #3A3A3A
+*.color0:       #2D2D41
+*.color8:       #4A4A60
 
 ! red
 *.color1:       #842323
@@ -25,8 +26,8 @@ URxvt.colorIT:            #686868
 *.color10:      #79b77E
 
 ! yellow
-*.color3:       #D1C114
-*.color11:      #DDCB3E
+*.color3:       #BAA520
+*.color11:      #EBD028
 
 ! cyan
 *.color6:       #5671C4
