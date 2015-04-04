@@ -14,8 +14,8 @@ bspc config gapless_monocle     true
 
 bspc config normal_border_color  '#'$(getcolour background) 
 bspc config active_border_color  '#'$(getcolour background) 
-bspc config focused_border_color '#'$(getcolour 10)
-bspc config presel_border_color  '#'$(getcolour 2)
+bspc config focused_border_color '#'$(getcolour 5) #10
+bspc config presel_border_color  '#'$(getcolour 13) #2
 bspc config urgent_border_color  '#'$(getcolour 1)
 
 bspc monitor DVI-D-0 -d Web Code Work Steam
