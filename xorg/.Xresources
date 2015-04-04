@@ -5,25 +5,20 @@ URxvt.iso14755: false
 URxvt.cursorBlink: 0
 URxvt.cursorUnderline: 0
 
-!URxvt.perl-ext: default,url-select
-!URxvt.keysym.M-u: perl:url-select:select_next
-!URxvt.url-select.launcher: /usr/bin/xdg-open
-!URxvt.url-select.underline: false
-
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 
 !FONTS
-!*font: xft:DejaVuSansMono
-!*boldfont: xft:DejaVuSansMono:bold
-!*italicfont: xft:DejaVuSansMono-Oblique
-!*.letterSpace: -2
+*font: xft:DejaVuSansMono
+*boldfont: xft:DejaVuSansMono:bold
+*italicfont: xft:DejaVuSansMono-Oblique
+*.letterSpace: -2
 !bitmap
-*.font:      -*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*
-*.boldfont:  -*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
-*.italicfont:-*-terminus-medium-*-*-*-20-*-*-*-*-*-*-*
-*.bolditalicfont:-*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
+!*.font:      -*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*
+!*.boldfont:  -*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
+!*.italicfont:-*-terminus-medium-*-*-*-20-*-*-*-*-*-*-*
+!*.bolditalicfont:-*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
 
 !XFT FONTS
 Xft.antialias:  1

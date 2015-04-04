@@ -15,26 +15,19 @@ BG="$(getcolour background)"
 
 # INFORMATION
 
-Playing () {
-    PLAYING1=$(mpc -f %artist% | sed -n '1p')
-    PLAYING2=$(mpc -f %album% | sed -n '1p')
-    PLAYING3=$(mpc -f %title% | sed -n '1p')
-    FILENAME=$(mpc -f %file% | sed -n '1p' | cut -d '.' -f 1)
-    if [ -z "$(mpc -f %artist% | sed -n '1p')" ]; then
-        echo "%{B#FF"$COLOR2"}$FILENAME%{B-}"
-    else
-        echo -n "%{B#FF"$COLOR1"} $PLAYING1 %{B-} "
-        echo -n "%{B#FF"$COLOR2"} $PLAYING2 %{B-} "
-        echo -n "%{B#FF"$COLOR3"} $PLAYING3 %{B-} "
-    fi
-}
-
 PlayingState() {
     if [ -n "`mpc | grep "playing"`" ]; then
-        echo -n "$(Playing)"  
-    else
-        echo -n "%{B#FF"$COLOR3"} Paused %{B-}"
-    fi
+        if [ -z "$(mpc -f %artist% | sed -n '1p')" ]; then
+            echo "%{B#FF"$COLOR2"} $(mpc -f %file% | sed -n '1p' | cut -d '.' -f 1) %{B-}"
+        else
+            echo -n "%{B#FF"$COLOR1"} $(mpc -f %artist% | sed -n '1p') %{B-} "
+            echo -n "%{B#FF"$COLOR2"} $(mpc -f %album% | sed -n '1p') %{B-} "
+            echo -n "%{B#FF"$COLOR3"} $(mpc -f %title% | sed -n '1p') %{B-} "
+        fi
+        # if nothing is playing, display 'paused'
+        else
+            echo -n "%{B#FF"$COLOR3"} Paused %{B-}"
+        fi
 }
 
 Volume () {

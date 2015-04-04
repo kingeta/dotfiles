@@ -30,5 +30,5 @@ ${bluefg}        ▄▄▄▄▄
  ▄▄▄▄█▌              ▀█▄▄▄▄▀▀▄
 ▌     ▐                ▀▀▄▄▄▀
  ▀▀▄▄▀
-This script is unoriginal${reset}
+${reset}
 EOF

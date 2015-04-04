@@ -34,4 +34,4 @@ bspc rule -a feh floating=on
 bspc rule -a mpv desktop=Media floating=on 
 bspc rule -a mupdf floating=on
 
-feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Tiling/Monochrome/purplelights.png
+feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Flat/turquoise.png

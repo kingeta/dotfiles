@@ -126,7 +126,7 @@ shift + alt + Return
 	urxvt
 
 shift + alt + space
-    dmenu_extended_run
+    dmenu_run -i -q -l 0 -x 0 -y 720 -h 12 -w 2560 -fn 'DejaVuSansMono' -nf '#979087' -nb '#151522' -sf '#D7D0C7' -sb '#151522'
 
 shift + alt + s
 	steam
