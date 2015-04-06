@@ -27,16 +27,16 @@ Desktop() {
     i=1
     while [ $i -le $DTOPS ]; do
         # check to see if any windows are open on that desktop
-        if [ -n "$(bspc query -W -d ^$i)" ]; then
-            echo -n " "
-        else
-            echo -n " %{F#FF"$BG"}"
-        fi
+        #if [ -n "$(bspc query -W -d ^$i)" ]; then
+        #    echo -n " "
+        #else
+        #    echo -n " %{F#FF"$BG"}"
+        #fi
         # check to see if it is the focused desktop
         if [ "$(bspc query -D -d)" = "$(bspc query -D -d ^$i)" ]; then
-            echo -n "#%{F-}"
+            echo -n " #%{F-}"
         else
-            echo -n "-%{F-}"
+            echo -n " -%{F-}"
         fi
         
         let "i = $i + 1" 

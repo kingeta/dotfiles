@@ -18,11 +18,11 @@ URxvt.colorIT:            #686868
 *.color8:       #4A4A60
 
 ! red
-*.color1:       #842323
+*.color1:       #962828
 *.color9:       #AB2B37
 
 ! green
-*.color2:       #417150
+*.color2:       #3F754E
 *.color10:      #79b77E
 
 ! yellow
@@ -38,7 +38,7 @@ URxvt.colorIT:            #686868
 *.color13:      #C998C9
 
 ! blue
-*.color4:       #2A519C
+*.color4:       #2F5BB0
 *.color12:      #4361BB
 
 ! white
