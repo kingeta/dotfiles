@@ -1,0 +1,12 @@
+#! /bin/bash
+#
+# this script launches dmenu or something
+
+width="$(bspc query -T -m $(bspc query -M -m) | grep -oE "[0-9]{2,6}" | tail -n 1 )"
+fg="$(getcolour foreground)"
+bg="$(getcolour background)"
+red="$(getcolour 1)"
+
+dmenu_run -i -q -l 0 -x 10 -y 10 -h 20 -w 2540 -fn '-*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*' -nf '#979087' -nb '#'$bg -sf '#'$fg -sb '#'$red -dim 0.25
+
+exit 0
