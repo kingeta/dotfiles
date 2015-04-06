@@ -9,7 +9,7 @@ hi FoldColumn                ctermbg=none
 hi NonText      ctermfg=8
 hi SpecialKey   ctermfg=0
 hi Statement    ctermfg=3
-hi Normal       ctermfg=7
+hi Normal       ctermfg=none
 
 " Spell
 hi SpellBad     ctermfg=9    ctermbg=none
@@ -21,8 +21,8 @@ hi MatchParen   ctermfg=12   ctermbg=none cterm=reverse
 
 " Lines
 hi CursorLine                             cterm=none
-hi CursorLineNr ctermfg=7
-hi LineNr       ctermfg=8
+hi CursorLineNr ctermfg=8
+hi LineNr       ctermfg=0
 
 " Splits
 hi SignColumn                ctermbg=none

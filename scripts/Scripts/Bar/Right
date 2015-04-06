@@ -6,9 +6,9 @@
 # COLOURS
 
 VOLUME="$(getcolour 1)"
-COLOR1="$(getcolour 4)"
-COLOR2="$(getcolour 6)"
-COLOR3="$(getcolour 12)"
+COLOR1="$(getcolour 6)"
+COLOR2="$(getcolour 5)"
+COLOR3="$(getcolour 4)"
 
 FG="$(getcolour foreground)"
 BG="$(getcolour background)"

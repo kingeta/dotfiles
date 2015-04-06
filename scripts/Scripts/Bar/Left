@@ -5,9 +5,8 @@
 
 # COLOURS
 
-CLOCK="$(getcolour 5)"
+CLOCK="$(getcolour 12)"
 DESKTOP="$(getcolour 2)"
-GITHUB="$(getcolour 8)"
 FG="$(getcolour foreground)"
 BG="$(getcolour background)"
 

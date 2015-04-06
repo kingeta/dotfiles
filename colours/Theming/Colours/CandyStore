@@ -18,15 +18,15 @@ URxvt.colorIT:            #686868
 *.color8:       #4A4A60
 
 ! red
-*.color1:       #962828
-*.color9:       #AB2B37
+*.color1:       #A62828
+*.color9:       #B72B37
 
 ! green
 *.color2:       #3F754E
 *.color10:      #79b77E
 
 ! yellow
-*.color3:       #BAA520
+*.color3:       #CAB520
 *.color11:      #EBD028
 
 ! cyan
@@ -38,10 +38,9 @@ URxvt.colorIT:            #686868
 *.color13:      #C998C9
 
 ! blue
-*.color4:       #2F5BB0
-*.color12:      #4361BB
+*.color4:       #4545E6
+*.color12:      #2336A3
 
 ! white
-*.color7:       #BDBDBD
-*.color15:      #D2D2D2
-
+*.color7:       #9D9D9D
+*.color15:      #ABABAB
