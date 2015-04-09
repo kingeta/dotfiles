@@ -1,7 +1,0 @@
-#! /usr/bin/bash
-
-while true; do
-    bspc config focused_border_color "#"$(date +%H%M%S)
-done
-
-exit 0
