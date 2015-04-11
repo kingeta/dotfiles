@@ -10,10 +10,20 @@ URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 
 !FONTS
+
+!mensch (apple)
+!*font: xft:Mensch:size=14
+!*boldfont: xft:Mensch:bold:size=14
+!*italicfont: xft:Mensch:italic:size=14
+!*bolditalicfont: xft:Mensch:bold:italic:size=14
+
+!dejavu
 *font: xft:DejaVuSansMono
 *boldfont: xft:DejaVuSansMono:bold
 *italicfont: xft:DejaVuSansMono-Oblique
+*bolditalicfont: xft:DejaVuSansMono-Oblique:bold
 *.letterSpace: -2
+
 !bitmap
 !*.font:      -*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*
 !*.boldfont:  -*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*

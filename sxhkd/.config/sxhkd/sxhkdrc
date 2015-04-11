@@ -96,7 +96,6 @@ super + {_,shift + } + Tab
    bspc window -f {next,prev}
 
 #alt + tab through monitors
-
 alt + {_,shift + } + Tab
     bspc monitor -f {next,prev}
 

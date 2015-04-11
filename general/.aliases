@@ -6,6 +6,7 @@ alias cl='clear'
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
+alias lla='ls -l -A'
 alias la='ls -A'
 alias l='ls -CF'
 

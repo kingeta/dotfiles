@@ -1,16 +1,34 @@
-[2015-04-09 09:34:57] WeeChat 1.1.1 (compiled on Jan 27 2015 11:17:07)
-[2015-04-09 09:34:57] Reading configuration file sec.conf
-[2015-04-09 09:34:57] Reading configuration file weechat.conf
-[2015-04-09 09:34:57] Reading configuration file plugins.conf
-[2015-04-09 09:34:57] Reading configuration file alias.conf
-[2015-04-09 09:34:57] Reading configuration file xfer.conf
-[2015-04-09 09:34:57] Reading configuration file irc.conf
-[2015-04-09 09:34:57] Reading configuration file aspell.conf
-[2015-04-09 09:34:57] Reading configuration file relay.conf
-[2015-04-09 09:34:57] Reading configuration file exec.conf
-[2015-04-09 09:34:57] Reading configuration file script.conf
-[2015-04-09 09:34:57] Reading configuration file buffers.conf
-[2015-04-09 09:34:57] Reading configuration file charset.conf
-[2015-04-09 09:34:57] Reading configuration file logger.conf
-[2015-04-09 09:34:57] Reading configuration file trigger.conf
-[2015-04-09 09:35:07] irc: connecting to server irc.rizon.net/6667...
+[2015-04-11 09:30:32] WeeChat 1.1.1 (compiled on Jan 27 2015 11:17:07)
+[2015-04-11 09:30:32] Reading configuration file sec.conf
+[2015-04-11 09:30:32] Reading configuration file weechat.conf
+[2015-04-11 09:30:32] Reading configuration file plugins.conf
+[2015-04-11 09:30:32] Reading configuration file alias.conf
+[2015-04-11 09:30:32] Reading configuration file xfer.conf
+[2015-04-11 09:30:32] Reading configuration file irc.conf
+[2015-04-11 09:30:32] Reading configuration file aspell.conf
+[2015-04-11 09:30:32] Reading configuration file relay.conf
+[2015-04-11 09:30:32] Reading configuration file exec.conf
+[2015-04-11 09:30:32] Reading configuration file script.conf
+[2015-04-11 09:30:32] Reading configuration file buffers.conf
+[2015-04-11 09:30:32] Reading configuration file charset.conf
+[2015-04-11 09:30:32] Reading configuration file logger.conf
+[2015-04-11 09:30:32] Reading configuration file trigger.conf
+[2015-04-11 09:30:35] irc: connecting to server irc.rizon.net/6667...
+[2015-04-11 13:51:44] Writing configuration file colorize_nicks.conf (default options)
+[2015-04-11 13:51:44] Reading configuration file colorize_nicks.conf
+[2015-04-11 13:52:05] Reloading configuration file sec.conf
+[2015-04-11 13:52:05] Reloading configuration file weechat.conf
+[2015-04-11 13:52:05] Reloading configuration file plugins.conf
+[2015-04-11 13:52:05] Reloading configuration file alias.conf
+[2015-04-11 13:52:05] Reloading configuration file xfer.conf
+[2015-04-11 13:52:05] Reloading configuration file irc.conf
+[2015-04-11 13:52:05] Reloading configuration file aspell.conf
+[2015-04-11 13:52:05] Reloading configuration file relay.conf
+[2015-04-11 13:52:05] Reloading configuration file exec.conf
+[2015-04-11 13:52:05] Reloading configuration file script.conf
+[2015-04-11 13:52:05] Reloading configuration file buffers.conf
+[2015-04-11 13:52:05] Reloading configuration file charset.conf
+[2015-04-11 13:52:05] Reloading configuration file logger.conf
+[2015-04-11 13:52:05] Reloading configuration file trigger.conf
+[2015-04-11 13:53:21] Writing configuration file colorize_nicks.conf
+[2015-04-11 13:53:24] Reading configuration file colorize_nicks.conf

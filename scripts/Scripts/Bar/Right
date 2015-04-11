@@ -9,9 +9,9 @@ VOLUME="$(getcolour 1)"
 COLOR1="$(getcolour 6)"
 COLOR2="$(getcolour 5)"
 COLOR3="$(getcolour 4)"
-
-FG="$(getcolour foreground)"
-BG="$(getcolour background)"
+PAUSED="$(getcolour 8)"
+BG="$(getcolour bg)"
+FG="$(getcolour fg)"
 
 # INFORMATION
 
@@ -26,7 +26,7 @@ PlayingState() {
         fi
         # if nothing is playing, display 'paused'
         else
-            echo -n "%{B#FF"$COLOR3"} Paused %{B-}"
+            echo -n "%{B#FF"$PAUSED"} Paused %{B-}"
         fi
 }
 

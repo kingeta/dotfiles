@@ -5,7 +5,6 @@ SHELL=/usr/bin/zsh
 cat /etc/issue
 
 # get mpd working
-sudo killall mpd
 mpd 
 
 # scrobble... maybe

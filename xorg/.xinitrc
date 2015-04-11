@@ -31,5 +31,4 @@ unclutter -root &
 
 # Load wm and keybind manager
 sxhkd &
-export BSPWM_GAPS=true
 exec bspwm
