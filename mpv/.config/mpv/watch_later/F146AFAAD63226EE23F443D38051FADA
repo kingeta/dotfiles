@@ -1,0 +1,6 @@
+start=2570.988000
+volume-restore-data=pulse:35.000000:35.000000:0:200.000000
+fullscreen=no
+vf=gradfun=strength=%3%1.6:radius=24
+aid=2
+sid=no
