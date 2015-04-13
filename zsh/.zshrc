@@ -2,13 +2,14 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
 
 # Emulate vim
 bindkey -v
 
 # Stuff
 zstyle :compinstall filename '/home/herby/.zshrc'
-setopt HIST_IGNORE_DUPS
 [[ -n "${key[Home]}" ]] && bindkey "${key[Home]}" beginning-of-line
 [[ -n "${key[End]}" ]] && bindkey "${key[End]}" end-of-line
 
@@ -16,12 +17,17 @@ setopt HIST_IGNORE_DUPS
 autoload -Uz compinit promptinit
 compinit
 promptinit
-setopt CORRECT
+setopt correct
 
 # Prompt
 autoload -U colors && colors
 RPROMPT="%{$fg_bold[white]%}%~%{$reset_color%}"
 PROMPT="%{$fg_bold[yellow]%}—— %{$reset_color%}"
+
+# Completion
+setopt autocd
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
 # Man
 man() {

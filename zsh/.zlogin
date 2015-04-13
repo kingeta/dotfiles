@@ -2,7 +2,7 @@
 SHELL=/usr/bin/zsh
 
 # ascii art
-cat /etc/issue
+#cat /etc/issue
 
 # get mpd working
 mpd 
