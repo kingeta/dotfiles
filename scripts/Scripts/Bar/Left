@@ -9,10 +9,12 @@ CLOCK="$(getcolour 12)"
 DESKTOP="$(getcolour 2)"
 BG="$(getcolour bg)"
 FG="$(getcolour fg)"
+DFG=$(getcolour darkened)
 
 # INFORMATION
 
 Clock() {
+    echo -n "%{F#FF$DFG} TIME: %{F#FF$FG}"
     echo -n "%{B#FF"$CLOCK"} "
     TIME=$(date "+%H:%M:%S")
     echo -n "$TIME"
@@ -20,17 +22,20 @@ Clock() {
 }
 
 Desktop() {
+    echo -n "%{F#FF$DFG} DESKTOP: %{F#FF$FG}"
     echo -n "%{B#FF"$DESKTOP"}"
     DTOPS="$(bspc query -D | wc -l)"
     i=1
     while [ $i -le $DTOPS ]; do
         # check to see if it is the focused desktop
         if [ "$(bspc query -D -d)" = "$(bspc query -D -d ^$i)" ]; then
-            echo -n " #%{F-}"
+            echo -n " *"
+        elif [ -n "$(bspc query -W -d ^$i)" ]; then
+            echo -n " +"
         else
-            echo -n " -%{F-}"
+            echo -n " -"
         fi
-        
+        # actually work
         let "i = $i + 1" 
     done
     echo -n " %{B-}"
@@ -39,10 +44,10 @@ Desktop() {
 # BAR
 
 FONT="-*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*"
-x="10"
-y="10"
-w="2540"
-h="20"
+x="0"
+y="0"
+w="2560"
+h="30"
 PARAMETERS="-f "$FONT" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
 
 while :; do echo "$(Desktop)%{r}$(Clock)"; done | bar $PARAMETERS

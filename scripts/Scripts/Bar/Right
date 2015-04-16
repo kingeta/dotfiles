@@ -12,25 +12,31 @@ COLOR3="$(getcolour 4)"
 PAUSED="$(getcolour 8)"
 BG="$(getcolour bg)"
 FG="$(getcolour fg)"
+DFG=$(getcolour darkened)
 
 # INFORMATION
 
 PlayingState() {
-    if [ -n "`mpc | grep "playing"`" ]; then
-        if [ -z "$(mpc -f %artist% | sed -n '1p')" ]; then
-            echo "%{B#FF"$COLOR2"} $(mpc -f %file% | sed -n '1p' | cut -d '.' -f 1) %{B-}"
-        else
-            echo -n "%{B#FF"$COLOR1"} $(mpc -f %artist% | sed -n '1p') %{B-} "
-            echo -n "%{B#FF"$COLOR2"} $(mpc -f %album% | sed -n '1p') %{B-} "
-            echo -n "%{B#FF"$COLOR3"} $(mpc -f %title% | sed -n '1p') %{B-} "
-        fi
-        # if nothing is playing, display 'paused'
-        else
-            echo -n "%{B#FF"$PAUSED"} Paused %{B-}"
-        fi
+    echo -n "%{F#FF$DFG} "
+    # show if it is playing or paused
+    if [ -n "$(mpc | grep playing)" ]; then
+        echo -n "PLAYING:"
+    else
+        echo -n "PAUSED:"
+    fi
+    echo -n " %{F#FF$FG}"
+    # show what is playing
+    if [ -z "$(mpc -f %artist% | sed -n '1p')" ]; then
+        echo "%{B#FF"$COLOR2"} $(mpc -f %file% | sed -n '1p' | cut -d '.' -f 1) %{B-}"
+    else
+        echo -n "%{B#FF"$COLOR1"} $(mpc -f %artist% | sed -n '1p') %{B-} "
+        echo -n "%{B#FF"$COLOR2"} $(mpc -f %album% | sed -n '1p') %{B-} "
+        echo -n "%{B#FF"$COLOR3"} $(mpc -f %title% | sed -n '1p') %{B-} "
+    fi
 }
 
 Volume () {
+    echo -n "%{F#FF$DFG} VOLUME: %{F#FF$FG}"
     echo -n "%{B#FF"$VOLUME"} "
     i=0
     VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
@@ -53,10 +59,10 @@ Date () {
 # BAR
 
 FONT="-*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*"
-x="2570"
-y="10"
-w="1900"
-h="20"
+x="2560"
+y="0"
+w="1920"
+h="30"
 PARAMETERS="-f "$FONT" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
 
 while :; do echo "$(PlayingState)%{r}$(Volume)"; done | bar $PARAMETERS

@@ -1,0 +1,20 @@
+#! /usr/bin/bash
+#
+# this complex script watches twitch streams.
+#
+
+if [ -z $1 ]; then
+    echo "Please choose a stream"
+    exit 0
+fi
+
+
+if [ -z $2 ]; then
+    quality="source"
+else
+    quality="$2"
+fi
+
+
+
+livestreamer -p "mpv --no-resume-playback" twitch.tv/$1 $quality && exit 0

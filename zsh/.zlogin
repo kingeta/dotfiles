@@ -5,6 +5,7 @@ SHELL=/usr/bin/zsh
 #cat /etc/issue
 
 # get mpd working
+rm /tmp/mpd.fifo
 mpd 
 
 # scrobble... maybe

@@ -1,4 +1,4 @@
 #Path and staff
 typeset -U path
-path=(~/bin $path)
+path=(~/Scripts/Bin $path)
 export EDITOR="vim"

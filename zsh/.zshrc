@@ -26,7 +26,7 @@ PROMPT="%{$fg_bold[yellow]%}—— %{$reset_color%}"
 
 # Completion
 setopt autocd
-zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
+zstyle ':completion:*:descriptions' format '%B%d%b'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
 # Man

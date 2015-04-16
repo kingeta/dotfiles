@@ -137,10 +137,10 @@ shift + alt + f
     firefox
 
 alt + {equal,minus} 
-	amixer set Master {1%+,1%-}
+	amixer set Master {2%+,2%-}
 
 shift + alt + {equal,minus} 
-	amixer set Master {5%+,5%-}
+	amixer set Master {10%+,10%-}
 
 shift + alt + w
     urxvt -e "weechat"

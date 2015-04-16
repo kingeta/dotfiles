@@ -30,7 +30,7 @@ xsetroot -cursor_name left_ptr
 unclutter -root &
 
 # Get the time right
-ntpd -qg
+ntpd -qg &
 
 # Load wm and keybind manager
 sxhkd &

@@ -40,4 +40,4 @@ Xft.lcdfilter:  lcddefault
 Xft.rgba:       rgb
 
 !Source colours if I need to
-#include "../../Theming/Colours/Visible"
+#include "../../Theming/Colours/Touchy"

@@ -8,7 +8,7 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lla='ls -l -A'
 alias la='ls -A'
-alias l='ls -CF'
+alias l='ls'
 
 editlatex() {
     if [ -z $1 ]; then

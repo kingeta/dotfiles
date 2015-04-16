@@ -1,17 +1,17 @@
-[2015-04-13 14:51:20] WeeChat 1.1.1 (compiled on Jan 27 2015 11:17:07)
-[2015-04-13 14:51:20] Reading configuration file sec.conf
-[2015-04-13 14:51:20] Reading configuration file weechat.conf
-[2015-04-13 14:51:20] Reading configuration file plugins.conf
-[2015-04-13 14:51:20] Reading configuration file alias.conf
-[2015-04-13 14:51:20] Reading configuration file xfer.conf
-[2015-04-13 14:51:20] Reading configuration file irc.conf
-[2015-04-13 14:51:20] Reading configuration file aspell.conf
-[2015-04-13 14:51:20] Reading configuration file relay.conf
-[2015-04-13 14:51:20] Reading configuration file exec.conf
-[2015-04-13 14:51:20] Reading configuration file script.conf
-[2015-04-13 14:51:20] Reading configuration file colorize_nicks.conf
-[2015-04-13 14:51:20] Reading configuration file buffers.conf
-[2015-04-13 14:51:20] Reading configuration file charset.conf
-[2015-04-13 14:51:20] Reading configuration file logger.conf
-[2015-04-13 14:51:20] Reading configuration file trigger.conf
-[2015-04-13 14:51:24] irc: connecting to server irc.rizon.net/6667...
+[2015-04-16 11:59:08] WeeChat 1.1.1 (compiled on Jan 27 2015 11:17:07)
+[2015-04-16 11:59:08] Reading configuration file sec.conf
+[2015-04-16 11:59:08] Reading configuration file weechat.conf
+[2015-04-16 11:59:08] Reading configuration file plugins.conf
+[2015-04-16 11:59:08] Reading configuration file alias.conf
+[2015-04-16 11:59:08] Reading configuration file xfer.conf
+[2015-04-16 11:59:08] Reading configuration file irc.conf
+[2015-04-16 11:59:08] Reading configuration file aspell.conf
+[2015-04-16 11:59:08] Reading configuration file relay.conf
+[2015-04-16 11:59:08] Reading configuration file exec.conf
+[2015-04-16 11:59:08] Reading configuration file script.conf
+[2015-04-16 11:59:08] Reading configuration file colorize_nicks.conf
+[2015-04-16 11:59:08] Reading configuration file buffers.conf
+[2015-04-16 11:59:08] Reading configuration file charset.conf
+[2015-04-16 11:59:08] Reading configuration file logger.conf
+[2015-04-16 11:59:08] Reading configuration file trigger.conf
+[2015-04-16 11:59:14] irc: connecting to server irc.rizon.net/6667...
