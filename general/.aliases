@@ -83,8 +83,6 @@ alias configmpvinput='$editor ~/.config/mpv/input.conf'
 
 alias ..='cd ..'
 
-alias ~='cd ~'
-
 alias csgo='cd ~/.steam/steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/'
 
 alias syntax='cd /usr/share/doc/zsh-syntax-highlighting'

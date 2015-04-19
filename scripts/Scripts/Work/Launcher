@@ -6,8 +6,8 @@ width="$(bspc query -T -m $(bspc query -M -m) | grep -oE "[0-9]{2,6}" | tail -n 
 fg="$(getcolour foreground)"
 bg="$(getcolour background)"
 dark=$(getcolour darkened)
-red="$(getcolour 1)"
+hl="$(getcolour 4)"
 
-dmenu_run -i -q -l 0 -x 0 -y 0 -h 30 -fn '-*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*' -nf '#'$dark -nb '#'$bg -sf '#'$fg -sb '#'$red -dim 0.25
+dmenu_run -i -q -l 0 -x 0 -y 0 -h 30 -fn '-*-gohufont-medium-r-*-*-14-*-*-*-*-*-*-*' -nf '#'$dark -nb '#'$bg -sf '#'$fg -sb '#'$hl -dim 0.25
 
 exit 0

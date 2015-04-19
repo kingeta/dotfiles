@@ -25,10 +25,10 @@ URxvt.matcher.button: 1
 *.letterSpace: -2
 
 !bitmap
-!*.font:      -*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*
-!*.boldfont:  -*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
-!*.italicfont:-*-terminus-medium-*-*-*-20-*-*-*-*-*-*-*
-!*.bolditalicfont:-*-terminus-bold-*-*-*-20-*-*-*-*-*-*-*
+!*.font:      -*-gohufont-medium-r-*-*-20-*-*-*-*-*-*-*
+!*.boldfont:  -*-gohufont-bold-*-*-*-20-*-*-*-*-*-*-*
+!*.italicfont:-*-gohufont-medium-*-*-*-20-*-*-*-*-*-*-*
+!*.bolditalicfont:-*-gohufont-bold-*-*-*-20-*-*-*-*-*-*-*
 
 !XFT FONTS
 Xft.antialias:  1

@@ -43,7 +43,7 @@ Desktop() {
 
 # BAR
 
-FONT="-*-terminus-medium-r-*-*-14-*-*-*-*-*-*-*"
+FONT="-*-gohufont-medium-r-*-*-14-*-*-*-*-*-*-*"
 x="0"
 y="0"
 w="2560"

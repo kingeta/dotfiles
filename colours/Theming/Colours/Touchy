@@ -14,8 +14,8 @@ Urxvt*colorUL:            #A0A0A0
 URxvt.colorIT:            #686868
 
 ! black
-*.color0:       #202424
-*.color8:       #2e2e2e
+*.color0:       #3A3A3D
+*.color8:       #3C3C3E
 
 ! red
 *.color1:       #ad967f

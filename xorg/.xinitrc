@@ -29,9 +29,6 @@ xsetroot -cursor_name left_ptr
 # Start unclutter
 unclutter -root &
 
-# Get the time right
-ntpd -qg &
-
 # Load wm and keybind manager
 sxhkd &
 exec bspwm
