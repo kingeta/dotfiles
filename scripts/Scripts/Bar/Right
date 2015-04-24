@@ -24,7 +24,7 @@ PlayingState() {
     else
         echo -n "[PAUSED]:"
     fi
-    echo -n " %{F#FF$FG}"
+    echo -n " %{F-}"
     # show what is playing
     if [ -z "$(mpc current)" ]; then
         echo -n "%{B#FF$COLOR2} Playlist Empty %{B-}"
@@ -40,7 +40,7 @@ PlayingState() {
 }
 
 Volume () {
-    echo -n "%{F#FF$DFG} VOLUME: %{F#FF$FG}"
+    echo -n "%{F#FF$DFG} VOLUME: %{F-}"
     echo -n "%{B#FF$VOLUME} "
     i=0
     VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
@@ -53,11 +53,6 @@ Volume () {
         i=$(( $i + 10))
     done
     echo -n " %{B-}"
-}
-
-Date () {
-    DATE=$(date "+%d/%m/%Y")
-    echo "%{B#FF"$DATECOLOR"} $DATE %{B-}"
 }
 
 # BAR

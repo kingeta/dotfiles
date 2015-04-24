@@ -1,8 +1,8 @@
 ! vim: set filetype=xdefaults :
 ! TERMINAL COLOURS
 *foreground: #D7D0C7
-*background: #151522
 ! darkened fg: #8A857F
+*background: #151522
 ! lightened bg: #1B1B2B
 
 ! URXVT COLOURS
@@ -15,32 +15,32 @@ URxvt.colorIT:            #686868
 
 ! black
 *.color0:       #2D2D41
-*.color8:       #4A4A60
+*.color8:       #393959
 
 ! red
-*.color1:       #A62828
-*.color9:       #B72B37
+*.color1:       #A63121
+*.color9:       #C2311D
 
 ! green
-*.color2:       #3F754E
-*.color10:      #79b77E
+*.color2:       #3B7D4E
+*.color10:      #40995A
 
 ! yellow
-*.color3:       #CAB520
-*.color11:      #EBD028
+*.color3:       #A16A22
+*.color11:      #BA761E
 
 ! cyan
-*.color6:       #5671C4
-*.color14:      #67A0E7
+*.color6:       #487891
+*.color14:      #4D8BAB
 
 ! magenta
-*.color5:       #936693
-*.color13:      #C998C9
+*.color5:       #995F93
+*.color13:      #A863A1
 
 ! blue
-*.color4:       #4545E6
-*.color12:      #2336A3
+*.color4:       #4C5FA1
+*.color12:      #4E66BA
 
 ! white
 *.color7:       #9D9D9D
-*.color15:      #ABABAB
+*.color15:      #AEAFB8

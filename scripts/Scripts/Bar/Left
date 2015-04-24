@@ -14,7 +14,7 @@ DFG=$(getcolour darkened)
 # INFORMATION
 
 Clock() {
-    echo -n "%{F#FF$DFG} TIME: %{F#FF$FG}"
+    echo -n "%{F#FF$DFG} TIME: %{F-}"
     echo -n "%{B#FF"$CLOCK"} "
     TIME=$(date "+%H:%M:%S")
     echo -n "$TIME"
@@ -22,7 +22,7 @@ Clock() {
 }
 
 Desktop() {
-    echo -n "%{F#FF$DFG} DESKTOP: %{F#FF$FG}"
+    echo -n "%{F#FF$DFG} DESKTOP: %{F-}"
     echo -n "%{B#FF"$DESKTOP"}"
     DTOPS="$(bspc query -D | wc -l)"
     i=1
