@@ -98,4 +98,6 @@ alias -s torrent=rtorrent
 
 # Fun
 
+alias radio='mpv --no-resume-playback http://radio.2f30.org:8000/live.ogg'
+
 alias nyan='telnet nyancat.dakko.us'

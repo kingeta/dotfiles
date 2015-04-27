@@ -17,18 +17,17 @@ xrandr --output HDMI-0 --auto --right-of DVI-D-0
 bash ~/Scripts/Bar/Left &
 bash ~/Scripts/Bar/Right &
 
-# Caps lock = escape
+# Keyboar
 setxkbmap -option caps:super -option 108:64 -layout gb
 
 # Start compton, with no -C now
 compton -zcf -r 5 -l -7 -t -7 -D 5 -i 1 -o 0.5 -e 1 &
 
-# Set the cursor
+# Cursor
 xsetroot -cursor_name left_ptr
-
-# Start unclutter
 unclutter -root &
 
 # Load wm and keybind manager
+hsetroot -solid '#050515'
 sxhkd &
 exec bspwm

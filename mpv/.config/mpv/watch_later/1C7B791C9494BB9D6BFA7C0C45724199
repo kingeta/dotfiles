@@ -1,2 +1,4 @@
-start=30048.766000
+start=4917.133000
 volume-restore-data=pulse:28.000000:28.000000:0:200.000000
+fullscreen=no
+vf=gradfun=strength=%3%1.6:radius=24
