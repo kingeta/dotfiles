@@ -11,11 +11,12 @@ URxvt.matcher.button: 1
 
 !FONTS
 
-!mensch (apple)
-!*font: xft:Mensch:size=14
-!*boldfont: xft:Mensch:bold:size=14
-!*italicfont: xft:Mensch:italic:size=14
-!*bolditalicfont: xft:Mensch:bold:italic:size=14
+!ff:Mensch
+*font: xft:Mensch
+*boldfont: xft:Mensch:bold
+*italicfont: xft:Mensch:italic
+*bolditalicfont: xft:Mensch:bold:italic
+*.letterSpace: -2
 
 !dejavu
 !*font: xft:DejaVuSansMono
@@ -24,11 +25,17 @@ URxvt.matcher.button: 1
 !*bolditalicfont: xft:DejaVuSansMono-Oblique:bold
 !*.letterSpace: -2
 
-!bitmap
-*.font:      -*-gohufont-medium-r-*-*-14-*-*-*-*-*-*-*
-*.boldfont:  -*-gohufont-bold-*-*-*-14-*-*-*-*-*-*-*
-*.italicfont:-*-gohufont-medium-*-*-*-14-*-*-*-*-*-*-*
-*.bolditalicfont:-*-gohufont-bold-*-*-*-14-*-*-*-*-*-*-*
+!gohufont
+!*.font:      -*-gohufont-medium-r-*-*-14-*-*-*-*-*-*-*
+!*.boldfont:  -*-gohufont-bold-*-*-*-14-*-*-*-*-*-*-*
+!*.italicfont:-*-gohufont-medium-*-*-*-14-*-*-*-*-*-*-*
+!*.bolditalicfont:-*-gohufont-bold-*-*-*-14-*-*-*-*-*-*-*
+
+!artwiz
+!*.font: xft:smoothansi
+!*.boldfont: xft:smoothansi
+!*.italicfont: xft:smoothansi
+!*.bolditalicfont: xft:smoothansi
 
 !XFT FONTS
 Xft.antialias:  1

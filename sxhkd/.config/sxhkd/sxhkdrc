@@ -19,8 +19,8 @@ shift + alt + k
 #
 
 # make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
+#super + Escape
+#	pkill -USR1 -x sxhkd
 
 #
 # WINDOW SPECIFIC BINDINGS
