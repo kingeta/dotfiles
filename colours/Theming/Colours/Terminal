@@ -1,7 +1,9 @@
+! vim: set filetype=xdefaults :
 ! TERMINAL COLOURS
 *foreground: #D7D0C7
+! darkened fg: #979087
 *background: #151515
-!Darkened forground: #8A857F
+! lightened bg: #252525
 
 ! URXVT COLOURS
 URxvt*borderColor:        #151515

@@ -3,7 +3,7 @@
 *foreground: #D7D0C7
 *background: #151522
 ! darkened fg: #979087
-! lightened bg: #1B1B2B
+! lightened bg: #1D1D2D
 
 ! URXVT COLOURS
 URxvt*borderColor:        #151522
@@ -43,4 +43,4 @@ URxvt.colorIT:            #686868
 
 ! white
 *.color7:       #bfbfbf
-*.color15:      #d9d9d9
+*.color15:      #c9c9c9

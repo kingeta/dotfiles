@@ -14,40 +14,50 @@ DFG=$(getcolour darkened)
 # INFORMATION
 
 Clock() {
-    echo -n "%{F#FF$DFG} TIME: %{F-}"
-    echo -n "%{B#FF"$CLOCK"} "
+    #echo -e -n "%{F#FF$DFG} TIME: %{F-}"
+    echo -e -n "%{F#FF$DFG} \ue015 %{F-}"
+    echo -e -n "%{B#FF"$CLOCK"} "
     TIME=$(date "+%H:%M:%S")
-    echo -n "$TIME"
-    echo -n " %{B-}"
+    echo -e -n "$TIME"
+    echo -e -n " %{B-}"
 }
 
 Desktop() {
-    echo -n "%{F#FF$DFG} DESKTOP: %{F-}"
-    echo -n "%{B#FF"$DESKTOP"}"
+    #echo -e -n "%{F#FF$DFG} DESKTOP: %{F-}"
+    echo -e -n "%{F#FF$DFG} \ue008 %{F-}"
+    echo -e -n "%{B#FF"$DESKTOP"}"
     DTOPS="$(bspc query -D | wc -l)"
     i=1
     while [ $i -le $DTOPS ]; do
         # check to see if it is the focused desktop
         if [ "$(bspc query -D -d)" = "$(bspc query -D -d ^$i)" ]; then
-            echo -n " *"
+            echo -e -n " *"
         elif [ -n "$(bspc query -W -d ^$i)" ]; then
-            echo -n " +"
+            echo -e -n " +"
         else
-            echo -n " -"
+            echo -e -n " -"
         fi
         # actually work
         let "i = $i + 1" 
     done
-    echo -n " %{B-}"
+    echo -e -n " %{B-}"
+}
+
+Github() {
+    GIT="github.com/kingeta/dotfiles"
+    echo -e -n "%{F#FF$DFG}$GIT%{F-}"
 }
 
 # BAR
 
-FONT="-*-gohufont-medium-r-*-*-14-*-*-*-*-*-*-*"
+FONT="-*-gohufont-medium-r-*-*-11-*-*-*-*-*-*-*"
+FONT2="-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+#FONT="Mensch:size=10"
 x="0"
 y="0"
 w="2560"
-h="30"
-PARAMETERS="-f "$FONT" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
+#h="30"
+h="25"
+PARAMETERS="-f "$FONT" -f "$FONT2" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
 
-while :; do echo "$(Desktop)%{r}$(Clock)"; done | bar $PARAMETERS
+while :; do echo "$(Desktop)%{c}$(Github)%{r}$(Clock)"; done | bar $PARAMETERS

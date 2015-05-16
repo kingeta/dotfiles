@@ -17,51 +17,56 @@ DFG=$(getcolour darkened)
 # INFORMATION
 
 PlayingState() {
-    echo -n "%{F#FF$DFG} "
+    echo -e -n "%{F#FF$DFG} "
     # show if it is playing or paused
     if [ -n "$(mpc | grep playing)" ]; then
-        echo -n "[PLAYING]"
+        #echo -e -n "[PLAYING]"
+        echo -e -n "\ue058"
     else
-        echo -n "[PAUSED]:"
+        #echo -e -n "[PAUSED]:"
+        echo -e -n "\ue059"
     fi
-    echo -n " %{F-}"
+    echo -e -n " %{F-}"
     # show what is playing
     if [ -z "$(mpc current)" ]; then
-        echo -n "%{B#FF$COLOR2} Playlist Empty %{B-}"
+        echo -e -n "%{B#FF$COLOR2} Playlist Empty %{B-}"
     else
         if [ -z "$(mpc -f %artist% | sed -n '1p')" ]; then
-            echo -n "%{B#FF$COLOR2} $(mpc current) %{B-}"
+            echo -e -n "%{B#FF$COLOR2} $(mpc current) %{B-}"
         else
-            echo -n "%{B#FF$COLOR1} $(mpc -f %artist% | sed -n '1p') %{B-} "
-            echo -n "%{B#FF$COLOR2} $(mpc -f %album% | sed -n '1p') %{B-} "
-            echo -n "%{B#FF$COLOR3} $(mpc -f %title% | sed -n '1p') %{B-} "
+            echo -e -n "%{B#FF$COLOR1} $(mpc -f %artist% | sed -n '1p') %{B-} "
+            echo -e -n "%{B#FF$COLOR2} $(mpc -f %album% | sed -n '1p') %{B-} "
+            echo -e -n "%{B#FF$COLOR3} $(mpc -f %title% | sed -n '1p') %{B-} "
         fi
     fi
 }
 
 Volume () {
-    echo -n "%{F#FF$DFG} VOLUME: %{F-}"
-    echo -n "%{B#FF$VOLUME} "
+    #echo -e -n "%{F#FF$DFG} VOLUME: %{F-}"
+    echo -e -n "%{F#FF$DFG} \ue152 %{F-}"
+    echo -e -n "%{B#FF$VOLUME} "
     i=0
     VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
     while [ $i -ne 100 ]; do
         if [ $VOLUME -gt $i ]; then
-            echo -n "*"
+            echo -e -n "*"
         else
-            echo -n " "
+            echo -e -n " "
         fi
         i=$(( $i + 10))
     done
-    echo -n " %{B-}"
+    echo -e -n " %{B-}"
 }
 
 # BAR
 
-FONT="-*-gohufont-medium-r-*-*-14-*-*-*-*-*-*-*"
+FONT="-*-gohufont-medium-r-*-*-11-*-*-*-*-*-*-*"
+FONT2="-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+#FONT="Mensch:size=10"
 x="2560"
 y="0"
 w="1920"
-h="30"
-PARAMETERS="-f "$FONT" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
+h="25"
+PARAMETERS="-f "$FONT" -f "$FONT2" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
 
 while :; do echo "$(PlayingState)%{r}$(Volume)"; done | bar $PARAMETERS

@@ -29,6 +29,8 @@ alias flacsplit='shntool split -f *.cue -o flac *.flac && cuetag.sh *.cue split-
 
 alias flactag='cuetag.sh **/**.flac'
 
+alias siji='xfd -rows 19 -columns 34 -fn -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1'
+
 # Programs
 
 alias vim='vim -u /home/herby/.vimrc'

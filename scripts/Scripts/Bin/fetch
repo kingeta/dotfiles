@@ -7,14 +7,14 @@ name(){
 }
 
 cpu(){
-    echo -e -n " \e[1;32mCPU:\033[0m $( cat /proc/cpuinfo | grep 'name' | head -1 | cut -c 14- )"
+    echo -e -n " \e[1;32mCPU:\033[0m   $( cat /proc/cpuinfo | grep 'name' | head -1 | cut -c 14- )"
 }
 
 disk(){
     DISK="$(df -h --total 2> /dev/null | tail -1)"
     DISKS="$(echo $DISK | awk '{print $2}')"
     DISKF="$(echo $DISK | awk '{print $4}')"
-    echo -e -n " \e[1;34mDISK:\033[0m $DISKF/$DISKS"
+    echo -e -n " \e[1;34mDISK:\033[0m  $DISKF/$DISKS"
 }
 
 music(){
@@ -22,17 +22,23 @@ music(){
 }
 
 wm(){
-    echo -e -n " \e[1;35mWM:\033[0m" && cat ~/.xinitrc | grep exec | sed s/"exec"/""/g
+    echo -e -n " \e[1;35mWM:\033[0m   " && cat ~/.xinitrc | grep exec | sed s/"exec"/""/g
 }
 
 font(){
     FONT="$(cat ~/.Xresources | grep "ff" | cut -d ':' -f 2)"
-    echo -e -n " \e[1;36mFONT:\033[0m $FONT"
+    echo -e -n " \e[1;36mFONT:\033[0m  $FONT"
 }
 
 github(){
     GITHUB="github.com/kingeta/dotfiles"
-    echo -e -n " \e[1;37mGITHUB:\033[0m $GITHUB"
+    echo -e -n " \e[1;37mDOTS:\033[0m  $GITHUB"
+}
+
+bar(){
+    tput setb 3
+    printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+    tput sgr0
 }
 
 # displaying it

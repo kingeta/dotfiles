@@ -6,7 +6,7 @@
 
 killall ncmpcpp
 bspc desktop -f Media
-urxvt -name ncmpcpp -e ncmpcpp &
+urxvtc -name ncmpcpp -e ncmpcpp &
 #bspc window -t floating=on
 bspc window -d Media
 bspc monitor -f last

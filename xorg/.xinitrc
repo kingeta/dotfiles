@@ -17,7 +17,7 @@ xrandr --output HDMI-0 --auto --right-of DVI-D-0
 bash ~/Scripts/Bar/Left &
 bash ~/Scripts/Bar/Right &
 
-# Keyboar
+# Keyboard
 setxkbmap -option caps:super -option 108:64 -layout gb
 
 # Start compton, with no -C now
@@ -28,6 +28,8 @@ xsetroot -cursor_name left_ptr
 unclutter -root &
 
 # Load wm and keybind manager
-hsetroot -solid '#050515'
+#hsetroot -solid '#050515'
+urxvtd -q -f -o
+feh --no-fehbg --bg-fill ~/Media/Images/Analog/darkbridge.jpg ~/Media/Images/Analog/darktraffic.jpg &
 sxhkd &
 exec bspwm
