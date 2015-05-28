@@ -43,21 +43,44 @@ Desktop() {
     echo -e -n " %{B-}"
 }
 
+Desktop2() {
+    #echo -e -n "%{F#FF$DFG} DESKTOP: %{F-}"
+    echo -e -n "%{F#FF$DFG} \ue008 %{F-}"
+    echo -e -n "%{B#FF"$DESKTOP"}"
+    DTOPS="$(bspc query -D)"
+    for a in $DTOPS; do
+        #if [ "$(bspc query -D -d)" = "$(bspc query -D -d ^$i)" ]; then
+        #    echo -e -n " *"
+        #elif [ -n "$(bspc query -W -d ^$i)" ]; then
+        #    echo -e -n " +"
+        #else
+        #    echo -e -n " -"
+        #fi
+        if [ "$(bspc query -D -d)" = $a ]; then
+            echo -e -n " *"
+        elif [ -n "$(bspc query -W -d $a)" ]; then
+            echo -e -n " +"
+        else
+            echo -e -n " -"
+        fi
+    done
+    echo -e -n " %{B-}"
+}
+
 Github() {
     GIT="github.com/kingeta/dotfiles"
-    echo -e -n "%{F#FF$DFG}$GIT%{F-}"
+    echo -e -n "%{F#FF$DFG}\ue0af $GIT%{F-}"
 }
 
 # BAR
 
 FONT="-*-gohufont-medium-r-*-*-11-*-*-*-*-*-*-*"
 FONT2="-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
-#FONT="Mensch:size=10"
 x="0"
 y="0"
 w="2560"
 #h="30"
-h="25"
+h="22"
 PARAMETERS="-f "$FONT" -f "$FONT2" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
 
-while :; do echo "$(Desktop)%{c}$(Github)%{r}$(Clock)"; done | bar $PARAMETERS
+while :; do echo "$(Desktop2)%{c}$(Github)%{r}$(Clock)"; done | lemonbar $PARAMETERS

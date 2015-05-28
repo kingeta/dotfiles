@@ -1,0 +1,43 @@
+#! /usr/bin/bash
+#
+# volume popup
+# 
+
+# COLOURS
+
+VOLUME="$(getcolour 1)"
+BG="$(getcolour bg)"
+FG="$(getcolour fg)"
+DFG=$(getcolour darkened)
+
+# INFORMATION
+
+Volume () {
+    #echo -e -n "%{F#FF$DFG} VOLUME: %{F-}"
+    echo -e -n "%{F#FF$DFG} \ue152 %{F-}"
+    echo -e -n "%{B#FF$VOLUME} "
+    i=0
+    VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
+    while [ $i -ne 100 ]; do
+        if [ $VOLUME -gt $i ]; then
+            echo -e -n "*"
+        else
+            echo -e -n " "
+        fi
+        i=$(( $i + 10))
+    done
+    echo -e -n " %{B-}"
+}
+
+# BAR
+
+FONT="-*-gohufont-medium-r-*-*-11-*-*-*-*-*-*-*"
+FONT2="-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+#FONT="Mensch:size=10"
+x="4380"
+y="10"
+w="90"
+h="22"
+PARAMETERS="-f "$FONT" -f "$FONT2" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
+
+while :; do echo "%{c}$(Volume)"; done | lemonbar $PARAMETERS

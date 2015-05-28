@@ -3,7 +3,7 @@
 ~/.config/bspwm/bspwmrc
 pkill -USR1 -x sxhkd
 xrdb ~/.Xresources
-[ -n "$(ps aux | grep bar)" ] && killall bar
+[ -n "$(ps aux | grep lemonbar)" ] && killall lemonbar
 ~/Scripts/Bar/Left &
 ~/Scripts/Bar/Right &
 exit 0

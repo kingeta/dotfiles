@@ -1,13 +1,19 @@
 !URXVT SETTINGS
 URxvt.scrollBar: false
-URxvt.internalBorder: 7
+!URxvt.internalBorder: 7
+URxvt.internalBorder: 11
 URxvt.iso14755: false
 URxvt.cursorBlink: 0
 URxvt.cursorUnderline: 0
 
-URxvt.perl-ext-common: default,matcher
+URxvt.perl-ext-common: default,matcher,clipboard
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+URxvt.keysms.Mouse3: \033[33~
 
 !FONTS
 

@@ -6,7 +6,7 @@ SHELL=/usr/bin/zsh
 
 # get mpd working
 sudo rm /tmp/mpd.fifo
-mpd 
+mpd
 
 # scrobble... maybe
 mpdscribble
