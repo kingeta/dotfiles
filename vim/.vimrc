@@ -77,10 +77,10 @@ set autoread
 
 nmap <c-w> :w!<cr>
 nmap <c-x> :x!<cr>
-nmap <c-q> :q!<cr>
+nmap <c-q> :q<cr>
 
-nmap <c-p> :set paste<cr>
-nmap <c-o> :set nopaste<cr>
+nmap <c-p> :set paste!<cr>
+"nmap <c-o> :set nopaste<cr>
 
 set timeout " Do time out on mappings and others
 set timeoutlen=2000 " Wait {num} ms before timing out a mapping

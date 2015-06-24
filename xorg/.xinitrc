@@ -17,8 +17,12 @@ xrandr --output HDMI-0 --auto --right-of DVI-D-0
 bash ~/Scripts/Bar/Left &
 bash ~/Scripts/Bar/Right &
 
-# Keyboard
+# KB + M
 setxkbmap -option caps:super -option 108:64 -layout gb
+xinput set-prop 10 'Device Accel Profile' -1
+xinput set-prop 10 'Device Accel Velocity Scaling' 1 
+xinput set-prop 11 'Device Accel Profile' -1
+xinput set-prop 11 'Device Accel Velocity Scaling' 1 
 
 # Start compton, with no -C now
 compton -zcf -r 5 -l -7 -t -7 -D 5 -i 1 -o 0.6 -e 1 &
@@ -30,6 +34,6 @@ unclutter -root &
 # Load wm and keybind manager
 #hsetroot -solid '#050515'
 urxvtd -q -f -o
-feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Flat/beet.png
+feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Beethoven/beet.png
 sxhkd &
 exec bspwm

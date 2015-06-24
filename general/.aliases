@@ -87,6 +87,8 @@ alias ..='cd ..'
 
 alias csgo='cd ~/.steam/steam/steamapps/common/Counter-Strike\ Global\ Offensive/csgo/'
 
+alias ksp='cd ~/.local/share/Steam/steamapps/common/Kerbal\ Space\ Program/'
+
 alias syntax='cd /usr/share/doc/zsh-syntax-highlighting'
 
 # Zsh file aliases

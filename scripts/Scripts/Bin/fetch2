@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# information
+
+name(){
+    echo -e -n "  \e[1;31m$(whoami)\033[0m@\e[1;31m$(hostname)"
+}
+
+cpu(){
+    echo -e -n "   \e[1;32mCPU:\033[0m $( cat /proc/cpuinfo | grep 'name' | head -1 | cut -c 14- )"
+}
+
+disk(){
+    DISK="$(df -h --total 2> /dev/null | tail -1)"
+    DISKS="$(echo $DISK | awk '{print $2}')"
+    DISKF="$(echo $DISK | awk '{print $4}')"
+    echo -e -n "  \e[1;34mDISK:\033[0m $DISKF/$DISKS"
+}
+
+music(){
+    echo -e -n " \e[1;33mMUSIC:\033[0m $(mpc current)"
+}
+
+wm(){
+    echo -e -n "    \e[1;35mWM:\033[0m" && cat ~/.xinitrc | grep exec | sed s/"exec"/""/g
+}
+
+font(){
+    FONT="$(cat ~/.Xresources | grep "ff" | cut -d ':' -f 2)"
+    echo -e -n "  \e[1;36mFONT:\033[0m $FONT"
+}
+
+github(){
+    GITHUB="github.com/kingeta/dotfiles"
+    echo -e -n "  \e[1;37mDOTS:\033[0m $GITHUB"
+}
+
+bar(){
+    tput setb 3
+    printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+    tput sgr0
+}
+
+# displaying it
+
+echo -e -n "$(name)
+$(cpu)
+$(disk)
+$(wm)
+$(music)
+$(font)
+$(github)
+"

@@ -6,7 +6,7 @@ setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
 # Emulate vim
-bindkey -v
+bindkey -e
 
 # Stuff
 zstyle :compinstall filename '/home/herby/.zshrc'
