@@ -35,5 +35,5 @@ unclutter -root &
 #hsetroot -solid '#050515'
 urxvtd -q -f -o
 feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Beethoven/beet.png
-sxhkd &
+sxhkd -f 100 &
 exec bspwm
