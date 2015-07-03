@@ -8,6 +8,6 @@ bg="$(getcolour background)"
 dark=$(getcolour darkened)
 hl="$(getcolour 4)"
 
-dmenu_run -i -q -l 0 -x 0 -y 0 -h 25 -fn '-*-gohufont-medium-r-*-*-11-*-*-*-*-*-*-*' -nf '#'$dark -nb '#'$bg -sf '#'$fg -sb '#'$hl -dim 0.25
+dmenu_run -i -q -l 0 -x 0 -y 0 -h 22 -fn '-*-gohufont-medium-r-*-*-11-*-*-*-*-*-*-*' -nf '#'$dark -nb '#'$bg -sf '#'$fg -sb '#'$hl -dim 0.25
 
 exit 0

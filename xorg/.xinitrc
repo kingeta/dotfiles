@@ -25,7 +25,7 @@ xinput set-prop 11 'Device Accel Profile' -1
 xinput set-prop 11 'Device Accel Velocity Scaling' 1 
 
 # Start compton, with no -C now
-compton -zcf -r 5 -l -7 -t -7 -D 5 -i 1 -o 0.6 -e 1 &
+compton -zcf -r 5 -l -7 -t -7 -D 5 -i 1 -o 0.8 -e 1 &
 
 # Cursor
 xsetroot -cursor_name left_ptr

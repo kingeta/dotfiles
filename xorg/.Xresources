@@ -31,11 +31,17 @@ URxvt.keysms.Mouse3: \033[33~
 !*bolditalicfont: xft:DejaVuSansMono-Oblique:bold
 !*.letterSpace: -2
 
-!gohufont
+!f:gohufont
 !*.font:      -*-gohufont-medium-r-*-*-14-*-*-*-*-*-*-*
 !*.boldfont:  -*-gohufont-bold-*-*-*-14-*-*-*-*-*-*-*
 !*.italicfont:-*-gohufont-medium-*-*-*-14-*-*-*-*-*-*-*
 !*.bolditalicfont:-*-gohufont-bold-*-*-*-14-*-*-*-*-*-*-*
+
+!f:terminus
+!URxvt*font:                                     xft:terminus:hinting=true:pixelsize=12:antialias=false
+!URxvt*boldFont:                                 xft:terminus:style=bold:hinting=true:pixelsize=12:antialias=false
+!URxvt*italicFont:                               xft:terminus:style=italic:hinting=true:pixelsize=12:antialias=false
+!URxvt*boldItalicFont:                           xft:terminus:style=bolditalic:hinting=true:pixelsize=12:antialias=false
 
 !artwiz
 !*.font: xft:smoothansi
