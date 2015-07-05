@@ -14,9 +14,8 @@ DFG=$(getcolour darkened)
 # INFORMATION
 
 Clock() {
-    #echo -e -n "%{F#FF$DFG} TIME: %{F-}"
-    echo -e -n "%{F#FF$DFG} \ue015 %{F-}"
-    echo -e -n "%{B#FF"$CLOCK"} "
+    echo -e -n "%{B#FF"$CLOCK"}"
+    echo -e -n "%{F#FF$FG} \ue015 %{F-}"
     TIME=$(date "+%H:%M:%S")
     echo -e -n "$TIME"
     echo -e -n " %{B-}"
@@ -44,9 +43,8 @@ Desktop() {
 }
 
 Desktop2() {
-    #echo -e -n "%{F#FF$DFG} DESKTOP: %{F-}"
-    echo -e -n "%{F#FF$DFG} \ue008 %{F-}"
     echo -e -n "%{B#FF"$DESKTOP"}"
+    echo -e -n "%{F#FF$FG} \ue008%{F-}"
     DTOPS="$(bspc query -D)"
     for a in $DTOPS; do
         #if [ "$(bspc query -D -d)" = "$(bspc query -D -d ^$i)" ]; then
@@ -76,9 +74,9 @@ Github() {
 
 FONT="-*-gohufont-medium-r-*-*-11-*-*-*-*-*-*-*"
 FONT2="-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
-x="0"
-y="0"
-w="2560"
+x="10"
+y="10"
+w="2540"
 #h="30"
 h="22"
 PARAMETERS="-f "$FONT" -f "$FONT2" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG

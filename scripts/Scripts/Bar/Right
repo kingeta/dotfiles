@@ -17,34 +17,30 @@ DFG=$(getcolour darkened)
 # INFORMATION
 
 PlayingState() {
-    echo -e -n "%{F#FF$DFG} "
-    # show if it is playing or paused
-    if [ -n "$(mpc | grep playing)" ]; then
-        #echo -e -n "[PLAYING]"
-        echo -e -n "\ue058"
-    else
-        #echo -e -n "[PAUSED]:"
-        echo -e -n "\ue059"
-    fi
-    echo -e -n " %{F-}"
+    echo -e -n "%{F#FF$FG}"
     # show what is playing
     if [ -z "$(mpc current)" ]; then
         echo -e -n "%{B#FF$COLOR2} Playlist Empty %{B-}"
     else
-        if [ -z "$(mpc -f %artist% | sed -n '1p')" ]; then
-            echo -e -n "%{B#FF$COLOR2} $(mpc current) %{B-}"
+        echo -e -n "%{B#FF$COLOR1} "    
+
+            # display the playing state
+        if [ -n "$(mpc | grep playing)" ]; then
+            echo -e -n "\ue058"
         else
-            echo -e -n "%{B#FF$COLOR1} $(mpc -f %artist% | sed -n '1p') %{B-} "
-            echo -e -n "%{B#FF$COLOR2} $(mpc -f %album% | sed -n '1p') %{B-} "
-            echo -e -n "%{B#FF$COLOR3} $(mpc -f %title% | sed -n '1p') %{B-} "
-        fi
+            echo -e -n "\ue059"
+        fi 
+
+        # display the playing music
+        echo -e -n " $(mpc -f %artist% | sed -n '1p') %{B-} "
+        echo -e -n "%{B#FF$COLOR2} $(mpc -f %album% | sed -n '1p') %{B-} "
+        echo -e -n "%{B#FF$COLOR3} $(mpc -f %title% | sed -n '1p') %{B-} "
     fi
 }
 
 Volume () {
-    #echo -e -n "%{F#FF$DFG} VOLUME: %{F-}"
-    echo -e -n "%{F#FF$DFG} \ue152 %{F-}"
-    echo -e -n "%{B#FF$VOLUME} "
+    echo -e -n "%{B#FF$VOLUME}"
+    echo -e -n "%{F#FF$FG} \ue152 %{F-}"
     i=0
     VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
     while [ $i -ne 100 ]; do
@@ -63,9 +59,9 @@ Volume () {
 FONT="-*-gohufont-medium-r-*-*-11-*-*-*-*-*-*-*"
 FONT2="-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
 #FONT="Mensch:size=10"
-x="2560"
-y="0"
-w="1920"
+x="2570"
+y="10"
+w="1900"
 h="22"
 PARAMETERS="-f "$FONT" -f "$FONT2" -g "$w"x"$h"+"$x"+"$y" -F #FF"$FG" -B #FF"$BG
 
