@@ -1,0 +1,38 @@
+#! /usr/bin/bash
+
+dtop=`bspc query -D -d`
+
+case $dtop in
+    Code)
+        hsetroot -solid '#F00000'
+        ;;
+    Work)
+        hsetroot -solid '#00F000'
+        ;;
+    *)
+        hsetroot -solid '#0000F0'
+        ;;
+esac
+
+while true :; do
+
+    dtop=`bspc query -D -d`
+
+    if [ "$dtop" != "$(bspc query -D -d)" ]; then
+
+    case $dtop in
+        Code)
+            hsetroot -solid '#F00000'
+            ;;
+        Work)
+            hsetroot -solid '#00F000'
+            ;;
+        *)
+            hsetroot -solid '#0000F0'
+            ;;
+    esac
+
+fi
+
+
+done

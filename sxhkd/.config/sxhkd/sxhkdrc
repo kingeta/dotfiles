@@ -3,7 +3,7 @@
 #
 
 #Quit bspwm
-super + alt + Escape
+ctrl + alt + Escape
 	bspc quit
 
 #Toggle window visibility
@@ -19,7 +19,7 @@ shift + alt + k
 #
 
 # make sxhkd reload its configuration files:
-#super + Escape
+#alt + Escape
 #	pkill -USR1 -x sxhkd
 
 #
@@ -27,19 +27,19 @@ shift + alt + k
 #
 
 #Close the focused window
-super + w
+alt + w
 	bspc window -c
 
 #Toggle the desktop layout
-super + t
+alt + t
 	bspc desktop -l next
 
 #Make all the windows occupy the same area
-super + b
+alt + b
 	bspc desktop -B
 
 #Toggle floating and fullscreen
-super + {s,f}
+alt + {s,f}
 	bspc window -t {floating,fullscreen}
 
 #
@@ -47,11 +47,11 @@ super + {s,f}
 #
 
 #Preselect the splitting area
-alt + {Left,Down,Up,Right}
+super + {Left,Down,Up,Right}
 	bspc window -p {left,down,up,right}
 
 #Cancel preselection
-alt + {_,ctrl + }space
+super + {_,ctrl + }space
 	bspc {window -p cancel,desktop -c}
 
 #
@@ -71,7 +71,7 @@ ctrl + alt + shift + {Left,Down,Up,Right}
 #
 
 #Focus on or send a window to a certain desktop
-super + {_,shift + }{1-9,0}
+alt + {_,shift + }{1-9,0}
 	bspc {desktop -f,window -d} ^{1-9,10}
 
 #Focus on or send a window to a certain monitor
@@ -88,15 +88,15 @@ super + m
 	bspc window -s biggest
 
 #Focus or swap the window to the side
-super + {_,shift + }{Left,Down,Up,Right}
+alt + {_,shift + }{Left,Down,Up,Right}
 	bspc window -{f,s} {left,down,up,right}
 
 #alt + tab through the windows
-super + {_,shift + } + Tab
+alt + {_,shift + } + Tab
    bspc window -f {next,prev}
 
 #alt + tab through monitors
-alt + {_,shift + } + Tab
+super + {_,shift + } + Tab
     bspc monitor -f {next,prev}
 
 #

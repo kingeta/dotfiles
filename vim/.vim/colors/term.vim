@@ -20,9 +20,9 @@ hi Visual       ctermfg=6    ctermbg=none cterm=reverse
 hi MatchParen   ctermfg=12   ctermbg=none cterm=reverse
 
 " Lines
-hi CursorLine                             cterm=none
-hi CursorLineNr ctermfg=8
-hi LineNr       ctermfg=0
+hi CursorLine   ctermfg=0                 cterm=none
+hi CursorLineNr ctermfg=0
+hi LineNr       ctermfg=8
 
 " Splits
 hi SignColumn                ctermbg=none
@@ -36,8 +36,7 @@ hi WildMenu     ctermfg=14   ctermbg=0
 " Tabs
 hi TabLine      ctermfg=none ctermbg=none cterm=none
 hi TabLineFill  ctermfg=none ctermbg=none cterm=none
-hi TabLineFill  ctermfg=none ctermbg=none cterm=none
-hi TabLineSel   ctermfg=15   ctermbg=0    cterm=none
+hi TabLineSel   ctermfg=15   ctermbg=none cterm=none
 
 " Vimdiff
 hi DiffAdd      ctermfg=14   ctermbg=none

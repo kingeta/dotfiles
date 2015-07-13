@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-# .xinitrc
+# xinit
 #
 
 # Load Xresouces
@@ -33,7 +33,7 @@ xsetroot -cursor_name left_ptr
 unclutter -root &
 
 # Load wm and keybind manager
-hsetroot -solid '#20202A'
+hsetroot -solid '#171717'
 urxvtd -q -f -o
 #feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Beethoven/beet.png
 sxhkd -f 100 &

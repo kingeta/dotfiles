@@ -18,12 +18,12 @@ html,body {
     margin: 0; padding: 0; overflow: hidden;
     width: 100%; height: 100%;
     font-family: "mensch", "DejaVu Sans Mono", Sans; font-size: 12pt;
-    background: #151522;
+    background: #202020;
 }
 ul, li { list-style-type: none; margin: 0; padding: 0; }
 
-a, a:link, a:visited { color: #D7D0C7; text-decoration: none; }
-a:hover, a:active    { color: #D7D0C7; }
+a, a:link, a:visited { color: #D7D7D7; text-decoration: none; }
+a:hover, a:active    { color: #D7D7D7; }
 
 .center { position: relative; width: 100%; height: 100%; }
     .center .content {
@@ -34,7 +34,7 @@ a:hover, a:active    { color: #D7D0C7; }
 
 #q {
     width: 500px;
-    background: #1B1B2B; color: #D7D0C7;
+    background: #252525; color: #D7D7D7;
     border: 0px solid #27282B; border-radius: 0px;
     padding: 8px 8px; font-size: 12pt;
 }
@@ -42,7 +42,7 @@ a:hover, a:active    { color: #D7D0C7; }
     #q:hover { border-color: #393A3D; }
 
 #more {
-    background: #1B1B2B; color: #D7D9C7; border-radius: 0px;
+    background: #252525; color: #D7D9C7; border-radius: 0px;
     cursor: pointer; display: inline-block;
     font-size: 18pt; line-height: 26px; /* vertical align "+" button */
     width: 24px; height: 24px;
@@ -61,7 +61,7 @@ a:hover, a:active    { color: #D7D0C7; }
 #menu {
     position: fixed; bottom: 0px; left: 0; z-index: 11;
     width: 100%; height: 128px;
-    background: transparent; color: #D7D0C7; cursor: default;
+    background: transparent; color: #D7D7D7; cursor: default;
     transition: .2s ease-out;
 }
     #menu:hover            { bottom: 0; }
@@ -73,7 +73,7 @@ a:hover, a:active    { color: #D7D0C7; }
     #menu label            { padding: 0; display: inline-block; font-weight: medium; width: 200px; } /* menu title width */
 
     #menu ul li            { float: left; border-radius: 0px; height: 64px; }
-    #menu ul li:hover      { background: #1B1B2B; color: #D7D0C7; }
+    #menu ul li:hover      { background: #252525; color: #D7D7D7; }
     #menu ul li:hover > ul { visibility: visible; bottom: 100%; opacity: 1; transition: .2s ease-out; }
     #menu ul li a          { display: block; white-space: nowrap; padding: 0 10px; }
 
@@ -85,7 +85,7 @@ a:hover, a:active    { color: #D7D0C7; }
     }
 
     #menu ul ul li         { width: 100%; height: 32px; text-align: left; } /* menu links align */
-    #menu ul ul li:hover   { background: #1B1B2B; }
+    #menu ul ul li:hover   { background: #252525; }
 
     #menu img {
         width: 16px; height: 16px;
@@ -108,10 +108,10 @@ var search=[ // Search engines
 
 var menus=[ // Menu Titles ["Title", width(px)],                                                   /* menu width */
     ["4chan",          200],                                        // menu-1
-    ["Media",          200],                                        // menu-2
-    ["Other",          200],                                        // menu-3
-    ["Trackers",       200],                                        // menu-4
-    ["File Hosts",     200],                                        // menu-4
+    ["media",          200],                                        // menu-2
+    ["other",          200],                                        // menu-3
+    ["trackers",       200],                                        // menu-4
+    ["file hosts",     200],                                        // menu-4
 ];
 
 var showFavicon = false;                                             // Enable/Disable Favicons
@@ -120,26 +120,26 @@ var showFavicon = false;                                             // Enable/D
 // Format: ["Name", "URL", "Custom Favicon"],
 var links=[
     // 4chan -          menu-1
-    ["/g/ - Consumerism",               "https://boards.4chan.org/g/",  "http://s.4cdn.org/image/favicon-ws.ico"],
-    ["/mu/ - Music",                    "https://boards.4chan.org/mu/", "http://s.4cdn.org/image/favicon-ws.ico"],
-    ["/tv/ - Bane",                     "https://boards.4chan.org/tv/", "http://s.4cdn.org/image/favicon-ws.ico"],
-    ["/fa/ - Fashion",                  "https://boards.4chan.org/fa/", ],
+    ["/g/ - consumerism",               "https://boards.4chan.org/g/",  "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/mu/ - music",                    "https://boards.4chan.org/mu/", "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/tv/ - bane",                     "https://boards.4chan.org/tv/", "http://s.4cdn.org/image/favicon-ws.ico"],
+    ["/fa/ - fashion",                  "https://boards.4chan.org/fa/", ],
 
     ["",                                "",                                     ""],
 
     // Media -         menu-2
     ["/r/videos",                       "https://reddit.com/r/videos/",         ""],
-    ["YouTube",                         "http://youtube.com",                   ""],
-    ["Twitch",                          "http://twitch.tv/directory",           ""],
-    ["Last.fm",                         "http://beta.last.fm/home",             ""],
+    ["youtube",                         "http://youtube.com",                   ""],
+    ["twitch",                          "http://twitch.tv/directory",           ""],
+    ["last.fm",                         "http://beta.last.fm/home",             ""],
 
     ["",                                "",                                     ""],
 
     // Other -          menu-3
-    ["Reddit",                          "http://reddit.com/",                   ""],
+    ["reddit",                          "http://reddit.com/",                   ""],
     ["/r/UnixPorn",                     "http://reddit.com/r/unixporn/",        ""],
     ["/r/MK",                           "http://reddit.com/r/mechanicalkeyboards/",""],
-    ["Inbox",                           "https://inbox.google.com/u/0/",        ""],
+    ["inbox",                           "https://inbox.google.com/u/0/",        ""],
     
     ["",                                "",                                     ""],
 
@@ -153,7 +153,7 @@ var links=[
     ["",                                "",                                     ""],
 
     ["jii.moe",                         "http://jii.moe",                       ""],
-    ["1339.cf",                         "http://1339.cf/",                      ""],
+    ["fuwa.se",                         "https://fuwa.se/",                     ""],
     ["uguu.se",                         "http://uguu.se/",                      ""],
     ["imgur.com",                       "http://imgur.com/",                    ""],
 

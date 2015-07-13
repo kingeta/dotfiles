@@ -9,11 +9,12 @@ CLOCK="$(getcolour 12)"
 DESKTOP="$(getcolour 2)"
 BG="$(getcolour bg)"
 FG="$(getcolour fg)"
-DFG=$(getcolour darkened)
+DFG=$(getcolour dfg)
 
 # INFORMATION
 
 Clock() {
+    echo -e -n "%{F#FF$CLOCK}$(date "+%D") %{F-}"
     echo -e -n "%{B#FF"$CLOCK"}"
     echo -e -n "%{F#FF$FG} \ue015 %{F-}"
     TIME=$(date "+%H:%M:%S")
@@ -22,7 +23,6 @@ Clock() {
 }
 
 Desktop() {
-    #echo -e -n "%{F#FF$DFG} DESKTOP: %{F-}"
     echo -e -n "%{F#FF$DFG} \ue008 %{F-}"
     echo -e -n "%{B#FF"$DESKTOP"}"
     DTOPS="$(bspc query -D | wc -l)"
@@ -47,13 +47,6 @@ Desktop2() {
     echo -e -n "%{F#FF$FG} \ue008%{F-}"
     DTOPS="$(bspc query -D)"
     for a in $DTOPS; do
-        #if [ "$(bspc query -D -d)" = "$(bspc query -D -d ^$i)" ]; then
-        #    echo -e -n " *"
-        #elif [ -n "$(bspc query -W -d ^$i)" ]; then
-        #    echo -e -n " +"
-        #else
-        #    echo -e -n " -"
-        #fi
         if [ "$(bspc query -D -d)" = $a ]; then
             echo -e -n " *"
         elif [ -n "$(bspc query -W -d $a)" ]; then
@@ -63,6 +56,7 @@ Desktop2() {
         fi
     done
     echo -e -n " %{B-}"
+    echo -e -n "%{F#FF$DESKTOP} $(bspc query -D -d)%{F-}"
 }
 
 Github() {

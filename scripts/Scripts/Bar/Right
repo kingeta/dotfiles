@@ -7,8 +7,8 @@
 
 VOLUME="$(getcolour 1)"
 COLOR1="$(getcolour 6)"
-COLOR2="$(getcolour 5)"
-COLOR3="$(getcolour 4)"
+COLOR3="$(getcolour 5)"
+COLOR2="$(getcolour 4)"
 PAUSED="$(getcolour 8)"
 BG="$(getcolour bg)"
 FG="$(getcolour fg)"
@@ -36,9 +36,11 @@ PlayingState() {
         echo -e -n "%{B#FF$COLOR2} $(mpc -f %album% | sed -n '1p') %{B-} "
         echo -e -n "%{B#FF$COLOR3} $(mpc -f %title% | sed -n '1p') %{B-} "
     fi
+    echo -e -n "%{F#FF$COLOR3}$(mpc | sed -n '2p' | cut -d ' ' -f 3-5 | tr -d ' ')"
 }
 
 Volume () {
+    echo -e -n "%{F#FF$VOLUME}$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | tr -d '\n')%% %{F-}"
     echo -e -n "%{B#FF$VOLUME}"
     echo -e -n "%{F#FF$FG} \ue152 %{F-}"
     i=0

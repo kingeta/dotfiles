@@ -1,17 +1,17 @@
-[2015-07-05 11:27:10] WeeChat 1.2 (compiled on Jun 14 2015 15:28:28)
-[2015-07-05 11:27:10] Reading configuration file sec.conf
-[2015-07-05 11:27:10] Reading configuration file weechat.conf
-[2015-07-05 11:27:10] Reading configuration file plugins.conf
-[2015-07-05 11:27:10] Reading configuration file charset.conf
-[2015-07-05 11:27:10] Reading configuration file logger.conf
-[2015-07-05 11:27:10] Reading configuration file exec.conf
-[2015-07-05 11:27:10] Reading configuration file trigger.conf
-[2015-07-05 11:27:10] Reading configuration file aspell.conf
-[2015-07-05 11:27:10] Reading configuration file alias.conf
-[2015-07-05 11:27:10] Reading configuration file xfer.conf
-[2015-07-05 11:27:10] Reading configuration file irc.conf
-[2015-07-05 11:27:10] Reading configuration file relay.conf
-[2015-07-05 11:27:10] Reading configuration file colorize_nicks.conf
-[2015-07-05 11:27:10] Reading configuration file buffers.conf
-[2015-07-05 11:27:10] Reading configuration file script.conf
-[2015-07-05 11:27:12] irc: connecting to server irc.rizon.net/6667...
+[2015-07-13 18:22:10] WeeChat 1.2 (compiled on Jun 14 2015 15:28:28)
+[2015-07-13 18:22:10] Reading configuration file sec.conf
+[2015-07-13 18:22:10] Reading configuration file weechat.conf
+[2015-07-13 18:22:10] Reading configuration file plugins.conf
+[2015-07-13 18:22:10] Reading configuration file charset.conf
+[2015-07-13 18:22:10] Reading configuration file logger.conf
+[2015-07-13 18:22:10] Reading configuration file exec.conf
+[2015-07-13 18:22:10] Reading configuration file trigger.conf
+[2015-07-13 18:22:10] Reading configuration file aspell.conf
+[2015-07-13 18:22:10] Reading configuration file alias.conf
+[2015-07-13 18:22:10] Reading configuration file xfer.conf
+[2015-07-13 18:22:10] Reading configuration file irc.conf
+[2015-07-13 18:22:10] Reading configuration file relay.conf
+[2015-07-13 18:22:10] Reading configuration file colorize_nicks.conf
+[2015-07-13 18:22:10] Reading configuration file buffers.conf
+[2015-07-13 18:22:10] Reading configuration file script.conf
+[2015-07-13 18:22:15] irc: connecting to server irc.rizon.net/6667...
