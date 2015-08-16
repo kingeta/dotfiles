@@ -108,10 +108,11 @@ var search=[ // Search engines
 
 var menus=[ // Menu Titles ["Title", width(px)],                                                   /* menu width */
     ["4chan",          200],                                        // menu-1
-    ["media",          200],                                        // menu-2
-    ["other",          200],                                        // menu-3
+    ["videos",         200],                                        // menu-2
+    ["reddit",         200],                                        // menu-3
     ["trackers",       200],                                        // menu-4
-    ["file hosts",     200],                                        // menu-4
+    ["file hosts",     200],                                        // menu-5
+    ["misc",           200],                                        // menu-6
 ];
 
 var showFavicon = false;                                             // Enable/Disable Favicons
@@ -119,6 +120,7 @@ var showFavicon = false;                                             // Enable/D
 // Link setup (separate with ["", "", ""],)
 // Format: ["Name", "URL", "Custom Favicon"],
 var links=[
+
     // 4chan -          menu-1
     ["/g/ - consumerism",               "https://boards.4chan.org/g/",  "http://s.4cdn.org/image/favicon-ws.ico"],
     ["/mu/ - music",                    "https://boards.4chan.org/mu/", "http://s.4cdn.org/image/favicon-ws.ico"],
@@ -127,35 +129,43 @@ var links=[
 
     ["",                                "",                                     ""],
 
-    // Media -         menu-2
+    // Videos -         menu-2
     ["/r/videos",                       "https://reddit.com/r/videos/",         ""],
     ["youtube",                         "http://youtube.com",                   ""],
     ["twitch",                          "http://twitch.tv/directory",           ""],
-    ["last.fm",                         "http://beta.last.fm/home",             ""],
 
     ["",                                "",                                     ""],
 
-    // Other -          menu-3
-    ["reddit",                          "http://reddit.com/",                   ""],
-    ["/r/UnixPorn",                     "http://reddit.com/r/unixporn/",        ""],
-    ["/r/MK",                           "http://reddit.com/r/mechanicalkeyboards/",""],
-    ["inbox",                           "https://inbox.google.com/u/0/",        ""],
+    // Reddit -         menu-3
+    ["front",                          "http://reddit.com/",                   ""],
+    ["globaloffensive",                "http://reddit.com/r/globaloffensive",  ""],
+    ["unixporn",                       "http://reddit.com/r/unixporn/",        ""],
+    ["mechanicalkeyboards",            "http://reddit.com/r/mechanicalkeyboards/",""],
     
     ["",                                "",                                     ""],
 
-    // Trackers -          menu-4
+    // Trackers -       menu-4
     ["rutracker",                       "http://rutracker.org/forum/index.php", ""],
     ["libble",                          "http://libble.me/index.php",           ""],
     ["mutracker",                       "https://mutracker.org/index.php",      ""],
     ["cock.li",                         "https://mail.cock.li/",                ""],
 
-    // File Hosts -   menu-5
     ["",                                "",                                     ""],
+
+    // File Hosts -     menu-5
 
     ["jii.moe",                         "http://jii.moe",                       ""],
     ["fuwa.se",                         "https://fuwa.se/",                     ""],
     ["uguu.se",                         "http://uguu.se/",                      ""],
     ["imgur.com",                       "http://imgur.com/",                    ""],
+
+    ["",                                "",                                     ""],
+
+    // Misc -           menu-6
+    
+    ["inbox",                           "https://inbox.google.com/u/0/",        ""],
+    ["hackernews",                      "https://news.ycombinator.com",         ""],
+
 
 ];
 

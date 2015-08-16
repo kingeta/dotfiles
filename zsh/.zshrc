@@ -21,9 +21,9 @@ setopt correct
 
 # Prompt
 autoload -U colors && colors
-RPROMPT="%{$fg_bold[white]%}%~%{$reset_color%}"
-#PROMPT="%{$fg_bold[yellow]%}§ %{$reset_color%}"
 PROMPT="%{$fg_bold[yellow]%}- %{$reset_color%}"
+#PROMPT="%{$fg_bold[yellow]%}§ %{$reset_color%}"
+RPROMPT="%{$fg_bold[black]%}%~%{$reset_color%}"
 
 # Completion
 setopt autocd

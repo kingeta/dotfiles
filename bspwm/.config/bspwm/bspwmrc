@@ -26,12 +26,10 @@ bspc config pointer_follows_focus true
 bspc config pointer_follows_monitor true
 
 bspc rule -a csgo_linux desktop=Steam locked=on floating=on fullscreen=on
-bspc rule -a 'War Thunder' desktop=Steam locked=on floating=on fullscreen=on
-bspc rule -a steam.sh desktop=Steam focus=off
-bspc rule -a steam desktop=Steam focus=off
-bspc rule -a steamwebhelper desktop=Steam focus=off
+#bspc rule -a steam.sh desktop=Steam focus=off
+#bspc rule -a steam desktop=Steam focus=off
+#bspc rule -a steamwebhelper desktop=Steam focus=off
 bspc rule -a ncmpcpp desktop=Media floating=on
-bspc rule -a steam desktop=Steam
 bspc rule -a feh floating=on
 bspc rule -a mpv desktop=Media floating=on 
 bspc rule -a mupdf floating=on

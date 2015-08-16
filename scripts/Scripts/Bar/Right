@@ -20,7 +20,7 @@ PlayingState() {
     echo -e -n "%{F#FF$FG}"
     # show what is playing
     if [ -z "$(mpc current)" ]; then
-        echo -e -n "%{B#FF$COLOR2} Playlist Empty %{B-}"
+        echo -e -n "%{B#FF$COLOR2} \ue099 Playlist Empty %{B-}"
     else
         echo -e -n "%{B#FF$COLOR1} "    
 

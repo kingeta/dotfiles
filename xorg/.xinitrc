@@ -18,7 +18,8 @@ bash ~/Scripts/Bar/Left &
 bash ~/Scripts/Bar/Right &
 
 # KB + M
-setxkbmap -option caps:super -option 108:64 -layout gb
+#setxkbmap -option caps:super -option 108:66 -layout gb
+setxkbmap -layout gb
 xinput set-prop 10 'Device Accel Profile' -1
 xinput set-prop 10 'Device Accel Velocity Scaling' 1 
 xinput set-prop 11 'Device Accel Profile' -1
@@ -33,8 +34,8 @@ xsetroot -cursor_name left_ptr
 unclutter -root &
 
 # Load wm and keybind manager
-hsetroot -solid '#171717'
+hsetroot -solid '#191919'
 urxvtd -q -f -o
 #feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Beethoven/beet.png
-sxhkd -f 100 &
+sxhkd &
 exec bspwm

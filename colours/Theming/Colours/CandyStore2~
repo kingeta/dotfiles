@@ -13,12 +13,12 @@
 ! URXVT COLOURS !
 !!!!!!!!!!!!!!!!!
 
-URxvt*borderColor:        #202020
-URxvt*colorBD:            #ffffff
-URxvt*cursorColor:        #D7D7D7
-URxvt*cursorColor2:       #202020
-Urxvt*colorUL:            #A0A0A0
-URxvt.colorIT:            #686868
+*.borderColor:        #202020
+*.colorBD:            #ffffff
+*.cursorColor:        #D7D7D7
+*.cursorColor2:       #202020
+*.colorUL:            #A0A0A0
+*.colorIT:            #686868
 
 ! black
 *.color0:       #2D2D2D

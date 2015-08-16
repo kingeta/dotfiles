@@ -14,7 +14,7 @@ DFG=$(getcolour dfg)
 # INFORMATION
 
 Clock() {
-    echo -e -n "%{F#FF$CLOCK}$(date "+%D") %{F-}"
+    echo -e -n "%{F#FF$CLOCK}$(date "+%d/%m/%y") %{F-}"
     echo -e -n "%{B#FF"$CLOCK"}"
     echo -e -n "%{F#FF$FG} \ue015 %{F-}"
     TIME=$(date "+%H:%M:%S")
