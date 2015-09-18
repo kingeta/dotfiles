@@ -1,0 +1,53 @@
+! vim: set filetype=xdefaults :
+
+!!!!!!!!!!!!!!!!!!!!
+! TERMINAL COLOURS !
+!!!!!!!!!!!!!!!!!!!!
+
+*foreground: #151515
+! alternate fg: #050505
+*background: #D7D7D7
+! alternate bg: #BBBBBB
+
+!!!!!!!!!!!!!!!!!
+! URXVT COLOURS !
+!!!!!!!!!!!!!!!!!
+
+*.borderColor:        #D7D7D7
+*.colorBD:            #000000
+*.cursorColor:        #050505
+*.cursorColor2:       #D7D7D7
+*.colorUL:            #E0E0E0
+*.colorIT:            #E8E8E8
+
+! black
+*.color0:       #2D2D2D
+*.color8:       #CECECE
+
+! red
+*.color1:       #A63121
+*.color9:       #C2311D
+
+! green
+*.color2:       #3B7D4E
+*.color10:      #40995A
+
+! yellow
+*.color3:       #A16A22
+*.color11:      #BA761E
+
+! cyan
+*.color6:       #487891
+*.color14:      #4D8BAB
+
+! magenta
+*.color5:       #995F93
+*.color13:      #A863A1
+
+! blue
+*.color4:       #4C5FA1
+*.color12:      #4E66C2
+
+! white
+*.color7:       #ADADAD
+*.color15:      #393939

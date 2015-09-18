@@ -54,4 +54,4 @@ Xft.lcdfilter:  lcddefault
 Xft.rgba:       rgb
 
 !Source colours if I need to
-#include "../../Theming/Colours/CandyStore2"
+#include "../../Theming/Colours/White"

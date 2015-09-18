@@ -19,8 +19,8 @@ shift + alt + k
 #
 
 # make sxhkd reload its configuration files:
-#alt + Escape
-#	pkill -USR1 -x sxhkd
+alt + Escape
+	pkill -USR1 -x sxhkd
 
 #
 # WINDOW SPECIFIC BINDINGS
@@ -125,7 +125,7 @@ shift + alt + Return
 	urxvtc
 
 shift + alt + space
-    ~/Scripts/Work/Launcher
+    ~/Scripts/Work/Launcher2
 
 shift + alt + s
 	steam
@@ -141,9 +141,6 @@ alt + {equal,minus}
 
 shift + alt + {equal,minus} 
 	amixer set Master {10%+,10%-}
-
-shift + alt + w
-    urxvtc -e "weechat"
 
 shift + alt + g
     gimp

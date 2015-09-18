@@ -14,21 +14,22 @@ zstyle :compinstall filename '/home/herby/.zshrc'
 [[ -n "${key[End]}" ]] && bindkey "${key[End]}" end-of-line
 
 # Loading stuff
-autoload -Uz compinit promptinit
+autoload -Uz compinit promptinit zmv
 compinit
 promptinit
 setopt correct
 
 # Prompt
 autoload -U colors && colors
-PROMPT="%{$fg_bold[yellow]%}- %{$reset_color%}"
+PROMPT="%{$fg_no_bold[grey]%}[%{$fg_no_bold[red]%}$%{$fg_no_bold[grey]%}]%{$reset_color%} "
 #PROMPT="%{$fg_bold[yellow]%}§ %{$reset_color%}"
-RPROMPT="%{$fg_bold[black]%}%~%{$reset_color%}"
+RPROMPT="%{$fg_no_bold[grey]%}[%{$fg_no_bold[green]%}%~%{$fg_no_bold[grey]%}]%{$reset_color%}"
+#RPROMPT="[%{$fg_bold[black]%}%~%{$reset_color%}]"
 
 # Completion
 setopt autocd
-zstyle ':completion:*:descriptions' format '%B%d%b'
-zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
+zstyle ':completion:*:descriptions' format '%d%b'
+zstyle ':completion:*:warnings' format 'No matches for: %d%b'
 
 # Man
 man() {

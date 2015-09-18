@@ -1,0 +1,63 @@
+#! /usr/bin/bash
+#
+# this is my right bar
+# 
+
+# COLOURS
+
+VOLUME="$(getcolour 1)"
+COLOR1="$(getcolour 6)"
+COLOR3="$(getcolour 5)"
+COLOR2="$(getcolour 4)"
+PAUSED="$(getcolour 8)"
+BG="$(getcolour bg)"
+FG="$(getcolour fg)"
+DFG=$(getcolour abg)
+
+# INFORMATION
+
+PlayingState() {
+    # show what is playing
+    if [ -z "$(mpc current)" ]; then
+        echo -e -n "%{B#FF$COLOR2} Playlist Empty %{B-}"
+    else
+        echo -e -n "%{B#FF$COLOR1}"    
+
+        # display the playing state
+        if [ -z "$(mpc | grep playing)" ]; then
+            echo -e -n "%{F#FF$DFG}"
+        fi
+
+        # display the playing music
+        echo -e -n " $(mpc -f %artist% | sed -n '1p') %{B-} "
+        echo -e -n "%{B#FF$COLOR2} $(mpc -f %album% | sed -n '1p') %{B-} "
+        echo -e -n "%{B#FF$COLOR3} $(mpc -f %title% | sed -n '1p') %{B-} %{F-}"
+    fi
+}
+
+Volume () {
+    echo -e -n "%{B#FF$VOLUME} "
+    i=0
+    VOLUME=$(amixer get Master | grep 'Front Left' | egrep -o "[0-9]+%" | rev | cut -c 2- | rev )
+    while [ $i -ne 100 ]; do
+        if [ $VOLUME -gt $i ]; then
+            echo -e -n "*"
+        else
+            echo -e -n " "
+        fi
+        i=$(( $i + 10))
+    done
+    echo -e -n " %{B-}"
+}
+
+# BAR
+
+FONT="-*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*"
+FONT2="-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+x="2560"
+y="0"
+w="1920"
+h="32"
+PARAMETERS="-f "$FONT" -f "$FONT2" -g "$w"x"$h"+"$x"+"$y" -F #FF"$BG" -B #FF"$BG
+
+while :; do echo "$(PlayingState)%{r}$(Volume)"; done | lemonbar $PARAMETERS

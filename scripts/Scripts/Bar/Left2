@@ -1,0 +1,55 @@
+#! /usr/bin/bash
+#
+# this is my left bar
+# 
+
+# COLOURS
+
+CLOCK="$(getcolour 12)"
+DESKTOP="$(getcolour 2)"
+BG="$(getcolour bg)"
+FG="$(getcolour fg)"
+AFG=$(getcolour afg)
+ABG=$(getcolour abg)
+
+# INFORMATION
+
+Clock() {
+    echo -e -n "%{B#FF$CLOCK} $(date "+%H:%M:%S") %{B-}"
+}
+
+Desktop() {
+    echo -e -n "%{B#FF"$DESKTOP"} "
+    DTOPS="$(bspc query -D)"
+    for a in $DTOPS; do
+        echo -e -n "%{F#FF$ABG}%{U#FF$ABG}"
+    
+        if [ "$(bspc query -D -d)" = $a ]; then
+            echo -e -n "%{F-}%{U#FF$BG}"
+        fi
+
+        if [ -n "$(bspc query -W -d $a)" ]; then
+            echo -e -n "%{+u}"
+        fi
+
+        echo -e -n "$a%{-u}%{F-} "
+    done
+    echo -e -n "%{F-}%{B-}"
+}
+
+Github() {
+    GIT="github.com/kingeta/dotfiles"
+    echo -e -n "%{F#FF505050}$GIT%{F-}"
+}
+
+# BAR
+
+FONT="-*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*"
+FONT2="-wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1"
+x="0"
+y="0"
+w="2560"
+h="32"
+PARAMETERS="-f "$FONT" -f "$FONT2" -g "$w"x"$h"+"$x"+"$y" -F #FF"$BG" -B #FF"$BG" "
+
+while :; do echo "$(Desktop)%{c}$(Github)%{r}$(Clock)"; done | lemonbar $PARAMETERS

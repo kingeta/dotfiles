@@ -18,7 +18,7 @@ set showcmd         " Show (partial) command in status line.
 
 set number          " Show line numbers.
 
-set hlsearch        " When there is a previous search pattern, highlight all
+"set hlsearch        " When there is a previous search pattern, highlight all
                     " its matches.
  
 set incsearch       " While typing a search command, show immediately where the
@@ -38,10 +38,10 @@ set autoindent      " Copy indent from current line when starting a new line
                     " (typing <CR> in Insert mode or when using the "o" or "O"
                     " command).
  
-set ruler           " Show the line and column number of the cursor position,
+"set ruler           " Show the line and column number of the cursor position,
                     " separated by a comma.
  
-set background=dark " When set to "dark", Vim will try to use colors that look
+set background=light " When set to "dark", Vim will try to use colors that look
                     " good on a dark background. When set to "light", Vim will
                     " try to use colors that look good on a light background.
                     " Any other value is illegal.
@@ -72,15 +72,11 @@ colorscheme term
 
 set autoread
 
-"let mapleader = ","
-"let g:mapleader = ","
-
 nmap <c-w> :w!<cr>
 nmap <c-x> :x!<cr>
 nmap <c-q> :q<cr>
 
 nmap <c-p> :set paste!<cr>
-"nmap <c-o> :set nopaste<cr>
 
 set timeout " Do time out on mappings and others
 set timeoutlen=2000 " Wait {num} ms before timing out a mapping

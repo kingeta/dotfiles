@@ -1,0 +1,11 @@
+#! /bin/bash
+#
+# this script launches rofi or something
+
+fg="$(getcolour foreground)"
+bg="$(getcolour background)"
+afg="$(getcolour afg)"
+
+rofi -show run -terminal urxvt -lines 5 -eh 2 -width 100 -padding 1000 -opacity "50" -bw 0 -bc "#$fg" -bg "#$fg" -fg "#$bg" -hlbg "#$fg" -hlfg "#$bg" -font "Dejavu Sans Mono 14"
+
+exit 0

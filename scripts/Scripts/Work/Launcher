@@ -3,11 +3,11 @@
 # this script launches dmenu or something
 
 width="$(bspc query -T -m $(bspc query -M -m) | grep -oE "[0-9]{2,6}" | tail -n 1 )"
-fg="$(getcolour foreground)"
-bg="$(getcolour background)"
-dark=$(getcolour darkened)
-hl="$(getcolour 4)"
+fg="$(getcolour fg)"
+bg="$(getcolour bg)"
+hl="$(getcolour abg)"
 
-dmenu_run -i -q -l 0 -x 10 -y 10 -h 22 -w 2540 -fn '-*-gohufont-medium-r-*-*-11-*-*-*-*-*-*-*' -nf '#'$dark -nb '#'$bg -sf '#'$fg -sb '#'$hl -dim 0.25
+dmenu_run -i -q -l 0 -x 0 -y 0 -h 32 -fn '-*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*' -nf '#'$fg -nb '#'$bg -sf '#'$fg -sb '#'$hl -dim 0.25
+
 
 exit 0

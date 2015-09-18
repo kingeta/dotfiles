@@ -14,8 +14,8 @@ xrandr --output DVI-D-0 --auto --primary
 xrandr --output HDMI-0 --auto --right-of DVI-D-0
 
 # Bars
-bash ~/Scripts/Bar/Left &
-bash ~/Scripts/Bar/Right &
+bash ~/Scripts/Bar/Left2 &
+bash ~/Scripts/Bar/Right2 &
 
 # KB + M
 #setxkbmap -option caps:super -option 108:66 -layout gb
@@ -34,8 +34,8 @@ xsetroot -cursor_name left_ptr
 unclutter -root &
 
 # Load wm and keybind manager
-hsetroot -solid '#191919'
+hsetroot -solid '#C3C3C3'
 urxvtd -q -f -o
-#feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Beethoven/beet.png
+#feh --no-fehbg --bg-tile ~/Theming/Wallpapers/Tiling/Dark/embroidery.png
 sxhkd &
 exec bspwm

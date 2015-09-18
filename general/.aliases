@@ -6,8 +6,8 @@ alias cl='clear'
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
-alias lla='ls -l -A'
-alias la='ls -A'
+alias lla='ls -l -a'
+alias la='ls -a'
 alias l='ls'
 
 editlatex() {
@@ -27,7 +27,7 @@ alias latex='editlatex'
 
 alias flacsplit='shntool split -f *.cue -o flac *.flac && cuetag.sh *.cue split-track*.flac'
 
-alias flactag='cuetag.sh **/**.flac'
+alias flactag='cuetag.sh *.cue *.flac'
 
 alias siji='xfd -rows 19 -columns 34 -fn -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1'
 

@@ -4,6 +4,6 @@
 pkill -USR1 -x sxhkd
 xrdb ~/.Xresources
 [ -n "$(ps aux | grep lemonbar)" ] && killall lemonbar
-~/Scripts/Bar/Left &
-~/Scripts/Bar/Right &
+~/Scripts/Bar/Left2 &
+~/Scripts/Bar/Right2 &
 exit 0
